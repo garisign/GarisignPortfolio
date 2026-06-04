@@ -1403,6 +1403,55 @@
     .hero-desc { max-width: 100%; }
     .about-actions, .hero-ctas, .filter-group { justify-content: center; }
     .site-footer__bottom { flex-direction: column; align-items: flex-start; }
+
+    /* Services: grelha 2×3 de cartões no mobile */
+    .services-rows {
+      border-top: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .service-row {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 18px 16px 16px;
+      border-bottom: none;
+      border-radius: 16px;
+      background: rgba(34,34,34,0.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(221,181,108,0.18);
+      min-height: 118px;
+      gap: 0;
+      transition: transform 0.3s var(--transition), border-color 0.3s;
+    }
+    .service-row::before {
+      bottom: auto;
+      width: 100% !important;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      opacity: 0.3;
+      transition: opacity 0.35s;
+    }
+    .service-row:hover {
+      padding-left: 16px;
+      transform: translateY(-3px);
+      border-color: rgba(221,181,108,0.38);
+    }
+    .service-row:hover::before { width: 100% !important; opacity: 1; }
+    .service-row__num {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: rgba(221,181,108,0.5);
+      min-width: auto;
+    }
+    .service-row__title {
+      font-size: clamp(19px, 5vw, 24px);
+      margin-top: auto;
+      padding-top: 12px;
+    }
+    .service-row__arrow { display: none; }
   }
   @media (pointer: coarse) {
     html { cursor: auto; }
