@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Página de trabalhos do Garisign: espaço preparado para futuros projetos em design gráfico, motion design, social media e edição de vídeo.">
+<meta name="keywords" content="designer criativo, portfolio, motion design, social media, Felgueiras, Portugal, freelancer, Garisign">
+<meta name="author" content="Gabriel — Garisign Designer">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Garisign Designer — Trabalhos">
+<meta property="og:description" content="Página de trabalhos do Garisign: espaço preparado para futuros projetos em design gráfico, motion design, social media e edição de vídeo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://garisign.pt/trabalhos.html">
+<meta property="og:image" content="og-image.svg">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Garisign Designer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Garisign Designer — Trabalhos">
+<meta name="twitter:description" content="Página de trabalhos do Garisign: espaço preparado para futuros projetos em design gráfico, motion design, social media e edição de vídeo.">
+<meta name="twitter:image" content="og-image.svg">
+<link rel="canonical" href="https://garisign.pt/trabalhos.html">
+<link rel="icon" type="image/svg+xml" href="img-logotipo-LOGO.svg">
+<link rel="apple-touch-icon" href="img-logotipo-LOGO.svg">
+<link rel="manifest" href="site.webmanifest">
+<title>Trabalhos — Garisign Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+<div id="scroll-progress"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo" data-hover>
+    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+    <span class="nav-logo-text">Garisign</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-nav data-i18n="nav.home">Início</a></li>
+    <li><a href="#top" data-nav class="active" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" data-nav data-i18n="nav.services">Serviços</a></li>
+    <li><a href="index.html#about" data-nav data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" data-nav data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="pt" id="btn-pt">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-en">EN</button>
+    </div>
+    <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html" onclick="toggleMenu()" data-i18n="nav.home">Início</a></li>
+    <li><a href="#top" onclick="toggleMenu()" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" onclick="toggleMenu()" data-i18n="nav.services">Serviços</a></li>
+    <li><a href="index.html#about" onclick="toggleMenu()" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" onclick="toggleMenu()" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+</div>
+
+<div class="social-float">
+  <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok" data-hover>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.79a4.85 4.85 0 01-1-.1z"/></svg>
+  </a>
+  <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram" data-hover>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+</div>
+
+<main class="page-main">
+  <header class="page-hero reveal">
+    <p class="section-label" data-i18n="worksPage.label">Portfólio</p>
+    <h1 data-i18n="worksPage.title">Trabalhos</h1>
+    <p class="page-lead" data-i18n="worksPage.lead">Uma seleção preparada para receber os próximos projetos: identidades visuais, social media, posters, edição e peças com impacto.</p>
+  </header>
+
+  <!-- ------ RECONGE — PROJETO DE DESTAQUE ------ -->
+  <section id="reconge" class="featured-project reveal">
+    <div class="featured-project__inner">
+      <div class="featured-project__meta">
+        <span class="featured-badge" data-i18n="worksPage.reconge.badge">PAP 2026 — Escola Profissional de Felgueiras</span>
+        <h2 class="featured-project__title">RECONGE</h2>
+        <p class="featured-project__sub" data-i18n="worksPage.reconge.sub">Identidade Visual · Branding · Social Media · Vídeo Promocional</p>
+        <p class="featured-project__desc" data-i18n="worksPage.reconge.desc">A minha Prova de Aptidão Profissional — o projeto mais completo que já realizei. Criei a identidade visual integral, manual de normas gráficas, conteúdos para redes sociais e vídeo promocional para uma plataforma social que une jovens em busca de alojamento com idosos que precisam de companhia.</p>
+        <a href="reconge.html" class="btn-primary btn-reconge" data-hover data-i18n="worksPage.reconge.cta">Ver Case Study →</a>
+      </div>
+      <div class="featured-project__visual">
+        <div class="featured-project__images">
+          <img src="Reconge-Images-post 1.webp" alt="RECONGE — Unir gerações, Partilhar vidas" loading="lazy">
+          <div class="featured-col">
+            <img src="Reconge-Images-Prancheta 1-1.webp" alt="RECONGE — Para o idoso" loading="lazy">
+            <img src="Reconge-Images-Prancheta 1-2.webp" alt="RECONGE — Para o jovem" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ CRDESIGN WEBSITE ------ -->
+  <section id="crdesign" class="featured-project reveal">
+    <div class="featured-project__inner">
+      <div class="featured-project__meta">
+        <span class="featured-badge featured-badge--cr">Website · Freelance · 2026</span>
+        <h2 class="featured-project__title">CRDESIGN</h2>
+        <p class="featured-project__sub featured-project__sub--cr" data-i18n="worksPage.crdesign.sub">Website Institucional · HTML/CSS/JS · PT/FR</p>
+        <p class="featured-project__desc" data-i18n="worksPage.crdesign.desc">Website completo para a CR Design, empresa de comunicação visual em Felgueiras. Construído de raiz em HTML, CSS e JS puro — bilingue em Português e Francês, com 14 categorias de serviços, galeria com lightbox e integração com WhatsApp.</p>
+        <a href="crdesign.html" class="btn-primary btn-crdesign" data-hover data-i18n="worksPage.crdesign.cta">Ver Case Study →</a>
+      </div>
+      <div class="featured-project__visual">
+        <div class="featured-project__images">
+          <img src="Website CR-img-Imagem inicial.webp" alt="CR Design — Hero do website" loading="lazy">
+          <div class="featured-col">
+            <img src="Website CR-img-Imagens loja fisica-20260525_105903.webp" alt="CR Design — Loja física Felgueiras" loading="lazy">
+            <img src="Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp" alt="CR Design — Decoração de montra" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ ESS�SNCIA AOS PEDA�?OS — SOCIAL MEDIA ------ -->
+  <div id="eap" class="social-feature reveal">
+    <div class="social-feature__inner">
+      <div class="social-feature__meta">
+        <span class="social-feature__badge">Social Media · Instagram</span>
+        <h2 class="social-feature__title">Essência Aos Pedaços</h2>
+        <p class="social-feature__desc" data-i18n="worksPage.eap.desc">Criação de conteúdo para Instagram de uma marca artesanal de doces e salgados — posts com identidade visual própria, fotografia de produto e copywriting.</p>
+        <a href="https://www.instagram.com/essencia_aos_pedacos/" target="_blank" rel="noopener noreferrer" class="social-feature__link" aria-label="Ver Instagram da Essência Aos Pedaços" data-i18n-aria-label="worksPage.eap.aria">@essencia_aos_pedacos →</a>
+      </div>
+      <div class="social-feature__posts">
+        <div class="social-feature__post">
+          <img src="EAP-Prancheta 1.webp" alt="Essência Aos Pedaços — post Instagram" loading="lazy">
+        </div>
+        <div class="social-feature__post">
+          <img src="EAP-eugenia.webp" alt="Essência Aos Pedaços — Doces & Salgados Artesanais" loading="lazy">
+        </div>
+        <div class="social-feature__post">
+          <img src="EAP-aniversário.webp" alt="Essência Aos Pedaços — Momentos que merecem ser celebrados" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------ WORKS GALLERY ------ -->
+  <section id="gallery" class="works-gallery">
+    <div class="works-grid" aria-live="polite">
+
+      <!-- SPORTS (6) -->
+      <div class="work-card glass-card" data-categories="sports">
+        <span class="work-num">01</span>
+        <img src="img-works-Design de Desporto-MATCH DAY 1.webp" alt="Match Day Graphics" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Sports Design</p>
+          <p class="work-title">Match Day</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="sports">
+        <span class="work-num">02</span>
+        <img src="img-works-Design de Desporto-Jogo.webp" alt="Pré-Jogo — Matchday Preview" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Sports Design</p>
+          <p class="work-title">Pré-Jogo</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="sports">
+        <span class="work-num">03</span>
+        <img src="img-works-Design de Desporto-pedro-1.webp" alt="Pedro — Atleta" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Sports Design</p>
+          <p class="work-title">Pedro — Atleta</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="sports">
+        <span class="work-num">04</span>
+        <img src="img-works-Design de Desporto-pedro-3.webp" alt="Pedro — Performance" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Sports Design</p>
+          <p class="work-title">Pedro — Performance</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="sports">
+        <span class="work-num">05</span>
+        <img src="img-works-Design de Desporto-Resultado2.webp" alt="Resultado do Jogo" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Sports Design</p>
+          <p class="work-title">Resultado</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="sports">
+        <span class="work-num">06</span>
+        <img src="img-works-Design de Desporto-Sergio s logo.webp" alt="Sérgio — Logotipo" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Sports Design</p>
+          <p class="work-title">Sérgio — Logotipo</p>
+        </div>
+      </div>
+
+      <!-- FASHION & STORES (9) -->
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">07</span>
+        <img src="img-works-Posters  fashion e stores-altitude.webp" alt="Altitude Store" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Altitude Store</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">08</span>
+        <img src="img-works-Posters  fashion e stores-aniversário.webp" alt="Poster Aniversário" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Aniversário</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">09</span>
+        <img src="img-works-Posters  fashion e stores-Banner fb.webp" alt="Banner Facebook" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Banner Facebook</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">10</span>
+        <img src="img-works-Posters  fashion e stores-bolo ananas.webp" alt="Bolo Ananás" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Bolo & Ananás</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">11</span>
+        <img src="img-works-Posters  fashion e stores-Cris.webp" alt="Cris Store" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Cris Store</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">12</span>
+        <img src="img-works-Posters  fashion e stores-eugenia.webp" alt="Eugénia Store" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Eugénia Store</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">13</span>
+        <img src="img-works-Posters  fashion e stores-lamington.webp" alt="Lamington" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Lamington</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">14</span>
+        <img src="img-works-Posters  fashion e stores-natal.webp" alt="Campanha de Natal" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Natal</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="fashion">
+        <span class="work-num">15</span>
+        <img src="img-works-Posters  fashion e stores-Sem Título-2.webp" alt="Campanha Fashion" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Fashion & Stores</p>
+          <p class="work-title">Campanha</p>
+        </div>
+      </div>
+
+      <!-- ENTERTAINMENT (5) -->
+      <div class="work-card glass-card" data-categories="entertainment">
+        <span class="work-num">16</span>
+        <img src="img-works-Posters entretenimento-Arrow.webp" alt="Arrow — Série TV Poster" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Entertainment</p>
+          <p class="work-title">Arrow — Série TV</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="entertainment">
+        <span class="work-num">17</span>
+        <img src="img-works-Posters entretenimento-Eminem.webp" alt="Eminem — Music Poster" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Entertainment</p>
+          <p class="work-title">Eminem</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="entertainment">
+        <span class="work-num">18</span>
+        <img src="img-works-Posters entretenimento-Jinx.webp" alt="Jinx — Arcane Poster" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Entertainment</p>
+          <p class="work-title">Jinx — Arcane</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="entertainment">
+        <span class="work-num">19</span>
+        <img src="img-works-Posters entretenimento-Kratos.webp" alt="Kratos — God of War Poster" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Entertainment</p>
+          <p class="work-title">Kratos — God of War</p>
+        </div>
+      </div>
+      <div class="work-card glass-card" data-categories="entertainment">
+        <span class="work-num">20</span>
+        <img src="img-works-Posters entretenimento-Uncharted 4.webp" alt="Uncharted 4 Poster" loading="lazy" class="work-img">
+        <div class="work-overlay">
+          <p class="work-tag">Entertainment</p>
+          <p class="work-title">Uncharted 4</p>
+        </div>
+      </div>
+
+    </div>
+    <div id="works-empty-state" class="works-empty-state" aria-hidden="true" style="display:none;">
+      <p data-i18n="worksPage.empty">Em breve...</p>
+    </div>
+  </section>
+
+<!-- ------ SITE FOOTER (CTA + FOOTER) ------ -->
+<section class="site-footer">
+  <div class="site-footer__decal">GA</div>
+  <div class="site-footer__top reveal">
+    <div class="site-footer__intro">
+      <p class="section-label"><span data-i18n="siteFooter.label">[04] — CONTACTO</span></p>
+      <h2 class="site-footer__title" data-i18n-html="siteFooter.title">Vamos criar<br>algo que<br>fica na <span class="site-footer-title-italic">memória.</span></h2>
+    </div>
+    <div class="site-footer__contact">
+      <a href="mailto:garisign2025@gmail.com" class="site-footer__email">garisign2025@gmail.com</a>
+      <p class="site-footer__text" data-i18n="siteFooter.location">Felgueiras, Portugal — disponível remotamente</p>
+      <p class="site-footer__text site-footer__text--muted" data-i18n="siteFooter.areas">Design Gráfico · Motion Design · Edição de Vídeo</p>
+      <a href="contacto.html" class="btn-primary" data-hover data-i18n="siteFooter.button">Ver Contacto →</a>
+    </div>
+  </div>
+  <hr class="site-footer__separator">
+  <div class="site-footer__bottom">
+    <a href="index.html" class="site-footer__logo">GARISIGN</a>
+    <p class="site-footer__copy" data-i18n="footer.copy">© 2025 Garisign Designer. Todos os direitos reservados.</p>
+    <div class="site-footer__links">
+      <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+      <a href="mailto:garisign2025@gmail.com">EMAIL</a>
+    </div>
+  </div>
+</section>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+<script src="trabalhos.js" defer></script>
+</body>
+</html>
+
+

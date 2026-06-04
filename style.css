@@ -1,0 +1,70 @@
+element.style {
+}
+.hero {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.28) 35%, rgba(0, 0, 0, 0.85) 100%), url(../img/Imagem inicial.webp) center / cover no-repeat;
+    padding: 0 1rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    background: #080808;
+    color: var(--white);
+    font-family: 'Comfortaa', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+:root {
+    --black: #0a0a0a;
+    --dark: #111111;
+    --card: #181818;
+    --green: #8dc63f;
+    --green2: #a8d84a;
+    --pink: #e83e8c;
+    --yellow: #f5c518;
+    --blue: #00b4d8;
+    --white: #f0f0f0;
+    --gray: #888;
+    --border: #2a2a2a;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba((0,0,0,0.32)0%);
+    pointer-events: none;
+    z-index: 1;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 260px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.92));
+    pointer-events: none;
+    z-index: 1;
+}
+<style>
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2) format('woff2');
+    unicode-range: U +0100 -02BA, U +02BD -02C5, U +02C7 -02CC, U +02CE -02D7, U +02DD -02FF, U +0304, U +0308, U +0329, U +1D00 -1DBF, U +1E00 -1E9F, U +1EF2 -1EFF, U +2020, U +20A0 -20AB, U +20AD -20C0, U +2113, U +2C60 -2C7F, U + A720-A7FF;
+}

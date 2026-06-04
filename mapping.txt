@@ -1,0 +1,270 @@
+Website CR-img-logotipos_servicos-10 Tacas, trofeus e placas de inaugura�ao-10png.png
+  norm: website cr-img-logotipos_servicos-10 tacas, trofeus e placas de inaugura�ao-10png.png
+  exact: 
+  cand: Website CR-img-logotipos_servicos-10 Tacas, trofeus e placas de inauguraçao-10png.png
+  cand: Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png
+  cand: Website CR-img-logotipos_servicos-5 cartões de visita-5png.png
+  cand: Website CR-img-logotipos_servicos-3 Catalogos, ementas e restauraçáo-3png.png
+  cand: Website CR-img-logotipos_servicos-1 Linhas Graficas e Branding-png.png
+
+Website CR-img-logotipos_servicos-12 Decora�ao de Montras (vitrinismo)-12png.png
+  norm: website cr-img-logotipos_servicos-12 decora�ao de montras (vitrinismo)-12png.png
+  exact: 
+  cand: Website CR-img-logotipos_servicos-12 Decoraçao de Montras (vitrinismo)-12png.png
+  cand: Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-logotipos_servicos-11 Vestuario de trabalho e carimbos-11png.png
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+
+Website CR-img-logotipos_servicos-13 Decora�ao de viaturas-13png.png
+  norm: website cr-img-logotipos_servicos-13 decora�ao de viaturas-13png.png
+  exact: 
+  cand: Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png
+  cand: Website CR-img-logotipos_servicos-12 Decoraçao de Montras (vitrinismo)-12png.png
+  cand: Website CR-img-logotipos_servicos-5 cartões de visita-5png.png
+  cand: Website CR-img-logotipos_servicos-14 outros serviços-14png.png
+  cand: Website CR-img-logotipos_servicos-6 Autocolantes-6png.png
+
+Website CR-img-logotipos_servicos-14 Outros Servi�os-14png.png
+  norm: website cr-img-logotipos_servicos-14 outros servi�os-14png.png
+  exact: 
+  cand: Website CR-img-logotipos_servicos-14 outros serviços-14png.png
+  cand: Website CR-img-logotipos_servicos-5 cartões de visita-5png.png
+  cand: Website CR-img-logotipos_servicos-6 Autocolantes-6png.png
+  cand: Website CR-img-logotipos_servicos-11 Vestuario de trabalho e carimbos-11png.png
+  cand: Website CR-img-logotipos_servicos-4 convites e etiquetas-4png.png
+
+Website CR-img-logotipos_servicos-3 Catalogos, ementas e restaura��o-3png.png
+  norm: website cr-img-logotipos_servicos-3 catalogos, ementas e restaura��o-3png.png
+  exact: 
+  cand: Website CR-img-logotipos_servicos-3 Catalogos, ementas e restauraçáo-3png.png
+  cand: Website CR-img-logotipos_servicos-4 convites e etiquetas-4png.png
+  cand: Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png
+  cand: Website CR-img-logotipos_servicos-14 outros serviços-14png.png
+  cand: Website CR-img-logotipos_servicos-2 Flyers, Panfletos e Cartazes-png2.png
+
+Website CR-img-logotipos_servicos-5 cart�es de visita-5png.png
+  norm: website cr-img-logotipos_servicos-5 cart�es de visita-5png.png
+  exact: 
+  cand: Website CR-img-logotipos_servicos-5 cartões de visita-5png.png
+  cand: Website CR-img-logotipos_servicos-4 convites e etiquetas-4png.png
+  cand: Website CR-img-logotipos_servicos-14 outros serviços-14png.png
+  cand: Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png
+  cand: Website CR-img-logotipos_servicos-6 Autocolantes-6png.png
+
+Website CR-img-logotipos_servicos-6 Etiquetas-6png.png
+  norm: website cr-img-logotipos_servicos-6 etiquetas-6png.png
+  exact: 
+  cand: Website CR-img-logotipos_servicos-4 convites e etiquetas-4png.png
+  cand: Website CR-img-logotipos_servicos-6 Autocolantes-6png.png
+  cand: Website CR-img-logotipos_servicos-5 cartões de visita-5png.png
+  cand: Website CR-img-logotipos_servicos-14 outros serviços-14png.png
+  cand: Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png
+
+Website CR-img-portfolio-1 Linhas Graficas e Branding-placeholder.webp
+  norm: website cr-img-portfolio-1 linhas graficas e branding-placeholder.webp
+  exact: 
+  cand: Website CR-img-portfolio-1 Linhas Graficas e Branding-4.webp
+  cand: Website CR-img-logotipos_servicos-1 Linhas Graficas e Branding-png.png
+  cand: Website CR-img-portfolio-7 Lonas Publicitarias e roll ups-Bandeira CF Jugueiros.webp
+  cand: Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-Polo On Egin.webp
+  cand: Website CR-img-Placas alveolar.webp
+
+Website CR-img-portfolio-10 Tacas, trofeus e placas de inaugura�ao-placeholder.webp
+  norm: website cr-img-portfolio-10 tacas, trofeus e placas de inaugura�ao-placeholder.webp
+  exact: 
+  cand: Website CR-img-logotipos_servicos-10 Tacas, trofeus e placas de inauguraçao-10png.png
+  cand: Website CR-img-portfolio-1 Linhas Graficas e Branding-4.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp
+  cand: Website CR-img-portfolio-13 Decoraçao de viaturas-Jipe 1.jfif
+
+Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirts SC Constru��es.webp
+  norm: website cr-img-portfolio-11 vestuario de trabalho e carimbos-t-shirts sc constru��es.webp
+  exact: 
+  cand: Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirts SC Construções.webp
+  cand: Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirt sapato com sola.webp
+  cand: Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirt Frida.jfif
+  cand: Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirt Koliguppe.jfif
+  cand: Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-Polo On Egin.webp
+
+Website CR-img-portfolio-12 Decora�ao de Montras (vitrinismo)-Montra  SC Constru��es.webp
+  norm: website cr-img-portfolio-12 decora�ao de montras (vitrinismo)-montra  sc constru��es.webp
+  exact: 
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra  SC Construções.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif
+
+Website CR-img-portfolio-12 Decora�ao de Montras (vitrinismo)-Montra Equinox.webp
+  norm: website cr-img-portfolio-12 decora�ao de montras (vitrinismo)-montra equinox.webp
+  exact: 
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra  SC Construções.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif
+
+Website CR-img-portfolio-12 Decora�ao de Montras (vitrinismo)-Montra Gilza Afonso.jfif
+  norm: website cr-img-portfolio-12 decora�ao de montras (vitrinismo)-montra gilza afonso.jfif
+  exact: 
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra  SC Construções.webp
+
+Website CR-img-portfolio-12 Decora�ao de Montras (vitrinismo)-Montra Passion.webp
+  norm: website cr-img-portfolio-12 decora�ao de montras (vitrinismo)-montra passion.webp
+  exact: 
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra  SC Construções.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif
+
+Website CR-img-portfolio-12 Decora�ao de Montras (vitrinismo)-Montra.webp
+  norm: website cr-img-portfolio-12 decora�ao de montras (vitrinismo)-montra.webp
+  exact: 
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra  SC Construções.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif
+
+Website CR-img-portfolio-12 Decora�ao de Montras (vitrinismo)-Porta Manjar Real.jfif
+  norm: website cr-img-portfolio-12 decora�ao de montras (vitrinismo)-porta manjar real.jfif
+  exact: 
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Porta Manjar Real.jfif
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp
+
+Website CR-img-portfolio-13 Decora�ao de viaturas-placeholder.webp
+  norm: website cr-img-portfolio-13 decora�ao de viaturas-placeholder.webp
+  exact: 
+  cand: Website CR-img-portfolio-13 Decoraçao de viaturas-Jipe 1.jfif
+  cand: Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp
+  cand: Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp
+
+Website CR-img-portfolio-2 Flyers, Panfletos e Cartazes-placeholder.webp
+  norm: website cr-img-portfolio-2 flyers, panfletos e cartazes-placeholder.webp
+  exact: 
+  cand: Website CR-img-logotipos_servicos-2 Flyers, Panfletos e Cartazes-png2.png
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp
+  cand: Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-colete biak.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Académico Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp
+
+Website CR-img-portfolio-3 Catalogos, ementas e restaura��o-Cartaz Acad�mico Passion.webp
+  norm: website cr-img-portfolio-3 catalogos, ementas e restaura��o-cartaz acad�mico passion.webp
+  exact: 
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Académico Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Informativo Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp
+
+Website CR-img-portfolio-3 Catalogos, ementas e restaura��o-Cartaz Informativo Passion.webp
+  norm: website cr-img-portfolio-3 catalogos, ementas e restaura��o-cartaz informativo passion.webp
+  exact: 
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Informativo Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Académico Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp
+
+Website CR-img-portfolio-3 Catalogos, ementas e restaura��o-Cartaz de Raspadinha.webp
+  norm: website cr-img-portfolio-3 catalogos, ementas e restaura��o-cartaz de raspadinha.webp
+  exact: 
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Académico Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Informativo Passion.webp
+
+Website CR-img-portfolio-3 Catalogos, ementas e restaura��o-Poster de Parceria.webp
+  norm: website cr-img-portfolio-3 catalogos, ementas e restaura��o-poster de parceria.webp
+  exact: 
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Académico Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Informativo Passion.webp
+
+Website CR-img-portfolio-3 Catalogos, ementas e restaura��o-Poster de cat�logo.webp
+  norm: website cr-img-portfolio-3 catalogos, ementas e restaura��o-poster de cat�logo.webp
+  exact: 
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Académico Passion.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Informativo Passion.webp
+
+Website CR-img-portfolio-4 convites e etiquetas-etiquetta Mimos & Encantos.webp
+  norm: website cr-img-portfolio-4 convites e etiquetas-etiquetta mimos & encantos.webp
+  exact: 
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiqueta Mimos & Encantos.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiquetas C A 1.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-Etiquetas Passion.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiqueta Florabella.webp
+  cand: Website CR-img-portfolio-6 Autocolantes-Etiquetas Passion.webp
+
+Website CR-img-portfolio-5 cart�es de visita-Cartao de visita Medibell.webp
+  norm: website cr-img-portfolio-5 cart�es de visita-cartao de visita medibell.webp
+  exact: 
+  cand: Website CR-img-portfolio-5 cartões de visita-Cartao de visita Medibell.webp
+  cand: Website CR-img-portfolio-5 cartões de visita-Cartoes de visita Cristina Almeida.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiqueta Florabella.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiquetas C A 1.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-Etiquetas Passion.webp
+
+Website CR-img-portfolio-5 cart�es de visita-Cartoes de visita Cristina Almeida.webp
+  norm: website cr-img-portfolio-5 cart�es de visita-cartoes de visita cristina almeida.webp
+  exact: 
+  cand: Website CR-img-portfolio-5 cartões de visita-Cartoes de visita Cristina Almeida.webp
+  cand: Website CR-img-portfolio-5 cartões de visita-Cartao de visita Medibell.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Rifas.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiqueta Florabella.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Caixa melhor mãe.webp
+
+Website CR-img-portfolio-6 Autocolantes-placeholder.webp
+  norm: website cr-img-portfolio-6 autocolantes-placeholder.webp
+  exact: 
+  cand: Website CR-img-portfolio-6 Autocolantes-Etiquetas Passion.webp
+  cand: Website CR-img-logotipos_servicos-6 Autocolantes-6png.png
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiquetas C A 1.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiqueta Florabella.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-Etiquetas Passion.webp
+
+Website CR-img-portfolio-8 outdoors e cartazes de grande formato-placeholder.webp
+  norm: website cr-img-portfolio-8 outdoors e cartazes de grande formato-placeholder.webp
+  exact: 
+  cand: Website CR-img-logotipos_servicos-8 outdoors e cartazes de grande formato-8png.png
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Informativo Passion.webp
+  cand: Website CR-img-portfolio-5 cartões de visita-Cartao de visita Medibell.webp
+  cand: Website CR-img-portfolio-4 convites e etiquetas-etiqueta Florabella.webp
+  cand: Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp
+
+Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Caixa melhor m�e.webp
+  norm: website cr-img-portfolio-9 brindes e artigos personalizados-caixa melhor m�e.webp
+  exact: 
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Caixa melhor mãe.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Rifas.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-magnéticos biak.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-20260528_113359.webp
+  cand: Website CR-img-logotipos_servicos-9 Brindes e Artigos Personalizados-9png.png
+
+Website CR-img-portfolio-9 Brindes e Artigos Personalizados-magn�ticos biak.webp
+  norm: website cr-img-portfolio-9 brindes e artigos personalizados-magn�ticos biak.webp
+  exact: 
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-magnéticos biak.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Rifas.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Caixa melhor mãe.webp
+  cand: Website CR-img-portfolio-9 Brindes e Artigos Personalizados-20260528_113359.webp
+  cand: Website CR-img-logotipos_servicos-9 Brindes e Artigos Personalizados-9png.png
+

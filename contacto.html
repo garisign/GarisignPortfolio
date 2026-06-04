@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contacta o Gabriel — Garisign Designer. Email, WhatsApp ou Instagram. Disponível para projetos de design criativo.">
+<meta name="keywords" content="contacto, designer criativo, portfolio, Garisign, Felgueiras, freelancer">
+<meta name="author" content="Gabriel — Garisign Designer">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Contacto — Garisign Designer">
+<meta property="og:description" content="Contacta o Gabriel — Garisign Designer. Vamos criar algo juntos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://garisign.pt/contacto.html">
+<meta property="og:image" content="og-image.svg">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Garisign Designer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contacto — Garisign Designer">
+<meta name="twitter:description" content="Contacta o Gabriel — Garisign Designer. Vamos criar algo juntos.">
+<meta name="twitter:image" content="og-image.svg">
+<link rel="canonical" href="https://garisign.pt/contacto.html">
+<link rel="icon" type="image/svg+xml" href="img-logotipo-LOGO.svg">
+<link rel="apple-touch-icon" href="img-logotipo-LOGO.svg">
+<link rel="manifest" href="site.webmanifest">
+<title>Contacto — Garisign Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ------ CONTACT HERO ------ */
+  .ctc-hero {
+    position: relative; z-index: 2;
+    padding: calc(var(--nav-h) + 72px) clamp(24px,6vw,100px) 56px;
+    text-align: center;
+  }
+  .ctc-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(221,181,108,0.1) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .ctc-hero__label {
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 20px; display: block;
+  }
+  .ctc-hero__title {
+    font-family: 'Agdasima', sans-serif;
+    font-size: clamp(52px,8vw,110px);
+    line-height: 0.92; letter-spacing: -1px;
+    color: var(--cream);
+    margin-bottom: 20px;
+  }
+  .ctc-hero__title em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--gold);
+  }
+  .ctc-hero__sub {
+    font-size: clamp(14px,1.5vw,17px);
+    color: rgba(240,237,232,0.5);
+    max-width: 480px; margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* ------ CONTACT BODY ------ */
+  .ctc-body {
+    position: relative; z-index: 2;
+    padding: 0 clamp(24px,6vw,100px) clamp(80px,10vw,120px);
+  }
+  .ctc-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(32px,5vw,80px);
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .ctc-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ------ FORM ------ */
+  .ctc-col-label {
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 28px; display: block;
+  }
+  .ctc-form {
+    display: flex; flex-direction: column; gap: 18px;
+  }
+  .ctc-field {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .ctc-field label {
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: rgba(240,237,232,0.4);
+  }
+  .ctc-field input,
+  .ctc-field textarea {
+    background: rgba(240,237,232,0.04);
+    border: 1px solid rgba(221,181,108,0.2);
+    border-radius: 8px;
+    padding: 14px 18px;
+    color: var(--cream);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .ctc-field input:focus,
+  .ctc-field textarea:focus {
+    border-color: rgba(221,181,108,0.55);
+    background: rgba(240,237,232,0.07);
+  }
+  .ctc-field input::placeholder,
+  .ctc-field textarea::placeholder {
+    color: rgba(240,237,232,0.25);
+  }
+  .ctc-form .btn-primary {
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+  .ctc-note {
+    font-size: 12px; color: rgba(240,237,232,0.3);
+    line-height: 1.5; margin-top: -4px;
+  }
+  .ctc-success {
+    display: none;
+    padding: 18px 22px;
+    background: rgba(221,181,108,0.1);
+    border: 1px solid rgba(221,181,108,0.3);
+    border-radius: 8px;
+    font-size: 14px; color: var(--gold);
+    line-height: 1.6;
+  }
+  .ctc-success.visible { display: block; }
+
+  /* ------ CHANNELS ------ */
+  .ctc-channels {
+    display: flex; flex-direction: column; gap: 14px;
+    margin-bottom: 28px;
+  }
+  .ctc-channel {
+    display: flex; align-items: center; gap: 18px;
+    padding: 20px 22px;
+    text-decoration: none; color: inherit;
+    border-radius: var(--radius);
+    transition: border-color 0.35s, transform 0.35s;
+    position: relative; overflow: hidden;
+  }
+  .ctc-channel:hover {
+    border-color: rgba(221,181,108,0.45);
+    transform: translateX(4px);
+  }
+  .ctc-channel--wa:hover { border-color: rgba(37,211,102,0.45); }
+  .ctc-channel--ig:hover { border-color: rgba(225,48,108,0.4); }
+  .ctc-channel__icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: rgba(221,181,108,0.1);
+    border: 1px solid rgba(221,181,108,0.2);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--gold);
+  }
+  .ctc-channel--wa .ctc-channel__icon {
+    background: rgba(37,211,102,0.1);
+    border-color: rgba(37,211,102,0.2);
+    color: #25d366;
+  }
+  .ctc-channel--ig .ctc-channel__icon {
+    background: rgba(225,48,108,0.1);
+    border-color: rgba(225,48,108,0.2);
+    color: #e1306c;
+  }
+  .ctc-channel__icon svg { width: 20px; height: 20px; }
+  .ctc-channel__info { flex: 1; min-width: 0; }
+  .ctc-channel__label {
+    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: rgba(240,237,232,0.4); display: block; margin-bottom: 3px;
+  }
+  .ctc-channel__value {
+    font-size: 15px; color: var(--cream); display: block;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    font-weight: 400;
+  }
+  .ctc-channel__sub {
+    font-size: 12px; color: rgba(240,237,232,0.35); display: block; margin-top: 2px;
+  }
+  .ctc-channel__arrow {
+    font-size: 18px; color: rgba(240,237,232,0.2);
+    transition: color 0.3s, transform 0.3s;
+  }
+  .ctc-channel:hover .ctc-channel__arrow {
+    color: rgba(240,237,232,0.6);
+    transform: translateX(4px);
+  }
+
+  .ctc-info-box {
+    padding: 22px 24px;
+    border-radius: var(--radius);
+  }
+  .ctc-info-box__avail {
+    font-size: 13px; color: var(--gold);
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 8px;
+  }
+  .ctc-info-box__avail::before {
+    content: '';
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 3px rgba(221,181,108,0.2);
+    animation: pulse-gold 2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  @keyframes pulse-gold {
+    0%,100% { box-shadow: 0 0 0 3px rgba(221,181,108,0.2); }
+    50%      { box-shadow: 0 0 0 6px rgba(221,181,108,0.05); }
+  }
+  .ctc-info-box__loc {
+    font-size: 13px; color: rgba(240,237,232,0.4);
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body id="top">
+
+<div id="scroll-progress"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo" data-hover>
+    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+    <span class="nav-logo-text">Garisign</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-nav data-i18n="nav.home">Início</a></li>
+    <li><a href="index.html#works" data-nav data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" data-nav data-i18n="nav.services">Serviços</a></li>
+    <li><a href="sobre.html" data-nav data-i18n="nav.about">Sobre</a></li>
+    <li><a href="#top" data-nav class="active" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="pt" id="btn-pt">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-en">EN</button>
+    </div>
+    <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html" onclick="toggleMenu()" data-i18n="nav.home">Início</a></li>
+    <li><a href="index.html#works" onclick="toggleMenu()" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" onclick="toggleMenu()" data-i18n="nav.services">Serviços</a></li>
+    <li><a href="sobre.html" onclick="toggleMenu()" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="#top" onclick="toggleMenu()" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button type="button" class="lang-btn active" data-lang="pt">PT</button>
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+  </div>
+</div>
+
+<div class="social-float">
+  <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok" data-hover>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.79a4.85 4.85 0 01-1-.1z"/></svg>
+  </a>
+  <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram" data-hover>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+</div>
+
+<!-- ------ HERO ------ -->
+<section class="ctc-hero reveal">
+  <span class="ctc-hero__label" data-i18n="contactPage.label">[04] — CONTACTO</span>
+  <h1 class="ctc-hero__title">
+    Vamos criar<br>algo <em>juntos.</em>
+  </h1>
+  <p class="ctc-hero__sub" data-i18n="contactPage.subtitle">Escolhe como preferes falar comigo:</p>
+</section>
+
+<!-- ------ BODY ------ -->
+<section class="ctc-body">
+  <div class="ctc-grid">
+
+    <!-- Form -->
+    <div class="reveal">
+      <span class="ctc-col-label" data-i18n="contactPage.form.label">Envia-me uma mensagem</span>
+      <form id="ctc-form" class="ctc-form" novalidate>
+        <div class="ctc-field">
+          <label for="ctc-name" data-i18n="contactPage.form.name">O teu nome</label>
+          <input type="text" id="ctc-name" name="name" placeholder="Rúben Silva" required>
+        </div>
+        <div class="ctc-field">
+          <label for="ctc-email" data-i18n="contactPage.form.email">O teu email</label>
+          <input type="email" id="ctc-email" name="email" placeholder="ruben@exemplo.com" required>
+        </div>
+        <div class="ctc-field">
+          <label for="ctc-subject" data-i18n="contactPage.form.subject">Assunto</label>
+          <input type="text" id="ctc-subject" name="subject" placeholder="Identidade visual para a minha marca" required>
+        </div>
+        <div class="ctc-field">
+          <label for="ctc-msg" data-i18n="contactPage.form.message">Conta-me o teu projeto...</label>
+          <textarea id="ctc-msg" name="message" rows="6" placeholder="Descreve o projeto, o prazo, o orçamento estimado..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" data-hover data-i18n="contactPage.form.send">Enviar Mensagem →</button>
+        <p class="ctc-note" data-i18n="contactPage.form.note">Abre o Gmail numa nova aba com a mensagem pré-preenchida.</p>
+      </form>
+      <div id="ctc-success" class="ctc-success" aria-live="polite"></div>
+    </div>
+
+    <!-- Direct channels -->
+    <div class="reveal reveal-delay-1">
+      <span class="ctc-col-label" data-i18n="contactPage.channels.title">Ou contacta diretamente</span>
+
+      <div class="ctc-channels">
+        <!-- Email -->
+        <a href="mailto:garisign2025@gmail.com" class="ctc-channel glass-card" data-hover>
+          <div class="ctc-channel__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </div>
+          <div class="ctc-channel__info">
+            <span class="ctc-channel__label" data-i18n="contactPage.channels.emailLabel">Email</span>
+            <span class="ctc-channel__value">garisign2025@gmail.com</span>
+            <span class="ctc-channel__sub" data-i18n="contactPage.channels.emailSub">Resposta em 24—48h</span>
+          </div>
+          <span class="ctc-channel__arrow">→</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/351910748984" target="_blank" rel="noopener noreferrer" class="ctc-channel ctc-channel--wa glass-card" data-hover>
+          <div class="ctc-channel__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </div>
+          <div class="ctc-channel__info">
+            <span class="ctc-channel__label" data-i18n="contactPage.channels.whatsappLabel">WhatsApp</span>
+            <span class="ctc-channel__value">+351 910 748 984</span>
+            <span class="ctc-channel__sub" data-i18n="contactPage.channels.whatsappSub">A forma mais rápida</span>
+          </div>
+          <span class="ctc-channel__arrow">→</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/garisign.designer/" target="_blank" rel="noopener noreferrer" class="ctc-channel ctc-channel--ig glass-card" data-hover>
+          <div class="ctc-channel__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <div class="ctc-channel__info">
+            <span class="ctc-channel__label" data-i18n="contactPage.channels.igLabel">Instagram</span>
+            <span class="ctc-channel__value">@garisign.designer</span>
+            <span class="ctc-channel__sub" data-i18n="contactPage.channels.igSub">DM sempre aberto</span>
+          </div>
+          <span class="ctc-channel__arrow">→</span>
+        </a>
+      </div>
+
+      <!-- Info -->
+      <div class="ctc-info-box glass-card">
+        <p class="ctc-info-box__avail" data-i18n="contactPage.availability">Disponível para novos projetos</p>
+        <p class="ctc-info-box__loc" data-i18n="contactPage.location">Felgueiras, Portugal — disponível remotamente</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ------ SITE FOOTER ------ -->
+<section class="site-footer">
+  <div class="site-footer__decal">GA</div>
+  <div class="site-footer__top reveal">
+    <div class="site-footer__intro">
+      <p class="section-label"><span data-i18n="siteFooter.label">[04] — CONTACTO</span></p>
+      <h2 class="site-footer__title" data-i18n-html="siteFooter.title">Vamos criar<br>algo que<br>fica na <span class="site-footer-title-italic">memória.</span></h2>
+    </div>
+    <div class="site-footer__contact">
+      <a href="mailto:garisign2025@gmail.com" class="site-footer__email">garisign2025@gmail.com</a>
+      <p class="site-footer__text" data-i18n="siteFooter.location">Felgueiras, Portugal — disponível remotamente</p>
+      <p class="site-footer__text site-footer__text--muted" data-i18n="siteFooter.areas">Design Gráfico · Motion Design · Edição de Vídeo</p>
+      <a href="https://wa.me/351910748984" target="_blank" rel="noopener noreferrer" class="btn-primary" data-hover data-i18n="siteFooter.buttonWhatsapp">Falar no WhatsApp →</a>
+    </div>
+  </div>
+  <hr class="site-footer__separator">
+  <div class="site-footer__bottom">
+    <a href="index.html" class="site-footer__logo">GARISIGN</a>
+    <p class="site-footer__copy" data-i18n="footer.copy">© 2025 Garisign Designer. Todos os direitos reservados.</p>
+    <div class="site-footer__links">
+      <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+      <a href="mailto:garisign2025@gmail.com">EMAIL</a>
+    </div>
+  </div>
+</section>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+<script>
+document.getElementById('ctc-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name    = document.getElementById('ctc-name').value.trim();
+  const email   = document.getElementById('ctc-email').value.trim();
+  const subject = document.getElementById('ctc-subject').value.trim();
+  const message = document.getElementById('ctc-msg').value.trim();
+
+  if (!name || !email || !subject || !message) return;
+
+  const body = `De: ${name} <${email}>\n\n${message}`;
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=garisign2025%40gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+
+  const success = document.getElementById('ctc-success');
+  const lang = localStorage.getItem('garisign-lang') || 'pt';
+  success.textContent = lang === 'en'
+    ? 'Gmail opened in a new tab with your message pre-filled. If it didn\'t open, send directly to garisign2025@gmail.com'
+    : 'O Gmail abriu numa nova aba com a mensagem pré-preenchida. Se não abriu, envia diretamente para garisign2025@gmail.com';
+  success.classList.add('visible');
+});
+</script>
+</body>
+</html>
+
+

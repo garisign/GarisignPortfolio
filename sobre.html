@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sobre Gabriel do Garisign: designer criativo português com foco em soluções visuais adaptáveis a empresas e projetos profissionais.">
+<meta name="keywords" content="designer criativo, portfolio, motion design, social media, Felgueiras, Portugal, freelancer, Garisign">
+<meta name="author" content="Gabriel — Garisign Designer">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Garisign Designer — Sobre">
+<meta property="og:description" content="Sobre Gabriel do Garisign: designer criativo português com foco em soluções visuais adaptáveis a empresas e projetos profissionais.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://garisign.pt/sobre.html">
+<meta property="og:image" content="og-image.svg">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Garisign Designer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Garisign Designer — Sobre">
+<meta name="twitter:description" content="Sobre Gabriel do Garisign: designer criativo português com foco em soluções visuais adaptáveis a empresas e projetos profissionais.">
+<meta name="twitter:image" content="og-image.svg">
+<link rel="canonical" href="https://garisign.pt/sobre.html">
+<link rel="icon" type="image/svg+xml" href="img-logotipo-LOGO.svg">
+<link rel="apple-touch-icon" href="img-logotipo-LOGO.svg">
+<link rel="manifest" href="site.webmanifest">
+<title>Sobre Mim — Garisign Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="sobre.css">
+</head>
+<body id="top">
+
+<div id="scroll-progress"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo" data-hover>
+    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+    <span class="nav-logo-text">Garisign</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-nav data-i18n="nav.home">Início</a></li>
+    <li><a href="index.html#works" data-nav data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" data-nav data-i18n="nav.services">Serviços</a></li>
+    <li><a href="#top" data-nav class="active" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" data-nav data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="pt" id="btn-pt">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-en">EN</button>
+    </div>
+    <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html" onclick="toggleMenu()" data-i18n="nav.home">Início</a></li>
+    <li><a href="index.html#works" onclick="toggleMenu()" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" onclick="toggleMenu()" data-i18n="nav.services">Serviços</a></li>
+    <li><a href="#top" onclick="toggleMenu()" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" onclick="toggleMenu()" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button type="button" class="lang-btn active" data-lang="pt">PT</button>
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+  </div>
+</div>
+
+<div class="social-float">
+  <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok" data-hover>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.79a4.85 4.85 0 01-1-.1z"/></svg>
+  </a>
+  <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram" data-hover>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+</div>
+
+<main class="about-story-page">
+  <section class="about-intro reveal">
+    <p class="section-label" data-i18n="aboutPage.label">Sobre Mim</p>
+    <h1 data-i18n="aboutPage.title">Olá, sou o Gabriel.</h1>
+    <p class="about-intro-text" data-i18n="aboutPage.intro">Designer criativo português, 18 anos, formado na Escola Profissional de Felgueiras. Tenho uma paixão genuína pelo design criativo — especialmente identidade visual, social media, edição de vídeo e motion design. Trabalho com rigor e respeito pelo cliente para entregar propostas visuais consistentes e adaptáveis.</p>
+
+    <div class="about-intro-stats">
+      <div class="about-intro-stat glass-card"><span class="astat-num">6+</span><span class="astat-label" data-i18n="stats.services">Serviços</span></div>
+      <div class="about-intro-stat glass-card"><span class="astat-num">∞</span><span class="astat-label" data-i18n="stats.creativity">Criatividade</span></div>
+      <div class="about-intro-stat glass-card"><span class="astat-num">100%</span><span class="astat-label" data-i18n="stats.dedication">Dedicação</span></div>
+    </div>
+    <a href="#story" class="story-scroll-cue" data-hover>
+      <span class="story-scroll-chevron"></span>
+      <span data-i18n="scroll.myStory">A minha história</span>
+    </a>
+  </section>
+
+  <section id="story" class="timeline-section">
+    <div class="timeline-heading reveal">
+      <p class="section-label" data-i18n="timeline.label">A Minha História</p>
+      <h2 data-i18n="timeline.title">A Minha História</h2>
+      <p data-i18n="timeline.subtitle">Cada ano moldou quem sou hoje.</p>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline-item timeline-item-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-year" data-i18n="timeline.1.year">2018 — 2019</span>
+          <h3 data-i18n="timeline.1.title">O Mundo Começa</h3>
+          <p data-i18n="timeline.1.short">Primeiro contacto com a internet. Primeiro computador. O início de tudo.</p>
+          <button type="button" class="timeline-toggle" data-story="timeline.1" aria-expanded="false" aria-controls="story-1-panel" data-hover data-i18n="timeline.toggle.open">Ver História —</button>
+          <div class="timeline-panel" id="story-1-panel" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="timeline-item timeline-item-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-year" data-i18n="timeline.2.year">2023</span>
+          <h3 data-i18n="timeline.2.title">A Escolha</h3>
+          <p data-i18n="timeline.2.short">Médias para ir para qualquer lado. Escolhi o caminho que era meu.</p>
+          <button type="button" class="timeline-toggle" data-story="timeline.2" aria-expanded="false" aria-controls="story-2-panel" data-hover data-i18n="timeline.toggle.open">Ver História —</button>
+          <div class="timeline-panel" id="story-2-panel" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="timeline-item timeline-item-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-year" data-i18n="timeline.3.year">2025</span>
+          <h3 data-i18n="timeline.3.title">Garisign Nasce</h3>
+          <p data-i18n="timeline.3.short">Uma identidade criada para trabalhar. Que se tornou na forma de me apresentar ao mundo.</p>
+          <button type="button" class="timeline-toggle" data-story="timeline.3" aria-expanded="false" aria-controls="story-3-panel" data-hover data-i18n="timeline.toggle.open">Ver História —</button>
+          <div class="timeline-panel" id="story-3-panel" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="timeline-item timeline-item-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-year" data-i18n="timeline.4.year">2026</span>
+          <h3 data-i18n="timeline.4.title">O Ano que Definiu Tudo</h3>
+          <p data-i18n="timeline.4.short">Primeiros clientes. Estágio na CR Design. Fim da EPF com distinção. Sem mais dúvidas.</p>
+          <button type="button" class="timeline-toggle" data-story="timeline.4" aria-expanded="false" aria-controls="story-4-panel" data-hover data-i18n="timeline.toggle.open">Ver História —</button>
+          <div class="timeline-panel" id="story-4-panel" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="timeline-item timeline-item-end">
+        <div class="timeline-dot timeline-dot-future"></div>
+        <p data-i18n="timeline.continued">A ser continuado�?�</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ------ SITE FOOTER (CTA + FOOTER) ------ -->
+<section class="site-footer">
+  <div class="site-footer__decal">GA</div>
+  <div class="site-footer__top reveal">
+    <div class="site-footer__intro">
+      <p class="section-label"><span data-i18n="siteFooter.label">[04] — CONTACTO</span></p>
+      <h2 class="site-footer__title" data-i18n-html="siteFooter.title">Vamos criar<br>algo que<br>fica na <span class="site-footer-title-italic">memória.</span></h2>
+    </div>
+    <div class="site-footer__contact">
+      <a href="mailto:garisign2025@gmail.com" class="site-footer__email">garisign2025@gmail.com</a>
+      <p class="site-footer__text" data-i18n="siteFooter.location">Felgueiras, Portugal — disponível remotamente</p>
+      <p class="site-footer__text site-footer__text--muted" data-i18n="siteFooter.areas">Design Gráfico · Motion Design · Edição de Vídeo</p>
+      <a href="contacto.html" class="btn-primary" data-hover data-i18n="siteFooter.button">Ver Contacto →</a>
+    </div>
+  </div>
+  <hr class="site-footer__separator">
+  <div class="site-footer__bottom">
+    <a href="index.html" class="site-footer__logo">GARISIGN</a>
+    <p class="site-footer__copy" data-i18n="footer.copy">© 2025 Garisign Designer. Todos os direitos reservados.</p>
+    <div class="site-footer__links">
+      <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+      <a href="mailto:garisign2025@gmail.com">EMAIL</a>
+    </div>
+  </div>
+</section>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+<script src="sobre.js" defer></script>
+</body>
+</html>
+

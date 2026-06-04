@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="img-logotipo-LOGO.svg">
+<link rel="manifest" href="site.webmanifest">
+<title>404 — Garisign Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ------ 404 LAYOUT ------ */
+  .nf-page {
+    position: relative; z-index: 2;
+    min-height: 100svh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 40px clamp(24px,6vw,100px);
+    overflow: hidden;
+  }
+  .nf-page::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 30% 40%, rgba(221,181,108,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 40% at 75% 65%, rgba(221,181,108,0.05) 0%, transparent 55%);
+    pointer-events: none;
+  }
+
+  /* Giant 404 background text */
+  .nf-bg-num {
+    position: absolute;
+    font-family: 'Agdasima', sans-serif;
+    font-size: clamp(260px, 35vw, 520px);
+    line-height: 1;
+    color: rgba(221,181,108,0.04);
+    letter-spacing: -8px;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  /* Logo */
+  .nf-logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none; margin-bottom: 48px;
+    position: relative;
+  }
+  .nf-logo img { width: 36px; height: 36px; }
+  .nf-logo span {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 22px; letter-spacing: 2px;
+    color: var(--cream); opacity: 0.7;
+  }
+
+  /* Main content */
+  .nf-content { position: relative; }
+
+  .nf-code {
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 24px; display: block;
+  }
+
+  .nf-title {
+    font-family: 'Agdasima', sans-serif;
+    font-size: clamp(56px,9vw,120px);
+    line-height: 0.92; letter-spacing: -1px;
+    color: var(--cream);
+    margin-bottom: 12px;
+  }
+
+  .nf-title em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .nf-sub {
+    font-size: clamp(14px, 1.5vw, 17px);
+    color: rgba(240,237,232,0.45);
+    max-width: 420px; margin: 0 auto 44px;
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  .nf-actions {
+    display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;
+  }
+
+  /* Animated line element */
+  .nf-divider {
+    width: 1px; height: 64px;
+    background: linear-gradient(to bottom, transparent, rgba(221,181,108,0.4), transparent);
+    margin: 0 auto 40px;
+    animation: nf-line 2.5s ease-in-out infinite;
+  }
+  @keyframes nf-line {
+    0%,100% { opacity: 0.4; transform: scaleY(1); }
+    50%      { opacity: 0.9; transform: scaleY(1.1); }
+  }
+</style>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+
+<div class="nf-page">
+  <span class="nf-bg-num" aria-hidden="true">404</span>
+
+  <a href="index.html" class="nf-logo" data-hover>
+    <img src="img-logotipo-LOGO.svg" alt="Garisign">
+    <span>GARISIGN</span>
+  </a>
+
+  <div class="nf-divider"></div>
+
+  <div class="nf-content">
+    <span class="nf-code">Erro 404 — Página não encontrada</span>
+    <h1 class="nf-title">
+      Esta página<br>foi para <em>outro lado.</em>
+    </h1>
+    <p class="nf-sub">O link que seguiste não existe ou foi movido. Mas o resto do portfolio está aqui à espera.</p>
+    <div class="nf-actions">
+      <a href="index.html" class="btn-primary" data-hover>Ir para o Início →</a>
+      <a href="trabalhos.html" class="btn-outline" data-hover>Ver Trabalhos</a>
+    </div>
+  </div>
+</div>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
+
+

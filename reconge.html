@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RECONGE — Case study da Prova de Aptidão Profissional de Gabriel (Garisign Designer). Identidade visual completa, branding, social media e vídeo promocional.">
+<meta name="author" content="Gabriel — Garisign Designer">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="RECONGE — Case Study · Garisign Designer">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://garisign.pt/reconge.html">
+<link rel="icon" type="image/svg+xml" href="img-logotipo-LOGO.svg">
+<link rel="apple-touch-icon" href="img-logotipo-LOGO.svg">
+<link rel="manifest" href="site.webmanifest">
+<title>RECONGE — Case Study · Garisign Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  @font-face {
+    font-family: 'GcProtage';
+    src: url('Reconge-fonts-gc-protage-font-GcProtageDemoLight-4nppx.ttf') format('truetype');
+    font-weight: 300; font-display: swap;
+    unicode-range: U+0020-007E;
+  }
+  @font-face {
+    font-family: 'GcProtage';
+    src: url('Reconge-fonts-gc-protage-font-GcProtageDemoRegular-e9XX6.ttf') format('truetype');
+    font-weight: 400; font-display: swap;
+    unicode-range: U+0020-007E;
+  }
+  @font-face {
+    font-family: 'GcProtage';
+    src: url('Reconge-fonts-gc-protage-font-GcProtageDemoBold-XG88j.ttf') format('truetype');
+    font-weight: 700; font-display: swap;
+    unicode-range: U+0020-007E;
+  }
+  @font-face {
+    font-family: 'TexAdventor';
+    src: url('Reconge-fonts-texgyreadventor-font-TexgyreadventorRegular-1meB.otf') format('opentype');
+    font-weight: 400; font-display: swap;
+  }
+  @font-face {
+    font-family: 'TexAdventor';
+    src: url('Reconge-fonts-texgyreadventor-font-TexgyreadventorBold-90Wn.otf') format('opentype');
+    font-weight: 700; font-display: swap;
+  }
+  @font-face {
+    font-family: 'TexAdventor';
+    src: url('Reconge-fonts-texgyreadventor-font-TexgyreadventorItalic-nEj0.otf') format('opentype');
+    font-style: italic; font-display: swap;
+  }
+
+  /* ------ RECONGE TOKENS ------ */
+  :root {
+    --r-teal:        #6BA4A1;
+    --r-teal-dark:   #3d7573;
+    --r-teal-deeper: #1e4644;
+    --r-teal-dim:    rgba(107,164,161,0.12);
+    --r-teal-border: rgba(107,164,161,0.28);
+    --r-orange:      #F07D29;
+    --r-orange-dim:  rgba(240,125,41,0.14);
+    --r-cream:       #f4f2ee;
+  }
+
+  /* ------ RECONGE HERO ------ */
+  .rcg-hero {
+    position: relative; z-index: 2;
+    min-height: 100svh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: calc(var(--nav-h) + 40px) clamp(24px,6vw,100px) 80px;
+    overflow: hidden;
+  }
+  .rcg-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(107,164,161,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .rcg-hero__back {
+    position: absolute; top: calc(var(--nav-h) + 24px); left: clamp(24px,6vw,100px);
+    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(240,237,232,0.4); text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+    transition: color 0.3s;
+  }
+  .rcg-hero__back:hover { color: var(--r-teal); }
+  .rcg-hero__pap {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 16px; border-radius: 40px;
+    background: var(--r-teal-dim);
+    border: 1px solid var(--r-teal-border);
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--r-teal); margin-bottom: 32px;
+  }
+  .rcg-hero__logo {
+    width: clamp(100px,16vw,180px); height: auto;
+    margin-bottom: 36px;
+    filter: brightness(0) saturate(100%) invert(64%) sepia(20%) saturate(600%) hue-rotate(145deg) brightness(95%);
+  }
+  .rcg-hero__title {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: clamp(72px,12vw,180px);
+    font-weight: 700;
+    line-height: 0.88;
+    letter-spacing: -2px;
+    color: var(--r-cream);
+    margin-bottom: 20px;
+  }
+  .rcg-hero__slogan {
+    font-family: 'TexAdventor', 'Comfortaa', sans-serif;
+    font-size: clamp(16px,2vw,22px);
+    font-weight: 400;
+    color: rgba(244,242,238,0.55);
+    letter-spacing: 0.5px;
+    margin-bottom: 48px;
+    max-width: 560px;
+  }
+  .rcg-hero__meta {
+    display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+  }
+  .rcg-meta-chip {
+    padding: 8px 18px; border-radius: 40px;
+    background: rgba(240,237,232,0.06);
+    border: 1px solid rgba(240,237,232,0.1);
+    font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+    color: rgba(240,237,232,0.45);
+  }
+  .rcg-scroll-hint {
+    position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(240,237,232,0.25);
+    animation: rcg-bounce 2s ease-in-out infinite;
+  }
+  .rcg-scroll-hint svg { width: 16px; height: 16px; }
+  @keyframes rcg-bounce {
+    0%,100% { transform: translateX(-50%) translateY(0); }
+    50%      { transform: translateX(-50%) translateY(6px); }
+  }
+
+  /* ------ SECTION STRUCTURE ------ */
+  .rcg-section {
+    position: relative; z-index: 2;
+    padding: clamp(72px,10vw,120px) clamp(24px,6vw,100px);
+  }
+  .rcg-section + .rcg-section {
+    border-top: 1px solid rgba(240,237,232,0.06);
+  }
+  .rcg-section--teal {
+    background: rgba(107,164,161,0.05);
+    border-top: 1px solid var(--r-teal-border) !important;
+    border-bottom: 1px solid var(--r-teal-border);
+  }
+  .rcg-num {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px; font-weight: 600; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--r-teal);
+    margin-bottom: 16px; display: block;
+  }
+  .rcg-h2 {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: clamp(38px,5vw,72px);
+    font-weight: 700; line-height: 0.92;
+    color: var(--r-cream); margin-bottom: 28px;
+    letter-spacing: -0.5px;
+  }
+  .rcg-lead {
+    font-family: 'TexAdventor', 'Comfortaa', sans-serif;
+    font-size: clamp(15px,1.5vw,18px);
+    line-height: 1.8; color: rgba(244,242,238,0.65);
+    max-width: 680px; margin-bottom: 32px;
+  }
+  .rcg-two-col {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: clamp(32px,5vw,72px); align-items: start;
+  }
+  .rcg-two-col--center { align-items: center; }
+  @media (max-width: 860px) {
+    .rcg-two-col { grid-template-columns: 1fr; }
+  }
+
+  /* ------ 01. CONTEXTO ------ */
+  .rcg-context-cards {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px; margin-top: 32px;
+  }
+  .rcg-ctx-card {
+    padding: 28px 24px;
+    background: var(--glass); border: 1px solid var(--glass-border);
+    backdrop-filter: blur(16px); border-radius: var(--radius);
+    position: relative; overflow: hidden;
+  }
+  .rcg-ctx-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    opacity: 0; transition: opacity 0.4s;
+  }
+  .rcg-ctx-card--teal::before { background: linear-gradient(90deg, transparent, var(--r-teal), transparent); }
+  .rcg-ctx-card--orange::before { background: linear-gradient(90deg, transparent, var(--r-orange), transparent); }
+  .rcg-ctx-card:hover::before { opacity: 1; }
+  .rcg-ctx-card__icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 16px;
+  }
+  .rcg-ctx-card--teal .rcg-ctx-card__icon { background: var(--r-teal-dim); }
+  .rcg-ctx-card--orange .rcg-ctx-card__icon { background: var(--r-orange-dim); }
+  .rcg-ctx-card h3 {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: clamp(20px,2.5vw,26px); font-weight: 700;
+    color: var(--r-cream); margin-bottom: 10px; line-height: 1.1;
+  }
+  .rcg-ctx-card p {
+    font-family: 'TexAdventor', 'Comfortaa', sans-serif;
+    font-size: 14px; line-height: 1.7; color: rgba(244,242,238,0.55);
+  }
+  @media (max-width: 600px) {
+    .rcg-context-cards { grid-template-columns: 1fr; }
+  }
+
+  /* ------ 02. O BRIEFING — Scope list ------ */
+  .rcg-scope-list {
+    display: flex; flex-direction: column; gap: 0;
+    border-top: 1px solid rgba(240,237,232,0.07);
+    margin-top: 32px;
+  }
+  .rcg-scope-item {
+    display: flex; align-items: center; gap: 20px;
+    padding: 20px 0; border-bottom: 1px solid rgba(240,237,232,0.07);
+    transition: padding-left 0.4s var(--transition);
+    position: relative; overflow: hidden;
+  }
+  .rcg-scope-item::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 0;
+    background: linear-gradient(90deg, var(--r-teal-dim), transparent);
+    transition: width 0.4s var(--transition); pointer-events: none;
+  }
+  .rcg-scope-item:hover { padding-left: 12px; }
+  .rcg-scope-item:hover::before { width: 100%; }
+  .rcg-scope-item__num {
+    font-size: 11px; font-weight: 600; letter-spacing: 2px;
+    color: rgba(107,164,161,0.4); min-width: 24px; flex-shrink: 0;
+  }
+  .rcg-scope-item__label {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: clamp(22px,2.5vw,36px); font-weight: 700;
+    color: var(--r-cream); flex: 1; line-height: 1;
+    transition: color 0.3s;
+  }
+  .rcg-scope-item:hover .rcg-scope-item__label { color: var(--r-teal); }
+  .rcg-scope-item__tag {
+    font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: rgba(244,242,238,0.3); flex-shrink: 0;
+  }
+
+  /* ------ 03. A MARCA ------ */
+  .rcg-brand-logo-wrap {
+    display: flex; align-items: center; justify-content: center;
+    padding: 56px 40px;
+    background: rgba(107,164,161,0.08);
+    border: 1px solid var(--r-teal-border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 32px;
+  }
+  .rcg-brand-logo-wrap img {
+    width: clamp(120px,20vw,220px); height: auto;
+    filter: brightness(0) saturate(100%) invert(64%) sepia(20%) saturate(600%) hue-rotate(145deg) brightness(95%);
+  }
+  .rcg-colors {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 12px;
+    margin-bottom: 32px;
+  }
+  .rcg-color-chip {
+    border-radius: var(--radius); overflow: hidden;
+    border: 1px solid rgba(240,237,232,0.08);
+  }
+  .rcg-color-chip__swatch { height: 80px; }
+  .rcg-color-chip__info { padding: 14px 14px 16px; background: rgba(240,237,232,0.04); }
+  .rcg-color-chip__name {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: 16px; font-weight: 700;
+    color: var(--r-cream); display: block; margin-bottom: 2px;
+  }
+  .rcg-color-chip__hex {
+    font-size: 11px; letter-spacing: 1px; color: rgba(244,242,238,0.4);
+  }
+  .rcg-type-row {
+    padding: 24px 28px;
+    background: var(--glass); border: 1px solid var(--glass-border);
+    border-radius: var(--radius); margin-bottom: 12px;
+  }
+  .rcg-type-row__label {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(244,242,238,0.35); margin-bottom: 8px; display: block;
+  }
+  .rcg-type-row__sample-gc {
+    font-family: 'GcProtage', sans-serif; font-size: clamp(28px,4vw,48px);
+    font-weight: 700; color: var(--r-cream); line-height: 1;
+  }
+  .rcg-type-row__sample-tex {
+    font-family: 'TexAdventor', sans-serif; font-size: clamp(20px,2.5vw,32px);
+    font-weight: 400; color: rgba(244,242,238,0.75); line-height: 1.2;
+  }
+
+  /* ------ 04. AS PE�?AS ------ */
+  .rcg-gallery {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 12px; margin-top: 40px;
+  }
+  .rcg-gallery__item {
+    border-radius: var(--radius); overflow: hidden;
+    position: relative; cursor: zoom-in;
+  }
+  .rcg-gallery__item img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.6s cubic-bezier(0.16,1,0.3,1);
+  }
+  .rcg-gallery__item:hover img { transform: scale(1.04); }
+  .rcg-gallery__item--tall { grid-row: span 2; }
+  .rcg-gallery__caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 16px;
+    background: linear-gradient(to top, rgba(30,70,68,0.85), transparent);
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: rgba(244,242,238,0.75); opacity: 0;
+    transition: opacity 0.35s;
+  }
+  .rcg-gallery__item:hover .rcg-gallery__caption { opacity: 1; }
+  @media (max-width: 700px) {
+    .rcg-gallery { grid-template-columns: 1fr 1fr; }
+    .rcg-gallery__item--tall { grid-row: span 1; }
+  }
+
+  /* ------ 05. VÍDEO ------ */
+  .rcg-video-wrap {
+    position: relative; border-radius: var(--radius-lg); overflow: hidden;
+    background: rgba(30,70,68,0.3); border: 1px solid var(--r-teal-border);
+    margin-top: 40px; aspect-ratio: 16/9;
+  }
+  .rcg-video-wrap video {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+
+  /* ------ 06. PROCESSO ------ */
+  .rcg-process {
+    display: grid; grid-template-columns: repeat(4,1fr);
+    gap: 2px; margin-top: 40px;
+  }
+  .rcg-step {
+    padding: 32px 24px;
+    background: var(--glass); border: 1px solid var(--glass-border);
+    position: relative; overflow: hidden;
+    transition: border-color 0.35s, transform 0.35s;
+  }
+  .rcg-step:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+  .rcg-step:last-child  { border-radius: 0 var(--radius) var(--radius) 0; }
+  .rcg-step::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--r-teal), transparent);
+    opacity: 0; transition: opacity 0.4s;
+  }
+  .rcg-step:hover { border-color: var(--r-teal-border); transform: translateY(-3px); }
+  .rcg-step:hover::before { opacity: 1; }
+  .rcg-step__num {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: 52px; font-weight: 700; line-height: 1;
+    color: rgba(107,164,161,0.12); margin-bottom: 16px; display: block;
+  }
+  .rcg-step__title {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: 22px; font-weight: 700;
+    color: var(--r-cream); margin-bottom: 10px; line-height: 1;
+  }
+  .rcg-step__desc {
+    font-family: 'TexAdventor', 'Comfortaa', sans-serif;
+    font-size: 13px; line-height: 1.7; color: rgba(244,242,238,0.5);
+  }
+  @media (max-width: 768px) {
+    .rcg-process { grid-template-columns: 1fr 1fr; }
+    .rcg-step:first-child { border-radius: var(--radius) 0 0 0; }
+    .rcg-step:nth-child(2) { border-radius: 0 var(--radius) 0 0; }
+    .rcg-step:nth-child(3) { border-radius: 0 0 0 var(--radius); }
+    .rcg-step:last-child { border-radius: 0 0 var(--radius) 0; }
+  }
+  @media (max-width: 480px) {
+    .rcg-process { grid-template-columns: 1fr; }
+    .rcg-step:first-child,
+    .rcg-step:nth-child(2),
+    .rcg-step:nth-child(3),
+    .rcg-step:last-child { border-radius: var(--radius); }
+  }
+
+  /* ------ 07. RESULTADOS ------ */
+  .rcg-results {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 16px; margin-top: 40px;
+  }
+  .rcg-result-card {
+    padding: 36px 28px; text-align: center;
+    background: var(--glass); border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg); backdrop-filter: blur(16px);
+    transition: border-color 0.35s, transform 0.35s;
+  }
+  .rcg-result-card:hover { border-color: var(--r-teal-border); transform: translateY(-4px); }
+  .rcg-result-card__num {
+    font-family: 'GcProtage', 'Agdasima', sans-serif;
+    font-size: clamp(44px,6vw,72px); font-weight: 700;
+    color: var(--r-teal); line-height: 1; display: block; margin-bottom: 8px;
+  }
+  .rcg-result-card__label {
+    font-family: 'TexAdventor', 'Comfortaa', sans-serif;
+    font-size: 13px; color: rgba(244,242,238,0.5); line-height: 1.5;
+  }
+  @media (max-width: 600px) {
+    .rcg-results { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ------ 08. REFLEX�fO ------ */
+  .rcg-quote {
+    max-width: 800px; margin: 40px auto 0; text-align: center;
+  }
+  .rcg-quote__text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(22px,3vw,36px);
+    line-height: 1.5;
+    color: rgba(244,242,238,0.85);
+    margin-bottom: 28px;
+  }
+  .rcg-quote__text span { color: var(--r-teal); }
+  .rcg-quote__author {
+    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(244,242,238,0.35);
+  }
+
+  /* ------ PIVOT BOX ------ */
+  .rcg-pivot {
+    margin-top: 28px;
+    padding: 22px 26px;
+    border-left: 3px solid var(--r-teal);
+    background: rgba(107,164,161,0.07);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+  .rcg-pivot__tag {
+    font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--r-teal); margin-bottom: 10px; display: block; font-weight: 600;
+  }
+  .rcg-pivot__text {
+    font-family: 'TexAdventor', 'Comfortaa', sans-serif;
+    font-size: 14px; line-height: 1.8; color: rgba(244,242,238,0.65);
+    font-style: italic;
+  }
+
+  /* ------ CTA ------ */
+  .rcg-cta {
+    text-align: center;
+    padding: clamp(72px,10vw,120px) clamp(24px,6vw,100px);
+    position: relative; z-index: 2;
+    border-top: 1px solid rgba(240,237,232,0.06);
+  }
+  .rcg-cta h2 {
+    font-family: 'Agdasima', sans-serif;
+    font-size: clamp(40px,5vw,72px);
+    line-height: 1; color: var(--cream);
+    margin-bottom: 24px; letter-spacing: 1px;
+  }
+  .rcg-cta p {
+    font-size: 15px; color: rgba(240,237,232,0.5);
+    margin-bottom: 36px;
+  }
+  .rcg-cta__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+
+<!-- ------ NAV ------ -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo" data-hover>
+    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+    <span class="nav-logo-text">Garisign</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-nav data-i18n="nav.home">Início</a></li>
+    <li><a href="trabalhos.html" data-nav class="active" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" data-nav data-i18n="nav.services">Serviços</a></li>
+    <li><a href="sobre.html" data-nav data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" data-nav data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="pt" id="btn-pt">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-en">EN</button>
+    </div>
+    <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html" onclick="toggleMenu()" data-i18n="nav.home">Início</a></li>
+    <li><a href="trabalhos.html" onclick="toggleMenu()" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" onclick="toggleMenu()" data-i18n="nav.services">Serviços</a></li>
+    <li><a href="sobre.html" onclick="toggleMenu()" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" onclick="toggleMenu()" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+</div>
+
+<!-- ------ HERO ------ -->
+<section class="rcg-hero">
+  <a href="trabalhos.html" class="rcg-hero__back" data-i18n="reconge.hero.back">�?� Trabalhos</a>
+  <span class="rcg-hero__pap" data-i18n="reconge.hero.pap">PAP 2026 — Escola Profissional de Felgueiras</span>
+  <img src="Reconge-Logo-Reconge.png" alt="Logótipo RECONGE" class="rcg-hero__logo reveal">
+  <h1 class="rcg-hero__title reveal">RECONGE</h1>
+  <p class="rcg-hero__slogan reveal" data-i18n="reconge.hero.slogan">Unir gerações. Partilhar vidas.</p>
+  <div class="rcg-hero__meta reveal">
+    <span class="rcg-meta-chip" data-i18n="reconge.hero.chip1">Identidade Visual</span>
+    <span class="rcg-meta-chip" data-i18n="reconge.hero.chip2">Manual de Normas</span>
+    <span class="rcg-meta-chip" data-i18n="reconge.hero.chip3">Social Media</span>
+    <span class="rcg-meta-chip" data-i18n="reconge.hero.chip4">Vídeo Promocional</span>
+    <span class="rcg-meta-chip">2026</span>
+  </div>
+  <div class="rcg-scroll-hint">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    scroll
+  </div>
+</section>
+
+<!-- ------ 01. O PROJETO ------ -->
+<section class="rcg-section">
+  <div class="rcg-two-col rcg-two-col--center">
+    <div>
+      <span class="rcg-num reveal" data-i18n="reconge.s01.num">[01] — O Projeto</span>
+      <h2 class="rcg-h2 reveal" data-i18n="reconge.s01.title">O que é a RECONGE?</h2>
+      <p class="rcg-lead reveal" data-i18n="reconge.s01.p1">
+        A RECONGE é uma plataforma portuguesa que resolve dois problemas sociais de uma só vez: jovens sem alojamento acessível e idosos que vivem sozinhos, carentes de companhia e apoio no dia a dia.
+      </p>
+      <p class="rcg-lead reveal" style="margin-top:-12px;" data-i18n-html="reconge.s01.p2">
+        O conceito é simples e poderoso — <em style="color:var(--r-teal);">um jovem oferece companhia e pequenas tarefas; o idoso oferece um lar.</em> Uma troca humana, digna e enriquecedora para ambos.
+      </p>
+    </div>
+    <div class="reveal">
+      <div class="rcg-context-cards">
+        <div class="rcg-ctx-card rcg-ctx-card--teal">
+          <div class="rcg-ctx-card__icon">�Y��</div>
+          <h3 data-i18n="reconge.s01.card1title">Para o Jovem</h3>
+          <p data-i18n="reconge.s01.card1desc">Registo gratuito, alojamento acessível por todo Portugal, e uma experiência de vida única e enriquecedora.</p>
+        </div>
+        <div class="rcg-ctx-card rcg-ctx-card--orange">
+          <div class="rcg-ctx-card__icon">�Y��</div>
+          <h3 data-i18n="reconge.s01.card2title">Para o Idoso</h3>
+          <p data-i18n="reconge.s01.card2desc">Companhia, segurança extra e apoio em pequenas tarefas do quotidiano. Viver com mais tranquilidade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------ 02. O DESAFIO ------ -->
+<section class="rcg-section rcg-section--teal">
+  <span class="rcg-num reveal" data-i18n="reconge.s02.num">[02] — O Desafio</span>
+  <div class="rcg-two-col">
+    <div>
+      <h2 class="rcg-h2 reveal" data-i18n="reconge.s02.title">A Prova de Aptidão Profissional</h2>
+      <p class="rcg-lead reveal" data-i18n="reconge.s02.p1">
+        A PAP (Prova de Aptidão Profissional) é o projeto final do Curso Técnico de Multimédia na Escola Profissional de Felgueiras — três anos de formação condensados num único projeto real, avaliado por júri.
+      </p>
+      <p class="rcg-lead reveal" style="margin-top:-12px;" data-i18n="reconge.s02.p2">
+        O desafio era criar do zero toda a identidade visual de uma marca com propósito social — com coerência, sistema, e a capacidade de comunicar com públicos completamente diferentes: jovens adultos e idosos.
+      </p>
+    </div>
+    <div>
+      <div class="rcg-pivot reveal">
+        <span class="rcg-pivot__tag" data-i18n="reconge.s02.pivotTag">Jan 2026 — O Pivot</span>
+        <p class="rcg-pivot__text" data-i18n="reconge.s02.pivotText">A meio do projeto, a equipa abandonou o conceito "Sorriso Vivo" e reconstruiu tudo do zero: novo nome, nova identidade, nova direção. Em poucas semanas, o que parecia um retrocesso tornou-se o momento que deu ao projeto a força que precisava.</p>
+      </div>
+      <div class="rcg-scope-list reveal">
+        <div class="rcg-scope-item">
+          <span class="rcg-scope-item__num">01</span>
+          <span class="rcg-scope-item__label" data-i18n="reconge.s02.scope1">Logótipo & Sistema Visual</span>
+          <span class="rcg-scope-item__tag">Branding</span>
+        </div>
+        <div class="rcg-scope-item">
+          <span class="rcg-scope-item__num">02</span>
+          <span class="rcg-scope-item__label" data-i18n="reconge.s02.scope2">Manual de Normas Gráficas</span>
+          <span class="rcg-scope-item__tag" data-i18n="reconge.s02.tag2">Documentação</span>
+        </div>
+        <div class="rcg-scope-item">
+          <span class="rcg-scope-item__num">03</span>
+          <span class="rcg-scope-item__label" data-i18n="reconge.s02.scope3">Conteúdos para Redes Sociais</span>
+          <span class="rcg-scope-item__tag">Social Media</span>
+        </div>
+        <div class="rcg-scope-item">
+          <span class="rcg-scope-item__num">04</span>
+          <span class="rcg-scope-item__label" data-i18n="reconge.s02.scope4">Vídeo Promocional</span>
+          <span class="rcg-scope-item__tag">Motion</span>
+        </div>
+        <div class="rcg-scope-item">
+          <span class="rcg-scope-item__num">05</span>
+          <span class="rcg-scope-item__label" data-i18n="reconge.s02.scope5">Website Institucional</span>
+          <span class="rcg-scope-item__tag">Web</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------ 03. A MARCA ------ -->
+<section class="rcg-section">
+  <span class="rcg-num reveal" data-i18n="reconge.s03.num">[03] — A Marca</span>
+  <h2 class="rcg-h2 reveal" data-i18n="reconge.s03.title">Identidade Visual</h2>
+  <p class="rcg-lead reveal" data-i18n="reconge.s03.lead">Um sistema visual que transmite confiança, calor humano e modernidade — pensado para abranger duas gerações distintas sem alienar nenhuma delas.</p>
+
+  <div class="rcg-two-col" style="margin-top:40px;">
+    <div class="reveal">
+      <div class="rcg-brand-logo-wrap">
+        <img src="Reconge-Logo-Reconge.png" alt="Logótipo RECONGE" loading="lazy">
+      </div>
+      <p style="font-family:'TexAdventor',sans-serif;font-size:13px;color:rgba(244,242,238,0.4);text-align:center;letter-spacing:1px;" data-i18n="reconge.s03.logodesc">
+        O logótipo representa duas pessoas dentro de uma casa — a união entre gerações sob um mesmo tecto. As linhas fluidas e suaves comunicam acolhimento e proximidade.
+      </p>
+    </div>
+    <div>
+      <div class="rcg-colors reveal">
+        <div class="rcg-color-chip">
+          <div class="rcg-color-chip__swatch" style="background:#6BA4A1;"></div>
+          <div class="rcg-color-chip__info">
+            <span class="rcg-color-chip__name" data-i18n="reconge.s03.color1">Teal Principal</span>
+            <span class="rcg-color-chip__hex">#6BA4A1</span>
+          </div>
+        </div>
+        <div class="rcg-color-chip">
+          <div class="rcg-color-chip__swatch" style="background:#F07D29;"></div>
+          <div class="rcg-color-chip__info">
+            <span class="rcg-color-chip__name" data-i18n="reconge.s03.color2">Laranja CTA</span>
+            <span class="rcg-color-chip__hex">#F07D29</span>
+          </div>
+        </div>
+        <div class="rcg-color-chip">
+          <div class="rcg-color-chip__swatch" style="background:#FFFFFF;border-bottom:1px solid rgba(0,0,0,0.06);"></div>
+          <div class="rcg-color-chip__info">
+            <span class="rcg-color-chip__name" data-i18n="reconge.s03.color3">Branco</span>
+            <span class="rcg-color-chip__hex">#FFFFFF</span>
+          </div>
+        </div>
+      </div>
+      <div class="rcg-type-row reveal">
+        <span class="rcg-type-row__label" data-i18n="reconge.s03.type1label">Display — GC Protage</span>
+        <div class="rcg-type-row__sample-gc">RECONGE</div>
+      </div>
+      <div class="rcg-type-row reveal">
+        <span class="rcg-type-row__label" data-i18n="reconge.s03.type2label">Corpo — TeX Gyre Adventor</span>
+        <div class="rcg-type-row__sample-tex" data-i18n="reconge.s03.type2sample">Unir gerações, partilhar vidas.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------ 04. AS PE�?AS ------ -->
+<section class="rcg-section rcg-section--teal">
+  <span class="rcg-num reveal" data-i18n="reconge.s04.num">[04] — As Peças</span>
+  <h2 class="rcg-h2 reveal" data-i18n="reconge.s04.title">Conteúdos Criados</h2>
+  <p class="rcg-lead reveal" data-i18n="reconge.s04.lead">Cada peça foi pensada para um público e um momento específico — desde a explicação do conceito ao call-to-action final. Visual consistente, mensagem clara.</p>
+
+  <div class="rcg-gallery reveal">
+    <div class="rcg-gallery__item rcg-gallery__item--tall">
+      <img src="Reconge-Images-post 1.webp" alt="RECONGE — Unir gerações, Partilhar vidas" loading="lazy">
+      <div class="rcg-gallery__caption" data-i18n="reconge.s04.cap1">Poster Principal · Conceito</div>
+    </div>
+    <div class="rcg-gallery__item">
+      <img src="Reconge-Images-Prancheta 1-1.webp" alt="RECONGE — Para o idoso" loading="lazy">
+      <div class="rcg-gallery__caption" data-i18n="reconge.s04.cap2">Para o Idoso · Social Media</div>
+    </div>
+    <div class="rcg-gallery__item">
+      <img src="Reconge-Images-Prancheta 1-2.webp" alt="RECONGE — Para o jovem" loading="lazy">
+      <div class="rcg-gallery__caption" data-i18n="reconge.s04.cap3">Para o Jovem · Social Media</div>
+    </div>
+    <div class="rcg-gallery__item">
+      <img src="Reconge-Images-Prancheta 1-3.webp" alt="RECONGE — Pronto a começar?" loading="lazy">
+      <div class="rcg-gallery__caption" data-i18n="reconge.s04.cap4">CTA Final · QR Code</div>
+    </div>
+    <div class="rcg-gallery__item">
+      <img src="Reconge-Images-Prancheta 1.webp" alt="RECONGE — Como funciona?" loading="lazy">
+      <div class="rcg-gallery__caption" data-i18n="reconge.s04.cap5">Como Funciona · Explicativo</div>
+    </div>
+  </div>
+</section>
+
+<!-- ------ 05. VÍDEO ------ -->
+<section class="rcg-section">
+  <span class="rcg-num reveal" data-i18n="reconge.s05.num">[05] — Vídeo Promocional</span>
+  <h2 class="rcg-h2 reveal" data-i18n="reconge.s05.title">O Vídeo</h2>
+  <p class="rcg-lead reveal" data-i18n="reconge.s05.lead">Uma peça audiovisual pensada para redes sociais — capaz de apresentar o conceito da RECONGE em segundos, com impacto emocional e visual.</p>
+
+  <div class="rcg-video-wrap reveal">
+    <video
+      controls
+      preload="metadata"
+      poster="Reconge-Images-post 1.webp"
+      aria-label="Vídeo Promocional RECONGE"
+      data-i18n-aria-label="reconge.s05.ariaLabel">
+      <source src="Reconge-videos-Video promocional reconge.mp4" type="video/mp4">
+      O teu browser não suporta o elemento de vídeo.
+    </video>
+  </div>
+</section>
+
+<!-- ------ 06. O PROCESSO ------ -->
+<section class="rcg-section rcg-section--teal">
+  <span class="rcg-num reveal" data-i18n="reconge.s06.num">[06] — O Processo</span>
+  <h2 class="rcg-h2 reveal" data-i18n="reconge.s06.title">Como foi feito</h2>
+  <p class="rcg-lead reveal" data-i18n="reconge.s06.lead">Da investigação à entrega final — um processo estruturado que garantiu coerência em cada peça criada.</p>
+
+  <div class="rcg-process reveal">
+    <div class="rcg-step">
+      <span class="rcg-step__num">01</span>
+      <div class="rcg-step__title" data-i18n="reconge.s06.step1title">Pesquisa</div>
+      <p class="rcg-step__desc" data-i18n="reconge.s06.step1desc">Investigação do problema social, análise do público-alvo (idosos e jovens), benchmarking de referências visuais e estudo de plataformas similares em Portugal e na Europa.</p>
+    </div>
+    <div class="rcg-step">
+      <span class="rcg-step__num">02</span>
+      <div class="rcg-step__title" data-i18n="reconge.s06.step2title">Conceito</div>
+      <p class="rcg-step__desc" data-i18n="reconge.s06.step2desc">Naming RECONGE (Rede de CONexão GEracionalional), esboços do logótipo, definição da paleta de cores e sistema tipográfico. Escolha de fontes que comunicam acessibilidade e modernidade.</p>
+    </div>
+    <div class="rcg-step">
+      <span class="rcg-step__num">03</span>
+      <div class="rcg-step__title" data-i18n="reconge.s06.step3title">Execução</div>
+      <p class="rcg-step__desc" data-i18n="reconge.s06.step3desc">Desenvolvimento do logótipo final, criação do manual de normas gráficas, produção de conteúdos para Instagram, TikTok e Facebook, e edição do vídeo promocional.</p>
+    </div>
+    <div class="rcg-step">
+      <span class="rcg-step__num">04</span>
+      <div class="rcg-step__title" data-i18n="reconge.s06.step4title">Entrega</div>
+      <p class="rcg-step__desc" data-i18n="reconge.s06.step4desc">Apresentação da identidade visual completa ao júri da EPF. Entrega do manual de normas, ficheiros de marca, conteúdos prontos a publicar e vídeo final. Avaliação com distinção.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ------ 07. RESULTADOS ------ -->
+<section class="rcg-section">
+  <span class="rcg-num reveal" data-i18n="reconge.s07.num">[07] — Resultados</span>
+  <h2 class="rcg-h2 reveal" data-i18n="reconge.s07.title">O que foi entregue</h2>
+  <p class="rcg-lead reveal" data-i18n="reconge.s07.lead">Um projeto completo — do conceito à execução final — entregue com coerência, rigor e impacto visual.</p>
+
+  <div class="rcg-results reveal">
+    <div class="rcg-result-card">
+      <span class="rcg-result-card__num">5+</span>
+      <span class="rcg-result-card__label" data-i18n="reconge.s07.stat1">Peças de Social Media criadas para Instagram, Facebook e TikTok</span>
+    </div>
+    <div class="rcg-result-card">
+      <span class="rcg-result-card__num">1</span>
+      <span class="rcg-result-card__label" data-i18n="reconge.s07.stat2">Manual de Normas Gráficas completo com sistema de identidade</span>
+    </div>
+    <div class="rcg-result-card">
+      <span class="rcg-result-card__num">∞</span>
+      <span class="rcg-result-card__label" data-i18n="reconge.s07.stat3">Aprendizagem — o projeto mais ambicioso até hoje, do zero ao fim</span>
+    </div>
+  </div>
+</section>
+
+<!-- ------ 08. REFLEX�fO ------ -->
+<section class="rcg-section rcg-section--teal">
+  <span class="rcg-num reveal" style="text-align:center;display:block;" data-i18n="reconge.s08.num">[08] — Reflexão</span>
+  <div class="rcg-quote reveal">
+    <p class="rcg-quote__text" data-i18n-html="reconge.s08.quote">
+      "A RECONGE não foi apenas um projeto escolar — foi a prova de que consigo criar algo com propósito, com sistema, e com <span>identidade própria</span> do primeiro ao último pixel."
+    </p>
+    <span class="rcg-quote__author" data-i18n="reconge.s08.author">Gabriel · Garisign Designer · PAP 2026</span>
+  </div>
+</section>
+
+<!-- ------ CTA ------ -->
+<section class="rcg-cta">
+  <h2 class="reveal" data-i18n-html="reconge.cta.title">Próximo projeto:<br>o teu.</h2>
+  <p class="reveal" data-i18n="reconge.cta.desc">Se chegaste até aqui, já viste do que sou capaz. Vamos criar algo juntos?</p>
+  <div class="rcg-cta__actions reveal">
+    <a href="mailto:garisign2025@gmail.com" class="btn-primary" data-hover data-i18n="reconge.cta.contact">Fala Comigo →</a>
+    <a href="trabalhos.html" class="btn-outline" data-hover data-i18n="reconge.cta.back">�?� Outros Trabalhos</a>
+  </div>
+</section>
+
+<!-- ------ SITE FOOTER ------ -->
+<section class="site-footer">
+  <div class="site-footer__decal">GA</div>
+  <div class="site-footer__top reveal">
+    <div class="site-footer__intro">
+      <p class="section-label"><span data-i18n="siteFooter.label">[04] — CONTACTO</span></p>
+      <h2 class="site-footer__title" data-i18n-html="siteFooter.title">Vamos criar<br>algo que<br>fica na <span class="site-footer-title-italic">memória.</span></h2>
+    </div>
+    <div class="site-footer__contact">
+      <a href="mailto:garisign2025@gmail.com" class="site-footer__email">garisign2025@gmail.com</a>
+      <p class="site-footer__text" data-i18n="siteFooter.location">Felgueiras, Portugal — disponível remotamente</p>
+      <p class="site-footer__text site-footer__text--muted" data-i18n="siteFooter.areas">Design Gráfico · Motion Design · Edição de Vídeo</p>
+      <a href="contacto.html" class="btn-primary" data-hover data-i18n="siteFooter.button">Ver Contacto →</a>
+    </div>
+  </div>
+  <hr class="site-footer__separator">
+  <div class="site-footer__bottom">
+    <a href="index.html" class="site-footer__logo">GARISIGN</a>
+    <p class="site-footer__copy" data-i18n="footer.copy">© 2025 Garisign Designer. Todos os direitos reservados.</p>
+    <div class="site-footer__links">
+      <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+      <a href="mailto:garisign2025@gmail.com">EMAIL</a>
+    </div>
+  </div>
+</section>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
+
+

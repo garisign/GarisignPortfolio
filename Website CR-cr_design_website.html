@@ -1,0 +1,1977 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="meta-title">CR Design - Solu��es de Comunica��o Visual</title>
+<meta name="description" id="meta-desc" content="CR Design em Felgueiras, Porto. Solu��es profissionais de comunica��o visual: Design Criativo, Log�tipos, Identidade Visual, Cart�es de Visita, Lonas, Decora��o de Viaturas e Montras. Pe�a o seu or�amento!">
+<meta name="keywords" content="CR Design, Comunica��o Visual, Felgueiras, Porto, Log�tipos, Design Gr�fico, Impress�o Digital, Decora��o de Viaturas, Decora��o de Montras, Lonas, Outdoors, Brindes Personalizados, T-Shirts e vestu�rio de trabalho Personalizado">
+<meta name="author" content="CR Design">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.crdesign.pt/">
+<meta property="og:title" id="og-title" content="CR Design - Solu��es de Comunica��o Visual">
+<meta property="og:description" id="og-desc" content="Design criativo, impress�o digital e publicidade exterior em Felgueiras. Damos vida �s suas ideias com a m�xima qualidade e rapidez.">
+<meta property="og:image" content="Website CR-img-Logos-CR Design.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.crdesign.pt/">
+<meta property="twitter:title" id="tw-title" content="CR Design - Solu��es de Comunica��o Visual">
+<meta property="twitter:description" id="tw-desc" content="Design criativo, impress�o digital e publicidade exterior em Felgueiras. Damos vida �s suas ideias com a m�xima qualidade e rapidez.">
+<meta property="twitter:image" content="Website CR-img-Logos-CR Design.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="Website CR-img-Logos-CR Design.png">
+<link rel="apple-touch-icon" href="Website CR-img-Logos-CR Design.png">
+
+<!-- Structured Data LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CR Design",
+  "image": "Website CR-img-Logos-CR Design.png",
+  "@id": "https://www.crdesign.pt/#localbusiness",
+  "url": "https://www.crdesign.pt/",
+  "telephone": "+351924791059",
+  "email": "crdesign64@hotmail.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua do Curral, N� 602",
+    "addressLocality": "Felgueiras",
+    "postalCode": "4610-156",
+    "addressCountry": "PT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.365,
+    "longitude": -8.199
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "19:00"
+  },
+  "sameAs": [
+    "https://www.instagram.com/crdesign64/"
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --black:#0a0a0a;
+  --dark:#111111;
+  --card:#181818;
+  --green:#8dc63f;
+  --green2:#a8d84a;
+  --pink:#e83e8c;
+  --yellow:#f5c518;
+  --blue:#00b4d8;
+  --white:#f0f0f0;
+  --gray:#888;
+  --border:#2a2a2a;
+}
+html{scroll-behavior:smooth;}
+body{background:#080808;color:var(--white);font-family:'DM Sans',sans-serif;overflow-x:hidden;position:relative;}
+body::before{content:'';position:fixed;inset:0;z-index:-2;pointer-events:none;background:
+  linear-gradient(180deg, rgba(8,8,8,0.92) 0%, rgba(12,12,12,0.96) 50%, rgba(8,8,8,0.88) 100%),
+  repeating-linear-gradient(135deg, rgba(255,255,255,0.12) 0, rgba(255,255,255,0.12) 2px, transparent 2px, transparent 18px);
+}
+.background-lines{position:fixed;top:0;left:0;right:0;bottom:0;z-index:0;pointer-events:none;}
+.background-lines .bg-line{position:fixed;width:200vw;height:2px;pointer-events:none;filter:blur(0.6px);background:linear-gradient(90deg, transparent 0%, var(--color,#00b4d8) 30%, var(--color,#00b4d8) 70%, transparent 100%);transform:rotate(-45deg) translateX(0);animation:swipe-line var(--duration,11s) ease-in-out infinite;mix-blend-mode:screen;}
+@keyframes swipe-line{
+ 0%{opacity:0;transform:rotate(-45deg) translateX(-200vw);}
+ 12%{opacity:0.4;transform:rotate(-45deg) translateX(-150vw);}
+ 30%{opacity:0.6;transform:rotate(-45deg) translateX(-50vw);}
+ 50%{opacity:0.65;transform:rotate(-45deg) translateX(0vw);}
+ 70%{opacity:0.6;transform:rotate(-45deg) translateX(50vw);}
+ 88%{opacity:0.4;transform:rotate(-45deg) translateX(150vw);}
+ 100%{opacity:0;transform:rotate(-45deg) translateX(200vw);}
+}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;transition:all .3s;}
+.nav-logo{cursor:pointer;display:flex;align-items:center;height:100%;}
+.nav-logo img{height:42px;width:auto;object-fit:contain;}
+.nav-links{display:flex;gap:2rem;align-items:center;}
+.nav-links a{color:var(--gray);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color .3s;cursor:pointer;}
+.nav-links a:hover,.nav-links a.active{color:var(--green);}
+.lang-switcher{display:flex;gap:4px;margin-left:2rem;}
+.lang-btn{background:none;border:1px solid var(--border);color:var(--gray);font-size:11px;font-weight:600;padding:4px 10px;border-radius:4px;cursor:pointer;transition:all .3s;font-family:'DM Sans',sans-serif;letter-spacing:1px;}
+.lang-btn.active{background:var(--green);border-color:var(--green);color:var(--black);}
+.nav-cta{background:var(--green);color:var(--black);font-size:12px;font-weight:600;padding:8px 20px;border-radius:4px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;transition:all .3s;}
+.nav-cta:hover{background:var(--green2);transform:translateY(-1px);}
+
+/* PAGES */
+.page{min-height:100vh;display:none;padding-top:64px;}
+.page.active{display:block;}
+
+/* ===== HOME ===== */
+.hero{min-height:calc(100vh - 64px);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(rgba(0,0,0,0.38),rgba(0,0,0,0.08)),url("Website CR-img-Imagem inicial.webp") center/cover no-repeat;padding:0 1rem;}
+.hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.32);pointer-events:none;z-index:1;}
+.hero::after{content:'';position:absolute;left:0;right:0;bottom:0;height:260px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.92));pointer-events:none;z-index:1;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 70% 50%, rgba(141,198,63,0.06) 0%, transparent 70%);pointer-events:none;z-index:1;}
+.hero-lines{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;}
+.hero-lines::before,.hero-lines::after{content:'';position:absolute;width:1px;background:linear-gradient(to bottom,transparent,rgba(141,198,63,0.3),transparent);}
+.hero-lines::before{left:20%;height:100%;animation:lineFall 4s ease-in-out infinite;}
+.hero-lines::after{right:25%;height:100%;animation:lineFall 4s ease-in-out infinite 2s;}
+@keyframes lineFall{0%,100%{opacity:0;transform:translateY(-100%);}50%{opacity:1;transform:translateY(0);}}
+.hero-content{text-align:center;z-index:2;max-width:900px;padding:2rem;animation:fadeUp .8s ease forwards;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+.animate-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .85s ease,transform .85s ease;will-change:opacity,transform;}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0);}
+.fade-left{transform:translateX(-24px);}
+.fade-left.visible{transform:translateX(0);}
+.fade-right{transform:translateX(24px);}
+.fade-right.visible{transform:translateX(0);}
+.fade-up{transform:translateY(24px);}
+.fade-up.visible{transform:translateY(0);}
+.fade-scale{opacity:0;transform:scale(0.96) translateY(20px);transition:opacity .85s ease,transform .85s ease;}
+.fade-scale.visible{opacity:1;transform:scale(1) translateY(0);}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--green);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';width:40px;height:1px;background:var(--green);opacity:0.5;}
+.hero-title{font-family:'Agdasima',sans-serif;font-size:clamp(72px,12vw,140px);line-height:.9;color:var(--white);margin-bottom:.5rem;}
+.hero-title span{color:var(--green);}
+.hero-subtitle{font-size:clamp(14px,2vw,18px);color:#f5f5f5;max-width:500px;margin:1.5rem auto 2.5rem;line-height:1.75;font-weight:400;text-shadow:0 12px 30px rgba(0,0,0,0.35);}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-primary{background:var(--green);color:var(--black);padding:14px 32px;border-radius:4px;font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .3s;}
+.btn-primary:hover{background:var(--green2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(141,198,63,0.3);}
+.btn-outline{background:transparent;color:var(--white);padding:14px 32px;border-radius:4px;font-weight:500;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.22);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .3s;}
+.btn-outline:hover{border-color:rgba(255,255,255,0.45);color:var(--white);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,255,255,0.08);background:rgba(255,255,255,0.08);}
+#hero-btn2{color:var(--white);border-color:rgba(255,255,255,0.32);background:rgba(255,255,255,0.06);}
+#hero-btn2:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.55);}
+.hero-dots{display:flex;gap:10px;justify-content:center;margin-top:3rem;}
+.hero-dot{width:10px;height:10px;border-radius:50%;}
+.hero-dot.blue{background:var(--blue);}
+.hero-dot.pink{background:var(--pink);}
+.hero-dot.yellow{background:var(--yellow);}
+.scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.5;}
+.scroll-indicator span{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray);}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--green),transparent);animation:scrollPulse 2s ease-in-out infinite;}
+@keyframes scrollPulse{0%,100%{opacity:0;transform:scaleY(0);transform-origin:top;}50%{opacity:1;transform:scaleY(1);transform-origin:top;}}
+
+/* STATS BAR */
+.stats-bar{background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.stat{text-align:center;padding:1rem;}
+.stat-num{font-family:'Agdasima',sans-serif;font-size:48px;color:var(--green);line-height:1;}
+.stat-label{font-size:12px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;margin-top:4px;}
+
+/* SERVICES PREVIEW */
+.section{padding:6rem 2rem;}
+.section-header{text-align:center;margin-bottom:4rem;}
+.section-eyebrow{font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--green);margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.section-eyebrow::before,.section-eyebrow::after{content:'';flex:1;max-width:60px;height:1px;background:var(--green);opacity:0.4;}
+.section-title{font-family:'Agdasima',sans-serif;font-size:clamp(40px,6vw,72px);color:var(--white);line-height:.95;}
+.section-title span{color:var(--green);}
+.section-sub{font-size:15px;color:var(--gray);margin-top:1rem;max-width:400px;margin-left:auto;margin-right:auto;line-height:1.7;}
+
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto;padding:1rem;}
+.service-card{background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);box-shadow:0 18px 40px rgba(0,0,0,0.26);border-radius:24px;padding:2rem;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;cursor:pointer;position:relative;overflow:hidden;}
+.service-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.2);box-shadow:0 24px 48px rgba(0,0,0,0.3);}
+.service-icon{font-size:32px;margin-bottom:1rem;}
+.service-card h3{font-family:'Agdasima',sans-serif;font-size:22px;color:var(--white);margin-bottom:.5rem;letter-spacing:1px;}
+.service-card p{font-size:13px;color:var(--gray);line-height:1.7;}
+.service-arrow{position:absolute;bottom:1.5rem;right:1.5rem;color:var(--green);opacity:0;transition:all .3s;font-size:20px;}
+.service-card:hover .service-arrow{opacity:1;transform:translate(2px,-2px);}
+
+/* MARQUEE */
+.marquee-section{background:var(--green);padding:.8rem 0;overflow:hidden;}
+.marquee-track{display:flex;gap:3rem;white-space:nowrap;animation:marquee 20s linear infinite;}
+.marquee-item{font-family:'Agdasima',sans-serif;font-size:18px;color:var(--black);letter-spacing:3px;display:flex;align-items:center;gap:1rem;}
+.marquee-dot{width:6px;height:6px;border-radius:50%;background:rgba(0,0,0,0.3);}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ===== SOBRE N�S ===== */
+.about-hero{padding:5rem 2rem;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.about-visual{position:relative;}
+.about-card{background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);box-shadow:0 18px 30px rgba(0,0,0,0.18);border-radius:20px;padding:2.5rem;position:relative;overflow:hidden;}
+.about-card::before{content:'CR';font-family:'Agdasima',sans-serif;font-size:200px;color:rgba(141,198,63,0.04);position:absolute;top:-20px;right:-20px;line-height:1;pointer-events:none;}
+.about-tag{display:inline-block;background:rgba(141,198,63,0.1);color:var(--green);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:4px;margin-bottom:1.5rem;}
+.about-visual-title{font-family:'Agdasima',sans-serif;font-size:48px;color:var(--white);line-height:.95;margin-bottom:1rem;}
+.about-visual-sub{font-size:14px;color:var(--gray);line-height:1.8;}
+.about-dots-row{display:flex;gap:8px;margin-top:1.5rem;}
+.dot-sm{width:8px;height:8px;border-radius:50%;}
+.about-text h2{font-family:'Agdasima',sans-serif;font-size:clamp(36px,5vw,56px);color:var(--white);line-height:.95;margin-bottom:1.5rem;}
+.about-text h2 span{color:var(--green);}
+.about-text p{font-size:15px;color:var(--gray);line-height:1.8;margin-bottom:1.2rem;}
+.values-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem;}
+.value-item{background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);padding:1.2rem;border-radius:16px;border-left:3px solid var(--green);box-shadow:0 14px 28px rgba(0,0,0,0.14);}
+.value-item h4{font-size:13px;font-weight:600;color:var(--white);margin-bottom:4px;letter-spacing:.5px;}
+.value-item p{font-size:12px;color:var(--gray);}
+.team-section{background:var(--dark);border-top:1px solid var(--border);padding:5rem 2rem;}
+.team-section .inner{max-width:1100px;margin:0 auto;}
+
+/* ===== SERVI�OS ===== */
+.services-page{max-width:1100px;margin:0 auto;padding:4rem 2rem;}
+.services-tabs{display:flex;gap:.5rem;margin-bottom:3rem;flex-wrap:wrap;}
+.tab{background:none;border:1px solid var(--border);color:var(--gray);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;padding:8px 20px;border-radius:4px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .3s;}
+.tab:hover{border-color:var(--green);color:var(--green);}
+.tab.active{background:var(--green);border-color:var(--green);color:var(--black);}
+.services-list{display:grid;gap:1.25rem;background:transparent;border:none;border-radius:0;overflow:visible;padding:1rem;}
+.service-row{background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);box-shadow:0 16px 32px rgba(0,0,0,0.22);border-radius:20px;display:grid;grid-template-columns:64px 1fr auto;align-items:center;gap:1rem;padding:1.5rem 2rem;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;cursor:pointer;}
+.service-row:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.2);box-shadow:0 24px 42px rgba(0,0,0,0.26);}
+.service-row-icon{width:60px;height:60px;display:flex;align-items:center;justify-content:center;background:rgba(141,198,63,0.16);border:1px solid rgba(141,198,63,0.28);border-radius:16px;overflow:hidden;transition:transform .3s ease,background .3s ease;}
+.service-row-icon img{width:84%;height:84%;object-fit:contain;display:block;}
+.service-row:hover .service-row-icon{transform:scale(1.05);background:rgba(141,198,63,0.2);}
+.service-row-icon:empty{background:transparent;border-color:transparent;}
+.service-row-info h3{font-size:16px;font-weight:600;color:var(--white);margin-bottom:4px;}
+.service-row-info p{font-size:13px;color:var(--gray);}
+.service-row-price{text-align:right;}
+.service-row-price span{font-size:11px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:2px;}
+.service-row-price strong{color:var(--green);font-size:14px;}
+.service-row-arrow{color:var(--green);opacity:0;transition:all .3s;margin-left:1rem;}
+.service-row:hover .service-row-arrow{opacity:1;}
+
+/* ===== PORTF�LIO ===== */
+.portfolio-page{max-width:1200px;margin:0 auto;padding:4rem 2rem;}
+.portfolio-filter{display:flex;gap:.5rem;margin-bottom:3rem;flex-wrap:wrap;}
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:2px;border-radius:8px;overflow:hidden;}
+.portfolio-item{position:relative;aspect-ratio:1/1;min-height:220px;overflow:hidden;cursor:pointer;background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);border-radius:20px;box-shadow:0 18px 36px rgba(0,0,0,0.22);transition:transform .3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .3s cubic-bezier(0.16, 1, 0.3, 1),border-color .3s ease;}
+.portfolio-item:hover{transform:translateY(-4px);box-shadow:0 22px 44px rgba(0,0,0,0.32);border-color:rgba(255,255,255,0.2);}
+.portfolio-thumb{width:100%;height:100%;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform .4s ease;position:relative;}
+.portfolio-item:hover .portfolio-thumb{transform:scale(1.05);}
+.portfolio-icon-wrap{display:flex;align-items:center;justify-content:center;color:var(--white);line-height:0;filter:drop-shadow(0 0 10px rgba(255,255,255,0.08));width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.portfolio-icon,.portfolio-icon-wrap{font-size:32px;margin-bottom:1rem;}
+.portfolio-icon-wrap svg,.portfolio-fallback svg,.lightbox-fallback svg{display:block;width:48px;height:48px;max-width:48px;max-height:48px;flex-shrink:0;overflow:visible}
+.portfolio-icon-wrap svg *{fill:currentColor !important;stroke:currentColor !important;}
+.portfolio-fallback{color:var(--white);padding:1rem;}
+.portfolio-fallback svg{margin-bottom:.5rem;}
+.lightbox-fallback svg{width:120px;height:120px;max-width:120px;max-height:120px;}
+.portfolio-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.5);transition:background .35s cubic-bezier(0.16, 1, 0.3, 1);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:1.5rem;z-index:3;}
+.portfolio-item:hover .portfolio-overlay{background:rgba(141,198,63,0.15);}
+.portfolio-overlay h3{font-family:'Agdasima',sans-serif;font-size:16px;color:var(--white);letter-spacing:0.5px;line-height:1.1;margin-bottom:0.4rem;font-weight:700;}
+.portfolio-overlay p{font-size:11px;color:rgba(255,255,255,0.8);letter-spacing:0.8px;text-transform:uppercase;font-weight:500;}
+.portfolio-overlay img{filter:drop-shadow(0 2px 4px rgba(0, 0, 0, 1.5));}
+.portfolio-icon{font-size:28px;margin-bottom:1rem;}
+.portfolio-tag{position:absolute;top:1rem;right:1rem;background:rgba(10,10,10,0.92);border:1px solid rgba(255,255,255,0.14);color:var(--white);font-size:13px;font-weight:700;letter-spacing:1px;padding:6px 12px;border-radius:4px;text-transform:uppercase;}
+.gallery-body{display:flex;flex-direction:column;gap:1.5rem;position:relative;}
+.gallery-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+.gallery-viewer{position:absolute;inset:0;z-index:10;display:none;align-items:center;justify-content:center;padding:0;box-sizing:border-box;background:rgba(0,0,0,0.92);}
+.gallery-viewer.active{display:flex;}
+.viewer-frame{position:relative;display:flex;align-items:center;justify-content:center;width:auto;max-width:calc(100vw - 100px);background:rgba(0,0,0,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);border-radius:20px;padding:50px;box-sizing:border-box;box-shadow:0 24px 48px rgba(0,0,0,0.36);}
+.viewer-close{position:absolute;top:1rem;right:1rem;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.14);color:var(--white);font-size:28px;line-height:1;width:44px;height:44px;border-radius:50%;cursor:pointer;z-index:121;}
+.viewer-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:none;background:rgba(0,0,0,0.5);color:var(--white);font-size:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:121;}
+.viewer-prev{left:1rem;}
+.viewer-next{right:1rem;}
+.viewer-nav:hover,.viewer-close:hover{background:rgba(141,198,63,0.9);}
+#viewer-img{display:block;max-width:100%;max-height:calc(100vh - 260px);width:auto;height:auto;object-fit:contain;box-shadow:0 24px 48px rgba(0,0,0,0.6);border-radius:10px;animation:zoomIn .3s ease both;}
+@keyframes zoomIn{from{transform:scale(0.95);opacity:0;}to{transform:scale(1);opacity:1;}}
+.gallery-grid{
+  --thumb-size: clamp(120px, 14vw, 200px);
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  justify-content:center;
+  align-items:flex-start;
+  padding:16px;
+}
+.gallery-card{background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);border-radius:16px;overflow:hidden;cursor:pointer;transition:transform .3s, border-color .3s, box-shadow .3s;display:flex;flex-direction:column;align-items:stretch;width:var(--thumb-size);box-shadow:0 16px 30px rgba(0,0,0,0.18);}
+.gallery-card:hover{transform:translateY(-4px);border-color:rgba(141,198,63,0.4);box-shadow:0 22px 38px rgba(0,0,0,0.22);}
+.gallery-card img{width:var(--thumb-size);height:var(--thumb-size);object-fit:cover;display:block;flex:0 0 auto;border-bottom:1px solid rgba(0,0,0,0.06);}
+.gallery-card-title{font-size:13px;color:var(--white);padding:0.5rem;text-align:left;}
+
+@media (max-width:680px){
+  .gallery-grid{--thumb-size: clamp(90px, 18vw, 140px);gap:12px;padding:12px;}
+}
+
+@media (max-width:480px){
+  .gallery-grid{--thumb-size: clamp(70px, 20vw, 100px);gap:10px;padding:10px;}
+}
+.gallery-card-title span{display:block;color:var(--gray);font-size:12px;margin-top:0.25rem;}
+
+/* ===== CONTACTO ===== */
+.contact-page{max-width:700px;margin:0 auto;padding:4rem 2rem;display:flex;flex-direction:column;align-items:start;}
+.contact-info h2{font-family:'Agdasima',sans-serif;font-size:clamp(40px,6vw,64px);color:var(--white);line-height:.9;margin-bottom:1.5rem;}
+.contact-info h2 span{color:var(--green);}
+.contact-info p{font-size:15px;color:var(--gray);line-height:1.8;margin-bottom:2.5rem;}
+.contact-method{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;padding:1.5rem;background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);border-radius:16px;transition:all .3s;cursor:pointer;box-shadow:0 14px 30px rgba(0,0,0,0.16);}
+.contact-method:hover{border-color:var(--green);transform:translateX(4px);box-shadow:0 18px 34px rgba(0,0,0,0.2);}
+.contact-method-icon{width:44px;height:44px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.contact-method-icon.green{background:rgba(141,198,63,0.1);}
+.contact-method-icon.wa{background:rgba(37,211,102,0.1);}
+.contact-method h4{font-size:14px;font-weight:600;color:var(--white);margin-bottom:2px;}
+.contact-method p{font-size:13px;color:var(--gray);}
+.contact-form{background:rgba(10,10,10,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.14);border-radius:20px;padding:2.5rem;box-shadow:0 18px 32px rgba(0,0,0,0.16);}
+.contact-form h3{font-family:'Agdasima',sans-serif;font-size:28px;color:var(--white);margin-bottom:2rem;letter-spacing:1px;}
+.form-group{margin-bottom:1.2rem;}
+.form-group label{display:block;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);margin-bottom:.5rem;}
+.form-group input,.form-group textarea,.form-group select{width:100%;background:var(--dark);border:1px solid var(--border);color:var(--white);font-size:14px;padding:12px 16px;border-radius:4px;font-family:'DM Sans',sans-serif;transition:border-color .3s;outline:none;}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--green);}
+.form-group textarea{height:100px;resize:vertical;}
+.form-group select option{background:var(--dark);}
+.form-submit{width:100%;background:var(--green);color:var(--black);font-size:13px;font-weight:700;padding:14px;border-radius:4px;border:none;cursor:pointer;letter-spacing:2px;text-transform:uppercase;font-family:'DM Sans',sans-serif;transition:all .3s;margin-top:.5rem;}
+.form-submit:hover{background:var(--green2);transform:translateY(-2px);}
+.social-row{display:flex;gap:.8rem;margin-top:2rem;}
+.social-btn{width:44px;height:44px;border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--gray);cursor:pointer;transition:all .3s;}
+.social-btn:hover{border-color:var(--green);color:var(--green);}
+.social-btn img{width:28px;height:28px;object-fit:contain;}
+.contact-method-icon img{width:24px;height:24px;object-fit:contain;}
+.wa-float img{width:30px;height:30px;object-fit:contain;}
+.lightbox-cta img{width:18px;height:18px;object-fit:contain;vertical-align:middle;}
+
+/* FOOTER */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2rem;display:flex;flex-direction:column;align-items:center;gap:1.5rem;}
+.footer-logo{display:flex;align-items:center;justify-content:center;}
+.footer-logo img{height:60px;width:auto;object-fit:contain;}
+.footer-links{display:flex;gap:2rem;}
+.footer-links a{font-size:12px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:color .3s;}
+.footer-links a:hover{color:var(--green);}
+.footer-dots{display:flex;gap:8px;}
+.footer-copy{font-size:12px;color:rgba(136,136,136,0.5);}
+
+/* Whatsapp float */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:99;background:radial-gradient(circle at center, #222 0%, #0a0a0a 100%);width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 4px 20px rgba(255,255,255,0.08);cursor:pointer;transition:all .3s;animation:waPulse 2s ease-in-out infinite;border:1px solid rgba(255,255,255,0.1);}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 20px rgba(255,255,255,0.08);}50%{box-shadow:0 4px 32px rgba(255,255,255,0.15);}}
+.wa-float:hover{transform:scale(1.1);}
+
+/* Page transition */
+.page{animation:pageFade .4s ease;}
+@keyframes pageFade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 110;
+  padding: 0;
+}
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: var(--green);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: var(--green);
+}
+
+/* LIGHTBOX MODAL */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,10,0.96);
+  backdrop-filter: blur(12px);
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox-content {
+  background: rgba(10,10,10,0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.4);
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.lightbox-content.gallery-modal {
+  max-width: min(100vw - 40px, 1400px);
+  width: min(100vw - 40px, 1400px);
+  border-radius: 20px;
+  overflow: visible;
+}
+.lightbox.active .lightbox-content {
+  transform: scale(1);
+}
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-size: 28px;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.lightbox-close:hover {
+  color: var(--green);
+  border-color: var(--green);
+  background: rgba(0,0,0,0.8);
+}
+.lightbox-body {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+.lightbox-img-container {
+  position: relative;
+  aspect-ratio: 4/3;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border);
+}
+.lightbox-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lightbox-fallback {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  background: var(--dark);
+}
+.lightbox-info {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lightbox-tag {
+  display: inline-block;
+  background: rgba(141,198,63,0.1);
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 3px;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+.lightbox-tag:empty {
+  display: none;
+}
+.lightbox-info h2 {
+  font-family: 'Agdasima', sans-serif;
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.lightbox-client {
+  font-size: 13px;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+.lightbox-desc {
+  font-size: 14px;
+  color: var(--white);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+.lightbox-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.lightbox-cta:hover {
+  background: #20ba5a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37,211,102,0.3);
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .mobile-only {
+    display: block !important;
+  }
+  .about-hero{grid-template-columns:1fr;}
+  .contact-page{grid-template-columns:1fr;}
+  .stats-bar{grid-template-columns:repeat(2,1fr);}
+  .values-grid{grid-template-columns:1fr;}
+  nav{padding:0 1rem;}
+  
+  .menu-toggle {
+    display: flex;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: rgba(10,10,10,0.98);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 105;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 2rem;
+  }
+  .nav-links.open {
+    right: 0;
+  }
+  .nav-links a {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .nav-cta {
+    display: none;
+  }
+  
+  .page{padding-left:0.75rem;padding-right:0.75rem;}
+  .portfolio-overlay h3,
+  .portfolio-overlay p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .section{padding:4rem 1rem;}
+  .about-hero, .contact-page, .services-page, .portfolio-page{padding:2rem 1rem;}
+  .section-header{padding-left:0.25rem;padding-right:0.25rem;}
+  .hero{padding:0 0.75rem;}
+  .hero-content{padding:1.5rem 0;}
+  .hero-eyebrow{font-size:10px;letter-spacing:3px;margin-bottom:1rem;}
+  .hero-title{font-size:clamp(38px,12vw,58px);line-height:1.05;}
+  .hero-subtitle{font-size:14px;max-width:100%;margin:1.25rem auto 2rem;padding:0 0.5rem;}
+  .services-page {
+    padding: 1.5rem 0.75rem;
+  }
+  .services-tabs {
+    gap: 0.5rem;
+  }
+  .tab {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 0;
+  }
+  .services-list {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .service-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+    align-items: flex-start;
+  }
+  .service-row-num {
+    font-size: 24px;
+    min-width: auto;
+  }
+  .service-row-info h3 {
+    font-size: 16px;
+  }
+  .service-row-info p {
+    font-size: 13px;
+  }
+  .service-row-price {
+    text-align: left;
+    padding-top: 0.25rem;
+  }
+  .service-row-price strong {
+    font-size: 14px;
+  }
+  .service-row-arrow {
+    position: relative;
+    margin-left: 0;
+    top: 0;
+    opacity: 1;
+    transform: none;
+  }
+  .service-card {
+    padding: 1.5rem;
+  }
+  .service-card h3 {
+    font-size: 20px;
+  }
+  .service-card p {
+    font-size: 13px;
+  }
+  .section-title {
+    font-size: clamp(32px, 7vw, 52px);
+  }
+  .section-sub,
+  .about-text p,
+  .contact-info p,
+  .hero-subtitle,
+  .contact-info h2,
+  .about-text h2 {
+    font-size: 14px;
+  }
+  .about-visual-sub,
+  .service-row-info p,
+  .footer-copy,
+  .contact-method h4 {
+    font-size: 13px;
+  }
+  .gallery-header,
+  .service-row,
+  .contact-method,
+  .contact-info,
+  .about-text,
+  .about-card,
+  .portfolio-page,
+  .services-page {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .hero-lines::before,
+  .hero-lines::after {
+    opacity: 0.12;
+  }
+  .lightbox-body {
+    grid-template-columns: 1fr;
+  }
+  .lightbox {
+    padding: 1rem;
+  }
+  .lightbox-img-container {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .lightbox-info {
+    padding: 1.5rem;
+  }
+  .lightbox-info h2 {
+    font-size: 28px;
+  }
+  .portfolio-item.fade-scale,
+  .gallery-card.fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Page loader styles */
+.page-loader{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(8,8,8,0.97);backdrop-filter:blur(4px);transition:opacity .45s ease;}
+.page-loader.hidden{opacity:0;pointer-events:none;}
+.loader-inner{display:flex;flex-direction:column;align-items:center;gap:18px;color:var(--white);}
+.loader-logo{width:110px;height:auto;filter:brightness(1.1);}
+.loader-wheel{width:48px;height:48px;border-radius:50%;border:4px solid rgba(255,255,255,0.06);border-top-color:var(--green);animation:spin 1s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.loader-bar{width:260px;background:rgba(255,255,255,0.04);height:8px;border-radius:8px;overflow:hidden;}
+.loader-fill{height:100%;background:linear-gradient(90deg,var(--green),#8dc63f);width:0%;transition:width .2s linear;}
+.loader-text{font-size:13px;color:var(--gray);}
+
+/* Loja f�sica gallery */
+.shop-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:1.5rem;}
+.shop-photo{width:100%;height:260px;object-fit:cover;border-radius:8px;border:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,0.6);transition:transform .35s ease,box-shadow .35s ease;display:block;}
+.shop-photo:hover{transform:translateY(-6px);box-shadow:0 22px 40px rgba(0,0,0,0.6);}
+@media(max-width:680px){.shop-photo{height:160px}}
+
+</style>
+</head>
+<body>
+<div class="background-lines" id="background-lines"></div>
+
+<!-- Page loader -->
+<div id="page-loader" class="page-loader">
+  <div class="loader-inner">
+    <img src="Website CR-img-Logos-CR Design.png" alt="CR Design" class="loader-logo">
+    <div class="loader-wheel" aria-hidden="true"></div>
+    <div class="loader-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="loader-fill" id="loader-fill"></div>
+    </div>
+    <div class="loader-text" id="loader-text">0%</div>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-logo" onclick="showPage('home')"><img src="Website CR-img-Logos-CR Design.png" alt="CR Design Logo"></div>
+  <div class="nav-links" id="nav-links">
+    <a onclick="showPage('home')" class="active" id="nav-home" data-pt="In�cio" data-fr="Accueil">In�cio</a>
+    <a onclick="showPage('sobre')" id="nav-sobre" data-pt="Sobre N�s" data-fr="Qui Sommes-Nous">Sobre N�s</a>
+    <a onclick="showPage('servicos')" id="nav-servicos" data-pt="Servi�os" data-fr="Services">Servi�os</a>
+    <a onclick="showPage('portfolio')" id="nav-portfolio" data-pt="Portf�lio" data-fr="Portfolio">Portf�lio</a>
+    <a onclick="showPage('contacto')" id="nav-contacto" data-pt="Contacto" data-fr="Contact">Contacto</a>
+    <!-- Mobile-only Call to Action in the drawer -->
+    <button class="nav-cta mobile-only" onclick="showPage('contacto')" id="nav-cta-btn-mobile" data-pt="Pedir Or�amento" data-fr="Devis Gratuit" style="margin-top: 1rem; width: 100%;">Pedir Or�amento</button>
+  </div>
+  <div style="display:flex;align-items:center;gap:1rem;z-index:110;">
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn" onclick="setLang('fr')">FR</button>
+    </div>
+    <button class="nav-cta" onclick="showPage('contacto')" id="nav-cta-btn" data-pt="Pedir Or�amento" data-fr="Devis Gratuit">Pedir Or�amento</button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HOME ===== -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" id="hero-eyebrow">Solu��es de Comunica��o Visual</div>
+      <div class="hero-title" id="hero-title">TRANSFORMAMOS<br><span>IDEIAS</span><br>EM IMAGEM</div>
+      <p class="hero-subtitle" id="hero-subtitle">Design, gr�fica e publicidade para marcas que querem ser vistas. Da ideia ao produto final.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('servicos')" id="hero-btn1">Ver Servi�os</button>
+        <button class="btn-outline" onclick="showPage('portfolio')" id="hero-btn2">Ver Portf�lio</button>
+      </div>
+      <div class="hero-dots">
+        <div class="hero-dot blue"></div>
+        <div class="hero-dot pink"></div>
+        <div class="hero-dot yellow"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-bar animate-on-scroll fade-up">
+    <div class="stat"><div class="stat-num">200+</div><div class="stat-label" id="stat1">Clientes</div></div>
+    <div class="stat"><div class="stat-num">25+</div><div class="stat-label" id="stat2">Anos de Experi�ncia</div></div>
+    <div class="stat"><div class="stat-num">30+</div><div class="stat-label" id="stat3">Servi�os</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label" id="stat4">Satisfa��o Garantida</div></div>
+  </div>
+
+  <div class="marquee-section animate-on-scroll fade-left">
+    <div class="marquee-track" id="marquee-track"></div>
+  </div>
+
+  <div class="section animate-on-scroll fade-up">
+    <div class="section-header">
+      <div class="section-eyebrow" id="home-services-eyebrow">O que fazemos</div>
+      <div class="section-title" id="home-services-title">SERVI�OS <span>PRINCIPAIS</span></div>
+      <p class="section-sub" id="home-services-sub">Do conceito criativo ao produto final, temos tudo o que a sua marca precisa.</p>
+    </div>
+    <div class="services-grid animate-on-scroll fade-up">
+      <div class="service-card" onclick="showPage('servicos')">
+        <div class="service-icon">??</div>
+        <h3 id="sc1-title">Design Criativo</h3>
+        <p id="sc1-text">Log�tipos, identidades visuais, flyers, cartazes e muito mais.</p>
+        <div class="service-arrow">?</div>
+      </div>
+      <div class="service-card" onclick="showPage('servicos')">
+        <div class="service-icon">???</div>
+        <h3 id="sc2-title">Gr�fica & Print</h3>
+        <p id="sc2-text">Impress�o digital de alta qualidade. Cart�es, convites, lonas e outdoors.</p>
+        <div class="service-arrow">?</div>
+      </div>
+      <div class="service-card" onclick="showPage('servicos')">
+        <div class="service-icon">??</div>
+        <h3 id="sc3-title">Promocional</h3>
+        <p id="sc3-text">T-Shirts e vestu�rio de trabalho Personalizado, brindes, ta�as e artigos personalizados para a sua marca.</p>
+        <div class="service-arrow">?</div>
+      </div>
+      <div class="service-card" onclick="showPage('servicos')">
+        <div class="service-icon">??</div>
+        <h3 id="sc4-title">Publicidade Exterior</h3>
+        <p id="sc4-text">Decora��o de viaturas, vitrines, outdoors e sinal�tica.</p>
+        <div class="service-arrow">?</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo"><img src="Website CR-img-Logos-CR Design.png" alt="CR Design Logo"></div>
+    <div class="footer-links">
+      <a onclick="showPage('home')" id="f-home">In�cio</a>
+      <a onclick="showPage('sobre')" id="f-sobre">Sobre N�s</a>
+      <a onclick="showPage('servicos')" id="f-servicos">Servi�os</a>
+      <a onclick="showPage('portfolio')" id="f-portfolio">Portf�lio</a>
+      <a onclick="showPage('contacto')" id="f-contacto">Contacto</a>
+    </div>
+    <div class="footer-dots">
+      <div class="hero-dot blue"></div>
+      <div class="hero-dot pink"></div>
+      <div class="hero-dot yellow"></div>
+    </div>
+    <div class="footer-copy" id="footer-copy">� 2025 CR Design - Solu��es de Comunica��o Visual</div>
+  </footer>
+</div>
+
+<!-- ===== SOBRE N�S ===== -->
+<div class="page" id="page-sobre">
+  <div class="about-hero animate-on-scroll fade-up">
+    <div class="about-visual">
+      <div class="about-card">
+        <div class="about-tag" id="about-tag">Fundada com paix�o</div>
+        <div style="display:flex;align-items:center;justify-content:center;padding:1rem 0;"><img src="Website CR-img-Logos-CR Design.png" alt="CR Design Logo" style="max-width:180px;width:100%;height:auto;object-fit:contain;"></div>
+        <div class="about-visual-sub" id="about-visual-sub">Solu��es de Comunica��o Visual para empresas e particulares.</div>
+        <div class="about-dots-row">
+          <div class="dot-sm" style="background:var(--blue)"></div>
+          <div class="dot-sm" style="background:var(--pink)"></div>
+          <div class="dot-sm" style="background:var(--yellow)"></div>
+          <div class="dot-sm" style="background:var(--green)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <h2 id="about-title">QUEM<br><span>SOMOS</span></h2>
+      <p id="about-p1">A CR Design � uma loja de comunica��o visual com anos de experi�ncia em ajudar marcas, empresas e particulares a comunicarem com impacto.</p>
+      <p id="about-p2">Somos especialistas em design criativo e produ��o gr�fica - desde o simples cart�o de visita at� � decora��o completa de viaturas e espa�os.</p>
+      <div class="values-grid">
+        <div class="value-item">
+          <h4 id="v1-title">Criatividade</h4>
+          <p id="v1-text">Cada projeto � �nico e pensado ao detalhe.</p>
+        </div>
+        <div class="value-item">
+          <h4 id="v2-title">Qualidade</h4>
+          <p id="v2-text">Materiais premium e acabamentos perfeitos.</p>
+        </div>
+        <div class="value-item">
+          <h4 id="v3-title">Rapidez</h4>
+          <p id="v3-text">Entregamos no prazo combinado, sempre.</p>
+        </div>
+        <div class="value-item">
+          <h4 id="v4-title">Proximidade</h4>
+          <p id="v4-text">Acompanhamos o cliente do in�cio ao fim.</p>
+        </div>
+      </div>
+      <div style="margin-top:2rem;">
+        <button class="btn-primary" onclick="showPage('contacto')" id="about-cta">Falar Connosco</button>
+      </div>
+    </div>
+  </div>
+    <!-- Loja f�sica: imagens exteriores da loja -->
+    <div class="section shop-section animate-on-scroll fade-up" style="max-width:1100px;margin:2.5rem auto;padding:2rem;">
+      <div class="section-header" style="text-align:left;margin-bottom:1rem;">
+        <div class="section-eyebrow">Visite a nossa loja</div>
+        <div class="section-title">LOJA <span>F�SICA</span></div>
+        <p class="section-sub" style="margin-top:0.5rem;color:var(--gray);">Algumas fotos da fachada e montra da nossa loja - venha visitar-nos em Felgueiras.</p>
+      </div>
+      <div class="shop-gallery">
+        <a href="Website CR-img-Imagens loja fisica-20260525_105903.webp" target="_blank"><img src="Website CR-img-Imagens loja fisica-20260525_105903.webp" alt="Loja exterior 1" class="shop-photo animate-on-scroll fade-scale"></a>
+        <a href="Website CR-img-Imagens loja fisica-20260527_115911.webp" target="_blank"><img src="Website CR-img-Imagens loja fisica-20260527_115911.webp" alt="Loja exterior 2" class="shop-photo animate-on-scroll fade-scale"></a>
+      </div>
+    </div>
+  <footer>
+    <div class="footer-logo"><img src="Website CR-img-Logos-CR Design.png" alt="CR Design Logo"></div>
+    <div class="footer-copy" id="footer-copy2">� 2025 CR Design - Solu��es de Comunica��o Visual</div>
+  </footer>
+</div>
+
+<!-- ===== SERVI�OS ===== -->
+<div class="page" id="page-servicos">
+  <div class="services-page">
+    <div class="section-header" style="text-align:left;margin-bottom:2rem;">
+      <div class="section-eyebrow" style="justify-content:flex-start;" id="srv-eyebrow">O que oferecemos</div>
+      <div class="section-title" id="srv-title">OS NOSSOS <span>SERVI�OS</span></div>
+      <p class="section-sub" style="margin:1rem 0 0;text-align:left;" id="srv-sub">Clica em qualquer servi�o para saber mais.</p>
+    </div>
+    <div class="services-tabs">
+      <button class="tab active" onclick="filterServices('all',this)" id="tab-all">Todos</button>
+      <button class="tab" onclick="filterServices('design',this)" id="tab-design">Design</button>
+      <button class="tab" onclick="filterServices('grafica',this)" id="tab-grafica">Gr�fica</button>
+      <button class="tab" onclick="filterServices('promo',this)" id="tab-promo">Promocional</button>
+      <button class="tab" onclick="filterServices('ext',this)" id="tab-ext">Exterior</button>
+    </div>
+    <div class="services-list" id="services-list">
+      <!-- populated by JS -->
+    </div>
+    <div style="margin-top:3rem;text-align:center;">
+      <p style="color:var(--gray);font-size:14px;margin-bottom:1.5rem;" id="srv-cta-text">N�o encontras o que procuras? Fala connosco!</p>
+      <button class="btn-primary" onclick="showPage('contacto')" id="srv-cta-btn">Pedir Or�amento Personalizado</button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo"><img src="Website CR-img-Logos-CR Design.png" alt="CR Design Logo"></div>
+    <div class="footer-copy">� 2025 CR Design</div>
+  </footer>
+</div>
+
+<!-- ===== PORTF�LIO ===== -->
+<div class="page" id="page-portfolio">
+  <div class="portfolio-page animate-on-scroll fade-up">
+    <div class="section-header" style="text-align:left;margin-bottom:2rem;">
+      <div class="section-eyebrow" style="justify-content:flex-start;" id="pf-eyebrow">Os nossos trabalhos</div>
+      <div class="section-title" id="pf-title">PORT<span>F�LIO</span></div>
+    </div>
+    <div class="portfolio-grid" id="portfolio-grid"></div>
+    <div style="margin-top:3rem;text-align:center;padding:3rem;background:var(--card);border:1px solid var(--border);border-radius:8px;border-style:dashed;">
+      <p style="font-size:28px;margin-bottom:.5rem;">??</p>
+      <p style="color:var(--gray);font-size:14px;" id="pf-upload">As suas imagens ser�o adicionadas aqui. Envia-nos os teus trabalhos!</p>
+      <button class="btn-outline" style="margin-top:1.5rem;" onclick="showPage('contacto')">Contactar</button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo"><img src="Website CR-img-Logos-CR Design.png" alt="CR Design Logo"></div>
+    <div class="footer-copy">� 2025 CR Design</div>
+  </footer>
+</div>
+
+<!-- ===== PORTF�LIO GALERIA ===== -->
+<div class="lightbox" id="portfolio-gallery-modal" onclick="if(event.target===this) closeGallery()">
+  <div class="lightbox-content gallery-modal">
+    <button class="lightbox-close" onclick="closeGallery()">&times;</button>
+    <div class="gallery-body" id="gallery-body">
+      <div class="gallery-header">
+        <div>
+          <span class="lightbox-tag" id="gallery-tag"></span>
+          <h2 id="gallery-title"></h2>
+          <p class="lightbox-client" id="gallery-desc"></p>
+        </div>
+      </div>
+      <div class="gallery-viewer" id="gallery-viewer">
+        <div class="viewer-frame">
+          <button class="viewer-close" onclick="closeViewer()">&times;</button>
+          <button class="viewer-nav viewer-prev" onclick="navigateViewer(-1)"><</button>
+          <img id="viewer-img" src="" alt="Visualiza��o">
+          <button class="viewer-nav viewer-next" onclick="navigateViewer(1)">></button>
+        </div>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACTO ===== -->
+<div class="page" id="page-contacto">
+  <div class="contact-page animate-on-scroll fade-up">
+    <div class="contact-info">
+      <h2 id="ct-title">FALA<br><span>CONNOSCO</span></h2>
+      <p id="ct-sub">Tens um projeto em mente? Entra em contacto connosco e recebe um or�amento sem compromisso.</p>
+      <a href="https://wa.me/351924791059" target="_blank" class="contact-method" style="text-decoration:none;">
+        <div class="contact-method-icon wa"><img src="Website CR-img-Logos-whatsapp.png" alt="WhatsApp"></div>
+        <div>
+          <h4>WhatsApp</h4>
+          <p id="ct-wa">Resposta r�pida via WhatsApp</p>
+        </div>
+      </a>
+      <a href="tel:+351924791059" class="contact-method" style="text-decoration:none;">
+        <div class="contact-method-icon green">??</div>
+        <div>
+          <h4 id="ct-phone-title">Telefone</h4>
+          <p id="ct-phone">Ligue-nos diretamente</p>
+        </div>
+      </a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+do+Curral,+N�+602,+4610-156+Felgueiras" target="_blank" class="contact-method" style="text-decoration:none;">
+        <div class="contact-method-icon" style="background:rgba(0,180,216,0.1)">??</div>
+        <div>
+          <h4 id="ct-loc-title">Localiza��o</h4>
+          <p id="ct-loc">Rua do Curral, N� 602, Felgueiras</p>
+        </div>
+      </a>
+      <div class="social-row">
+        <a href="https://www.instagram.com/crdesign64/" target="_blank" class="social-btn" title="Instagram" style="text-decoration:none;display:flex;align-items:center;justify-content:center;"><img src="Website CR-img-Logos-instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/351924791059" target="_blank" class="social-btn" title="WhatsApp" style="text-decoration:none;display:flex;align-items:center;justify-content:center;"><img src="Website CR-img-Logos-whatsapp.png" alt="WhatsApp" style="width:44px;height:44px;"></a>
+      </div>
+      <a href="https://wa.me/351924791059" target="_blank" style="display:inline-flex;align-items:center;gap:10px;margin-top:2.5rem;background:#25d366;color:white;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;padding:16px 32px;border-radius:6px;transition:all .3s;font-family:'DM Sans',sans-serif;" onmouseover="this.style.background='#20ba5a';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(37,211,102,0.3)'" onmouseout="this.style.background='#25d366';this.style.transform='none';this.style.boxShadow='none'"><span id="ct-cta-btn">Pedir Or�amento via WhatsApp</span></a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo"><img src="Website CR-img-Logos-CR Design.png" alt="CR Design Logo"></div>
+    <div class="footer-copy">� 2025 CR Design</div>
+  </footer>
+</div>
+
+<!-- WhatsApp float button -->
+<a href="https://wa.me/351924791059" target="_blank" class="wa-float" title="WhatsApp" style="text-decoration:none;display:flex;align-items:center;justify-content:center;"><img src="Website CR-img-Logos-whatsapp.png" alt="WhatsApp"></a>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="portfolio-lightbox" onclick="if(event.target===this) closeLightbox()">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <div class="lightbox-body">
+      <div class="lightbox-img-container">
+        <!-- Fallback in modal if image fails to load -->
+        <div class="lightbox-fallback" id="lb-fallback"></div>
+        <img id="lightbox-img" src="" alt="" onerror="this.style.display='none';document.getElementById('lb-fallback').style.display='flex';">
+      </div>
+    <div class="lightbox-info">
+        <span class="lightbox-tag" id="lightbox-tag"></span>
+        <h2 id="lightbox-title"></h2>
+        <p class="lightbox-client"><strong id="lb-client-label">Cliente:</strong> <span id="lightbox-client"></span></p>
+        <p class="lightbox-desc" id="lightbox-desc"></p>
+        <a href="" target="_blank" class="lightbox-cta" id="lightbox-cta-btn-link">
+          <img src="Website CR-img-Logos-whatsapp.png" alt="WhatsApp"> <span id="lightbox-cta-text">Pedir Or�amento Semelhante</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="Website CR-data-portfolio-data.js"></script>
+<script>
+// Global business configuration
+const companyConfig = {
+  phone: '924 791 059',
+  phoneFormatted: '+351 924 791 059',
+  whatsappUrl: 'https://wa.me/351924791059',
+  email: 'crdesign64@hotmail.com',
+  address: 'Rua do Curral, N� 602, 4610-156 Felgueiras',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Rua+do+Curral,+N�+602,+4610-156+Felgueiras',
+  instagram: 'https://www.instagram.com/crdesign64/'
+};
+
+const lang = {
+  pt: {
+    'meta-title': 'CR Design - Solu��es de Comunica��o Visual em Felgueiras',
+    'meta-desc': 'CR Design em Felgueiras, Porto. Solu��es profissionais de comunica��o visual: Design Criativo, Log�tipos, Identidade Visual, Cart�es de Visita, Lonas, Decora��o de Viaturas e Montras. Pe�a o seu or�amento!',
+    'hero-eyebrow':'Solu��es de Comunica��o Visual',
+    'hero-title':'TRANSFORMAMOS<br><span>IDEIAS</span><br>EM IMAGEM',
+    'hero-subtitle':'Design, gr�fica e publicidade para marcas que querem ser vistas. Da ideia ao produto final.',
+    'hero-btn1':'Ver Servi�os','hero-btn2':'Ver Portf�lio',
+    'stat1':'Clientes','stat2':'Anos de Experi�ncia','stat3':'Servi�os','stat4':'Satisfa��o Garantida',
+    'home-services-eyebrow':'O que fazemos','home-services-title':'SERVI�OS <span>PRINCIPAIS</span>',
+    'home-services-sub':'Do conceito criativo ao produto final, temos tudo o que a sua marca precisa.',
+    'sc1-title':'Design Criativo','sc1-text':'Log�tipos, identidades visuais, flyers, cartazes e muito mais.',
+    'sc2-title':'Gr�fica & Print','sc2-text':'Impress�o digital de alta qualidade. Cart�es, convites, lonas e outdoors.',
+    'sc3-title':'Promocional','sc3-text':'T-Shirts e vestu�rio de trabalho Personalizado, brindes, ta�as e artigos personalizados para a sua marca.',
+    'sc4-title':'Publicidade Exterior','sc4-text':'Decora��o de viaturas, vitrines, outdoors e sinal�tica.',
+    'about-tag':'Fundada com paix�o','about-visual-sub':'Solu��es de Comunica��o Visual para empresas e particulares.',
+    'about-title':'QUEM<br><span>SOMOS</span>',
+    'about-p1':'A CR Design � uma loja de comunica��o visual com anos de experi�ncia em ajudar marcas, empresas e particulares a comunicarem com impacto.',
+    'about-p2':'Somos especialistas em design criativo e produ��o gr�fica - desde o simples cart�o de visita at� � decora��o completa de viaturas e espa�os.',
+    'v1-title':'Criatividade','v1-text':'Cada projeto � �nico e pensado ao detalhe.',
+    'v2-title':'Qualidade','v2-text':'Materiais premium e acabamentos perfeitos.',
+    'v3-title':'Rapidez','v3-text':'Entregamos no prazo combinado, sempre.',
+    'v4-title':'Proximidade','v4-text':'Acompanhamos o cliente do in�cio ao fim.',
+    'about-cta':'Falar Connosco',
+    'srv-eyebrow':'O que oferecemos','srv-title':'OS NOSSOS <span>SERVI�OS</span>',
+    'srv-sub':'Clica em qualquer servi�o para saber mais.',
+    'tab-all':'Todos','tab-design':'Design','tab-grafica':'Gr�fica','tab-promo':'Promocional','tab-ext':'Exterior',
+    'srv-cta-text':'N�o encontras o que procuras? Fala connosco!',
+    'srv-cta-btn':'Pedir Or�amento Personalizado',
+    'pf-eyebrow':'Os nossos trabalhos','pf-title':'PORT<span>F�LIO</span>',
+    'pf-all':'Todos','pf-upload':'As suas imagens ser�o adicionadas aqui. Envia-nos os teus trabalhos!',
+    'ct-title':'FALA<br><span>CONNOSCO</span>',
+    'ct-sub':'Tens um projeto em mente? Entra em contacto connosco e recebe um or�amento sem compromisso.',
+    'ct-wa':'Resposta r�pida: 924 791 059','ct-phone-title':'Telefone','ct-phone':'Ligue-nos: 924 791 059',
+    'ct-loc-title':'Localiza��o','ct-loc':'Rua do Curral, N� 602, Felgueiras',
+    'cf-title':'PEDIR OR�AMENTO','cf-name-label':'Nome','cf-phone-label':'Telefone / WhatsApp',
+    'cf-service-label':'Servi�o de interesse','cf-select-default':'Selecionar...',
+    'cf-msg-label':'Mensagem','cf-submit':'Enviar Pedido ?',
+    'nav-cta-btn':'Pedir Or�amento',
+    'nav-cta-btn-mobile':'Pedir Or�amento',
+    'f-home':'In�cio','f-sobre':'Sobre N�s','f-servicos':'Servi�os','f-portfolio':'Portf�lio','f-contacto':'Contacto',
+    'footer-copy':'� 2025 CR Design - Solu��es de Comunica��o Visual',
+    'footer-copy2':'� 2025 CR Design - Solu��es de Comunica��o Visual',
+    'cf-opt1': 'Log�tipo / Identidade Visual',
+    'cf-opt2': 'Cart�es de Visita',
+    'cf-opt3': 'Flyers / Cartazes',
+    'cf-opt4': 'Lonas / Outdoors',
+    'cf-opt5': 'T-Shirts e vestu�rio de trabalho Personalizado / Brindes',
+    'cf-opt6': 'Decora��o de Viaturas',
+    'cf-opt7': 'Outro'
+  },
+  fr: {
+    'meta-title': 'CR Design - Solutions de Communication Visuelle � Felgueiras',
+    'meta-desc': 'CR Design � Felgueiras, Porto. Solutions de communication visuelle professionnelles: Design Cr�atif, Logos, Identit� Visuelle, Cartes de Visite, B�ches, D�coration de V�hicules et Vitrines. Demandez votre devis!',
+    'hero-eyebrow':'Solutions de Communication Visuelle',
+    'hero-title':'ON TRANSFORME<br><span>VOS ID�ES</span><br>EN IMAGES',
+    'hero-subtitle':'Design, impression et publicit� pour les marques qui veulent �tre vues. De l\'id�e au produit fini.',
+    'hero-btn1':'Voir les Services','hero-btn2':'Voir le Portfolio',
+    'stat1':'Clients','stat2':'Ans d\'Exp�rience','stat3':'Services','stat4':'Satisfaction Garantie',
+    'home-services-eyebrow':'Ce que nous faisons','home-services-title':'SERVICES <span>PRINCIPAUX</span>',
+    'home-services-sub':'Du concept cr�atif au produit final, nous avons tout ce dont votre marque a besoin.',
+    'sc1-title':'Design Cr�atif','sc1-text':'Logos, identit�s visuelles, flyers, affiches et bien plus encore.',
+    'sc2-title':'Impression & Print','sc2-text':'Impression num�rique haute qualit�. Cartes, invitations, b�ches et panneaux.',
+    'sc3-title':'Promotionnel','sc3-text':'T-shirts, cadeaux, troph�es et articles personnalis�s pour votre marque.',
+    'sc4-title':'Publicit� Ext�rieure','sc4-text':'D�coration de v�hicules, vitrines, panneaux et signal�tique.',
+    'about-tag':'Fond�e avec passion','about-visual-sub':'Solutions de Communication Visuelle pour entreprises et particuliers.',
+    'about-title':'QUI<br><span>SOMMES-NOUS</span>',
+    'about-p1':'CR Design est une agence de communication visuelle avec des ann�es d\'exp�rience pour aider les marques et les particuliers � communiquer avec impact.',
+    'about-p2':'Nous sommes sp�cialistes en design cr�atif et production graphique - de la simple carte de visite � la d�coration compl�te de v�hicules.',
+    'v1-title':'Cr�ativit�','v1-text':'Chaque projet est unique et pens� dans les d�tails.',
+    'v2-title':'Qualit�','v2-text':'Mat�riaux premium et finitions parfaites.',
+    'v3-title':'Rapidit�','v3-text':'Nous livrons dans les d�lais convenus, toujours.',
+    'v4-title':'Proximit�','v4-text':'Nous accompagnons le client du d�but � la fin.',
+    'about-cta':'Nous Contacter',
+    'srv-eyebrow':'Ce que nous proposons','srv-title':'NOS <span>SERVICES</span>',
+    'srv-sub':'Cliquez sur un service pour en savoir plus.',
+    'tab-all':'Tous','tab-design':'Design','tab-grafica':'Impression','tab-promo':'Promotionnel','tab-ext':'Ext�rieur',
+    'srv-cta-text':'Vous ne trouvez pas ce que vous cherchez? Contactez-nous!',
+    'srv-cta-btn':'Demander un Devis Personnalis�',
+    'pf-eyebrow':'Nos r�alisations','pf-title':'PORT<span>FOLIO</span>',
+    'pf-all':'Tous','pf-upload':'Vos images seront ajout�es ici. Envoyez-nous vos travaux!',
+    'ct-title':'CONTACTEZ<br><span>-NOUS</span>',
+    'ct-sub':'Vous avez un projet en t�te? Contactez-nous et recevez un devis gratuit sans engagement.',
+    'ct-wa':'R�ponse rapide : 924 791 059','ct-phone-title':'T�l�phone','ct-phone':'Appelez-nous : 924 791 059',
+    'ct-loc-title':'Adresse','ct-loc':'Rua do Curral, N� 602, Felgueiras',
+    'cf-title':'DEMANDER UN DEVIS','cf-name-label':'Nom','cf-phone-label':'T�l�phone / WhatsApp',
+    'cf-service-label':'Service souhait�','cf-select-default':'S�lectionner...',
+    'cf-msg-label':'Message','cf-submit':'Envoyer la Demande ?',
+    'nav-cta-btn':'Devis Gratuit',
+    'nav-cta-btn-mobile':'Devis Gratuit',
+    'f-home':'Accueil','f-sobre':'Qui Sommes-Nous','f-servicos':'Services','f-portfolio':'Portfolio','f-contacto':'Contact',
+    'footer-copy':'� 2025 CR Design - Solutions de Communication Visuelle',
+    'footer-copy2':'� 2025 CR Design - Solutions de Communication Visuelle',
+    'cf-opt1': 'Logo / Identit� Visuelle',
+    'cf-opt2': 'Cartes de Visite',
+    'cf-opt3': 'Flyers / Affiches',
+    'cf-opt4': 'B�ches / Panneaux',
+    'cf-opt5': 'T-shirts / Cadeaux',
+    'cf-opt6': 'D�coration de V�hicules',
+    'cf-opt7': 'Autre'
+  }
+};
+
+const placeholders = {
+  pt: {
+    'cf-name': 'O seu nome',
+    'cf-phone-input': '+351 924 791 059',
+    'cf-msg': 'Descreva o seu projeto...'
+  },
+  fr: {
+    'cf-name': 'Votre nom',
+    'cf-phone-input': '+351 924 791 059',
+    'cf-msg': 'D�crivez votre projet...'
+  }
+};
+
+const navLabels = {
+  pt:{home:'In�cio',sobre:'Sobre N�s',servicos:'Servi�os',portfolio:'Portf�lio',contacto:'Contacto'},
+  fr:{home:'Accueil',sobre:'Qui Sommes-Nous',servicos:'Services',portfolio:'Portfolio',contacto:'Contact'}
+};
+
+// marquee items per language
+const marqueeItems = {
+  pt: ['Design Gr�fico','Impress�o Digital','Publicidade','Log�tipos','T-Shirts e vestu�rio de trabalho Personalizado','Outdoors','Cart�es de Visita','Vitrines','Lonas','Brindes','Ta�as Personalizadas','Convites'],
+  fr: ['Design Graphique','Impression Num�rique','Publicit�','Logos','T-shirts','Affiches','Cartes de Visite','Vitrines','B�ches','Cadeaux','Troph�es Personnalis�s','Invitations']
+};
+
+let currentLang = 'pt';
+
+function renderMarquee(){
+  const track = document.getElementById('marquee-track');
+  if(!track) return;
+  const items = (marqueeItems[currentLang] || marqueeItems['pt']);
+  // build a long sequence and duplicate to ensure seamless scroll
+  const seq = [];
+  for(let i=0;i<3;i++) items.forEach(it=> seq.push(it));
+  track.innerHTML = '';
+  seq.forEach(text=>{
+    const div = document.createElement('div');
+    div.className = 'marquee-item';
+    div.innerHTML = `${text} <span class="marquee-dot"></span>`;
+    track.appendChild(div);
+  });
+}
+
+function setLang(l){
+  currentLang = l;
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');
+  
+  const d = lang[l];
+  for(const[k,v] of Object.entries(d)){
+    const el = document.getElementById(k);
+    if(el) {
+      if(k === 'meta-desc') {
+        el.setAttribute('content', v);
+      } else {
+        el.innerHTML = v;
+      }
+    }
+  }
+  
+  // Update inputs placeholder
+  const pData = placeholders[l];
+  for(const[k,v] of Object.entries(pData)){
+    const el = document.getElementById(k);
+    if(el) el.setAttribute('placeholder', v);
+  }
+  
+  // Update option selection values if needed for submission
+  document.querySelectorAll('#cf-service option').forEach(opt => {
+    const translation = d[opt.id];
+    if(translation) {
+      opt.textContent = translation;
+    }
+  });
+
+  const nl = navLabels[l];
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    const page = a.getAttribute('onclick').replace("showPage('","").replace("')","");
+    a.textContent = nl[page] || a.textContent;
+  });
+  rebuildServices();
+  rebuildPortfolio();
+  renderMarquee();
+  // If a gallery is open, refresh its texts and thumbnails
+  const modal = document.getElementById('portfolio-gallery-modal');
+  if(modal && modal.classList.contains('active') && typeof currentGallery !== 'undefined' && currentGallery) {
+    openGallery(currentGallery.id);
+  }
+}
+
+const servicesData = {
+  pt:[
+    {cat:'design',num:'01',name:'Linhas Gr�ficas & Branding',desc:'Desenho de log�tipos, cart�es de visita, folhas comerciais, envelopes, capas de arquivo e identidades visuais completas.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-1 Linhas Graficas e Branding-png.png'},
+    {cat:'design',num:'02',name:'Flyers, Panfletos & Cartazes',desc:'Flyers, folhetos, desdobr�veis e cartazes de divulga��o para eventos e promo��es.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-2 Flyers, Panfletos e Cartazes-png2.png'},
+    {cat:'design',num:'03',name:'Cat�logos, Ementas & Restaura��o',desc:'Cat�logos de produtos, ementas personalizadas e toalhas de mesa promocionais para com�rcio.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-3 Catalogos, ementas e restauraçáo-3png.png'},
+    {cat:'design',num:'04',name:'Convites, Autocolantes & Etiquetas',desc:'Convites para casamentos e batizados, etiquetas autocolantes personalizadas e sinaliza��o de eventos.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-4 convites e etiquetas-4png.png'},
+    {cat:'grafica',num:'05',name:'Cart�es de Visita',desc:'Impress�o premium de cart�es de visita com acabamentos mate, brilho, verniz localizado ou relevo.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-5 cartões de visita-5png.png'},
+    {cat:'grafica',num:'06',name:'Etiquetas & Autocolantes em Folha/Rolo',desc:'Impress�o de r�tulos, etiquetas e autocolantes de corte personalizado para marcas e embalagens.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-6 Autocolantes-6png.png'},
+    {cat:'grafica',num:'07',name:'Lonas Publicit�rias & Roll-ups',desc:'Impress�o digital em lonas para exterior de alta resist�ncia, roll-ups e expositores port�teis.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-7 Lonas Publicitarias e roll ups-7png.png'},
+    {cat:'grafica',num:'08',name:'Outdoors & Cartazes de Grande Formato',desc:'Impress�o de posters, cartazes de rua e grandes formatos para pain�is publicit�rios.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-8 outdoors e cartazes de grande formato-8png.png'},
+    {cat:'promo',num:'09',name:'Brindes & Artigos Personalizados',desc:'Canetas, blocos de notas, sacos de pano, garrafas de �gua, �manes e magn�ticos publicit�rios.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-9 Brindes e Artigos Personalizados-9png.png'},
+    {cat:'promo',num:'10',name:'Ta�as, Trof�us & Placas de Inaugura��o',desc:'Trof�us desportivos e corporativos gravados a laser, e placas comemorativas.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-10 Tacas, trofeus e placas de inauguraçao-10png.png'},
+    {cat:'promo',num:'11',name:'Vestu�rio de Trabalho & Carimbos',desc:'Fardamento, T-Shirts e vestu�rio de trabalho Personalizado, polos e vestu�rio personalizado com estampagem ou bordado, e carimbos autom�ticos.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-11 Vestuario de trabalho e carimbos-11png.png'},
+    {cat:'ext',num:'12',name:'Decora��o de Montras (Vitrinismo)',desc:'Decora��o de vidros interior e exterior com vinil fosco, microperfurado ou vinil de corte.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-12 Decoraçao de Montras (vitrinismo)-12png.png'},
+    {cat:'ext',num:'13',name:'Decora��o de Viaturas',desc:'Publicidade em movimento com publicidade em viaturas (parcial ou total) com vinil de alta performance.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png'},
+    {cat:'ext',num:'14',name:'Outros Servi�os',desc:'Solu��es � medida das suas necessidades: projetos especiais, instala��es personalizadas e servi�os de design exclusivos para destacar o seu neg�cio.',price:'Fa�a o seu or�amento',icon:'Website CR-img-logotipos_servicos-14 outros serviços-14png.png'},
+  ],
+  fr:[
+    {cat:'design',num:'01',name:'Charte Graphique & Branding',desc:'Cr�ation de logos, cartes de visite, papier en-t�te, enveloppes, chemises � rabat et identit�s visuelles.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-1 Linhas Graficas e Branding-png.png'},
+    {cat:'design',num:'02',name:'Flyers, D�pliants & Affiches',desc:'Flyers, brochures, d�pliants et affiches promotionnelles pour vos �v�nements et offres.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-2 Flyers, Panfletos e Cartazes-png2.png'},
+    {cat:'design',num:'03',name:'Catalogues, Menus & Restauration',desc:'Catalogues de produits, menus de restaurants personnalis�s et sets de table promotionnels.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-3 Catalogos, ementas e restauraçáo-3png.png'},
+    {cat:'design',num:'04',name:'Faire-part, Autocollants & �tiquettes',desc:'Invitations de mariage ou bapt�me, �tiquettes adh�sives personnalis�es et signal�tique d\'�v�nement.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-4 convites e etiquetas-4png.png'},
+    {cat:'grafica',num:'05',name:'Cartes de Visite',desc:'Impression premium de cartes de visite avec finitions mate, brillante, vernis s�lectif ou relief.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-5 cartões de visita-5png.png'},
+    {cat:'grafica',num:'06',name:'�tiquettes & Autocollants en Planche/Rouleau',desc:'Impression de stickers et d\'�tiquettes personnalis�s avec d�coupe sur mesure pour emballages.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-6 Autocolantes-6png.png'},
+    {cat:'grafica',num:'07',name:'B�ches Publicitaires & Roll-ups',desc:'Impression num�rique sur b�che ext�rieure haute r�sistance, roll-ups et pr�sentoirs portatifs.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-7 Lonas Publicitarias e roll ups-7png.png'},
+    {cat:'grafica',num:'08',name:'Affiches Grand Format & Panneaux',desc:'Impression d\'affiches de rue, posters et grands formats pour panneaux d\'affichage.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-8 outdoors e cartazes de grande formato-8png.png'},
+    {cat:'promo',num:'09',name:'Objets Publicitaires & Magnets',desc:'Stylos, carnets, sacs, gourdes, magnets pour frigo et aimants publicitaires pour v�hicules.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-9 Brindes e Artigos Personalizados-9png.png'},
+    {cat:'promo',num:'10',name:'Coupes, Troph�es & Plaques d\'Inauguration',desc:'Troph�es de sport ou d\'entreprise grav�s au laser, et plaques comm�moratives.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-10 Tacas, trofeus e placas de inauguraçao-10png.png'},
+    {cat:'promo',num:'11',name:'V�tements de Travail & Tampons',desc:'Uniformes, t-shirts, polos personnalis�s avec flocage ou broderie, et tampons encreurs automatiques.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-11 Vestuario de trabalho e carimbos-11png.png'},
+    {cat:'ext',num:'12',name:'Habillage de Vitrines (Vitrophanie)',desc:'D�coration de vitres int�rieure/ext�rieure avec vinyle d�poli, micro-perfor� ou vinyle de d�coupe.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-12 Decoraçao de Montras (vitrinismo)-12png.png'},
+    {cat:'ext',num:'13',name:'D�coration de V�hicules',desc:'Publicit� sur v�hicules (semi-covering ou total covering) avec vinyle coul� haute durabilit�.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png'},
+    {cat:'ext',num:'14',name:'Autres Services',desc:'Des solutions sur mesure pour vos besoins : projets sp�ciaux, installations personnalis�es et services de conception exclusifs pour mettre en valeur votre entreprise.',price:'Demandez un devis',icon:'Website CR-img-logotipos_servicos-14 outros serviços-14png.png'},
+  ]
+};
+
+let activeServiceCat = 'all';
+function filterServices(cat, btn){
+  activeServiceCat = cat;
+  document.querySelectorAll('.services-tabs .tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  rebuildServices();
+}
+function rebuildServices(){
+  const list = document.getElementById('services-list');
+  const data = servicesData[currentLang];
+  list.innerHTML = data.filter(s=>activeServiceCat==='all'||s.cat===activeServiceCat).map(s=>`
+    <div class="service-row" onclick="showPage('contacto'); setTimeout(() => { const btn = document.getElementById('ct-cta-btn'); if(btn) btn.scrollIntoView({behavior: 'smooth', block: 'center'}); }, 100);" style="cursor:pointer;">
+      <div class="service-row-icon">${s.icon ? `<img src="${s.icon}" alt="${s.name} �cone">` : ''}</div>
+      <div class="service-row-info"><h3>${s.name}</h3><p>${s.desc}</p></div>
+      <div class="service-row-price"><strong>${s.price}</strong></div>
+      <div class="service-row-arrow">?</div>
+    </div>
+  `).join('');
+}
+
+let portfolioFolders = [];
+const portfolioFoldersFallback = [
+  {
+    id: 'design01',
+    title: 'Linhas Gr�ficas & Branding',
+    folder: '1 Linhas Graficas e Branding',
+    displayTitle: 'Linhas Gr�ficas & Branding',
+    cat: 'design',
+    cover: 'Website CR-img-portfolio-1 Linhas Graficas e Branding-4.webp',
+    icon: 'Website CR-img-logotipos_servicos-1 Linhas Graficas e Branding-png.png',
+    accent: '#8dc63f',
+    images: []
+  },
+  {
+    id: 'design02',
+    title: 'Flyers, Panfletos & Cartazes',
+    folder: '2 Flyers, Panfletos e Cartazes',
+    cat: 'design',
+    cover: 'Website CR-img-logotipos_servicos-2 Flyers, Panfletos e Cartazes-png2.png',
+    icon: 'Website CR-img-logotipos_servicos-2 Flyers, Panfletos e Cartazes-png2.png',
+    accent: '#00b4d8',
+    images: []
+  },
+  {
+    id: 'design03',
+    title: 'Cat�logos, Ementas & Restaura��o',
+    folder: '3 Catalogos, ementas e restaura��o',
+    cat: 'design',
+    cover: 'Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp',
+    icon: 'Website CR-img-logotipos_servicos-3 Catalogos, ementas e restauraçáo-3png.png',
+    accent: '#e83e8c',
+    images: [
+      'Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Académico Passion.webp',
+      'Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz de Raspadinha.webp',
+      'Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Cartaz Informativo Passion.webp',
+      'Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de catálogo.webp',
+      'Website CR-img-portfolio-3 Catalogos, ementas e restauraçáo-Poster de Parceria.webp'
+    ]
+  },
+  {
+    id: 'design04',
+    title: 'Convites, Autocolantes & Etiquetas',
+    folder: '4 convites e etiquetas',
+    cat: 'design',
+    cover: 'Website CR-img-portfolio-4 convites e etiquetas-etiqueta Florabella.webp',
+    icon: 'Website CR-img-logotipos_servicos-4 convites e etiquetas-4png.png',
+    accent: '#f5c518',
+    images: [
+      'Website CR-img-portfolio-4 convites e etiquetas-etiqueta Florabella.webp',
+      'Website CR-img-portfolio-4 convites e etiquetas-etiquetas C A 1.webp',
+      'Website CR-img-portfolio-4 convites e etiquetas-etiqueta Mimos & Encantos.webp',
+      'Website CR-img-portfolio-4 convites e etiquetas-Etiquetas Passion.webp'
+    ]
+  },
+  {
+    id: 'grafica05',
+    title: 'Cart�es de Visita',
+    folder: '5 cart�es de visita',
+    cat: 'grafica',
+    cover: 'Website CR-img-portfolio-5 cartões de visita-Cartoes de visita Cristina Almeida.webp',
+    icon: 'Website CR-img-logotipos_servicos-5 cartões de visita-5png.png',
+    accent: '#00b4d8',
+    images: [
+      'Website CR-img-portfolio-5 cartões de visita-Cartao de visita Medibell.webp',
+      'Website CR-img-portfolio-5 cartões de visita-Cartoes de visita Cristina Almeida.webp'
+    ]
+  },
+  {
+    id: 'grafica06',
+    title: 'Etiquetas & Autocolantes',
+    folder: '6 Autocolantes',
+    cat: 'grafica',
+    cover: 'Website CR-img-portfolio-6 Autocolantes-Etiquetas Passion.webp',
+    icon: 'Website CR-img-logotipos_servicos-6 Autocolantes-6png.png',
+    accent: '#e83e8c',
+    images: []
+  },
+  {
+    id: 'grafica07',
+    title: 'Lonas Publicit�rias & Roll-ups',
+    folder: '7 Lonas Publicitarias e roll ups',
+    cat: 'grafica',
+    cover: 'Website CR-img-portfolio-7 Lonas Publicitarias e roll ups-Bandeira CF Jugueiros.webp',
+    icon: 'Website CR-img-logotipos_servicos-7 Lonas Publicitarias e roll ups-7png.png',
+    accent: '#8dc63f',
+    images: [
+      'Website CR-img-portfolio-7 Lonas Publicitarias e roll ups-Bandeira CF Jugueiros.webp'
+    ]
+  },
+  {
+    id: 'grafica08',
+    title: 'Outdoors & Cartazes de Grande Formato',
+    folder: '8 outdoors e cartazes de grande formato',
+    cat: 'grafica',
+    cover: 'Website CR-img-logotipos_servicos-8 outdoors e cartazes de grande formato-8png.png',
+    icon: 'Website CR-img-logotipos_servicos-8 outdoors e cartazes de grande formato-8png.png',
+    accent: '#8dc63f',
+    images: []
+  },
+  {
+    id: 'promo09',
+    title: 'Brindes & Artigos Personalizados',
+    folder: '9 Brindes e Artigos Personalizados',
+    cat: 'promo',
+    cover: 'Website CR-img-portfolio-9 Brindes e Artigos Personalizados-magnéticos biak.webp',
+    icon: 'Website CR-img-logotipos_servicos-9 Brindes e Artigos Personalizados-9png.png',
+    accent: '#00b4d8',
+    images: [
+      'Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Caixa melhor mãe.webp',
+      'Website CR-img-portfolio-9 Brindes e Artigos Personalizados-magnéticos biak.webp',
+      'Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Rifas.webp'
+    ]
+  },
+  {
+    id: 'promo10',
+    title: 'Ta�as, Trof�us & Placas',
+    folder: '10 Tacas, trofeus e placas de inaugura�ao',
+    cat: 'promo',
+    cover: 'Website CR-img-logotipos_servicos-10 Tacas, trofeus e placas de inauguraçao-10png.png',
+    icon: 'Website CR-img-logotipos_servicos-10 Tacas, trofeus e placas de inauguraçao-10png.png',
+    accent: '#f5c518',
+    images: []
+  },
+  {
+    id: 'promo11',
+    title: 'Vestu�rio de Trabalho',
+    folder: '11 Vestuario de trabalho e carimbos',
+    cat: 'promo',
+    cover: 'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirts SC Construções.webp',
+    icon: 'Website CR-img-logotipos_servicos-11 Vestuario de trabalho e carimbos-11png.png',
+    accent: '#00b4d8',
+    images: [
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-Casacos Estica-me as peles.jfif',
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-colete biak.webp',
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-Polo On Egin.webp',
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-Polos Estica-me as peles.jfif',
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirt Frida.jfif',
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirt Koliguppe.jfif',
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirt sapato com sola.webp',
+      'Website CR-img-portfolio-11 Vestuario de trabalho e carimbos-T-Shirts SC Construções.webp'
+    ]
+  },
+  {
+    id: 'ext12',
+    title: 'Decora��o de Montras',
+    folder: '12 Decora�ao de Montras (vitrinismo)',
+    cat: 'ext',
+    cover: 'Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif',
+    icon: 'Website CR-img-logotipos_servicos-12 Decoraçao de Montras (vitrinismo)-12png.png',
+    accent: '#f5c518',
+    images: [
+      'Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra  SC Construções.webp',
+      'Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Equinox.webp',
+      'Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Gilza Afonso.jfif',
+      'Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp',
+      'Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra.webp',
+      'Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Porta Manjar Real.jfif'
+    ]
+  },
+  {
+    id: 'ext13',
+    title: 'Decora��o de Viaturas',
+    folder: '13 Decora�ao de viaturas',
+    cat: 'ext',
+    cover: 'Website CR-img-portfolio-13 Decoraçao de viaturas-Jipe 1.jfif',
+    icon: 'Website CR-img-logotipos_servicos-13 Decoraçao de viaturas-13png.png',
+    accent: '#00b4d8',
+    images: []
+  }
+];
+
+function formatPortfolioTitle(raw){
+  if(!raw || typeof raw !== 'string') return '';
+  return raw
+    .replace(/^\s*\d+\s*/,'')
+    .replace(/[_-]+/g,' ')
+    .replace(/\s{2,}/g,' ')
+    .trim();
+}
+
+function translateCaption(raw){
+  const fileName = raw.replace(/.[^/.]+$/, '');
+  const caption = formatPortfolioTitle(fileName);
+  if(currentLang !== 'fr') return caption;
+
+  const translations = {
+    'caixa': 'bo�te',
+    'melhor': 'meilleur',
+    'm�e': 'm�re',
+    'magn�ticos': 'magn�tiques',
+    'montra': 'vitrine',
+    'montras': 'vitrines',
+    'porta': 'porte',
+    'manjar': 'saveur',
+    'sapato': 'chaussure',
+    'sola': 'semelle',
+    'colete': 'gilet',
+    'casacos': 'vestes',
+    'cartaz': 'affiche',
+    'cartazes': 'affiches',
+    'cart�o': 'carte',
+    'cartoes': 'cartes',
+    'etiqueta': '�tiquette',
+    'etiquetas': '�tiquettes',
+    'brindes': 'cadeaux',
+    'artigos': 'articles',
+    'personalizados': 'personnalis�s',
+    'rifas': 'tombolas',
+    'ta�as': 'coupes',
+    'trofeus': 'troph�es',
+    'placas': 'plaques',
+    'inaugura�ao': 'inauguration',
+    'inaugura��o': 'inauguration',
+    'vestuario': 'v�tements',
+    'trabalho': 'travail',
+    'carimbos': 'tampons',
+    'decora�ao': 'd�coration',
+    'decora��o': 'd�coration',
+    'viaturas': 'v�hicules',
+    'bandeira': 'drapeau',
+    'outdoors': 'affiches ext�rieures',
+    'flyers': 'flyers',
+    'panfletos': 'd�pliants',
+    'cartuchos': 'cartouches',
+    'etiquetas': '�tiquettes',
+    'mimos': 'charme',
+    'encantos': 'charme',
+    'passion': 'passion',
+    'balon': 'ballon'
+  };
+
+  return caption.split(' ').map(word => {
+    const key = word.toLowerCase();
+    return translations[key] || word;
+  }).join(' ');
+}
+
+function setPortfolioData(data){
+  if(Array.isArray(data) && data.length){
+    portfolioFolders = data.map(item => ({
+      ...item,
+      title: item.title || item.folder || '',
+      displayTitle: item.displayTitle || formatPortfolioTitle(item.title || item.folder),
+      images: Array.isArray(item.images) ? item.images : []
+    }));
+  } else {
+    portfolioFolders = portfolioFoldersFallback.map(item => ({
+      ...item,
+      displayTitle: item.displayTitle || formatPortfolioTitle(item.title || item.folder)
+    }));
+  }
+}
+
+// Load portfolio data from generated JS or JSON; fallback to embedded data if fetch fails
+async function loadPortfolioData(){
+  if(window.portfolioData && Array.isArray(window.portfolioData) && window.portfolioData.length){
+    setPortfolioData(window.portfolioData);
+    rebuildPortfolio();
+    return;
+  }
+
+  try{
+    const resp = await fetch('Website CR-data-portfolio-data.json');
+    if(resp.ok){
+      const data = await resp.json();
+      setPortfolioData(data);
+    } else {
+      setPortfolioData(portfolioFoldersFallback);
+    }
+  }catch(e){
+    setPortfolioData(portfolioFoldersFallback);
+  }
+  try{ rebuildPortfolio(); }catch(e){ console.warn('rebuildPortfolio missing', e); }
+}
+
+function initBackgroundLines(){
+  const container = document.getElementById('background-lines');
+  if(!container) return;
+  container.innerHTML = '';
+  const colors = ['#00b4d8', '#e83e8c', '#f5c518'];
+  const lineCount = 24;
+  
+  for(let i = 0; i < lineCount; i++){
+    const line = document.createElement('div');
+    line.className = 'bg-line';
+    
+    const topPercent = Math.random() * 100;
+    const leftPercent = -120 + Math.random() * 260;
+    const colorIndex = i % 3;
+    const color = colors[colorIndex];
+    const duration = 7 + Math.random() * 6;
+    const delay = -Math.random() * 16;
+    
+    line.style.top = topPercent + '%';
+    line.style.left = leftPercent + '%';
+    line.style.setProperty('--color', color);
+    line.style.setProperty('--duration', duration + 's');
+    line.style.animation = `swipe-line ${duration}s ease-in-out infinite ${delay}s`;
+    
+    container.appendChild(line);
+  }
+}
+
+initBackgroundLines();
+loadPortfolioData();
+
+let currentGallery = null;
+let currentGalleryIndex = 0;
+
+// Localization for portfolio folder titles and gallery text
+const portfolioTitles = {
+  pt: {
+    design01: 'Linhas Gr�ficas & Branding',
+    design02: 'Flyers, Panfletos & Cartazes',
+    design03: 'Cat�logos, Ementas & Restaura��o',
+    design04: 'Convites, Autocolantes & Etiquetas',
+    grafica05: 'Cart�es de Visita',
+    grafica06: 'Etiquetas & Autocolantes',
+    grafica07: 'Lonas Publicit�rias & Roll-ups',
+    grafica08: 'Outdoors & Cartazes de Grande Formato',
+    promo09: 'Brindes & Artigos Personalizados',
+    promo10: 'Ta�as, Trof�us & Placas',
+    promo11: 'Vestu�rio de Trabalho',
+    ext12: 'Decora��o de Montras',
+    ext13: 'Decora��o de Viaturas'
+  },
+  fr: {
+    design01: 'Charte Graphique & Branding',
+    design02: 'Flyers, D�pliants & Affiches',
+    design03: 'Catalogues, Menus & Restauration',
+    design04: 'Faire-part, Autocollants & �tiquettes',
+    grafica05: 'Cartes de Visite',
+    grafica06: '�tiquettes & Autocollants',
+    grafica07: 'B�ches Publicitaires & Roll-ups',
+    grafica08: 'Affiches Grand Format & Panneaux',
+    promo09: 'Objets Publicitaires',
+    promo10: 'Coupes & Troph�es',
+    promo11: 'V�tements de Travail',
+    ext12: 'Habillage de Vitrines',
+    ext13: 'D�coration de V�hicules'
+  }
+};
+
+const galleryText = {
+  pt: {
+    descTemplate: 'Veja todas as imagens da pasta {title}. Clique numa miniatura para ver em tamanho grande.',
+    imagesLabel: 'imagens'
+  },
+  fr: {
+    descTemplate: 'Voir toutes les images du dossier {title}. Cliquez sur une vignette pour voir en grand.',
+    imagesLabel: 'images'
+  }
+};
+
+// add animation classes to common elements (called on init and after dynamic renders)
+function attachScrollAnimationClasses(){
+  const mapping = [
+    // structural sections and headers
+    {sel: '.hero-content', cls: 'fade-up'},
+    {sel: '.section-header', cls: 'fade-left'},
+    {sel: '.section-title', cls: 'fade-right'},
+    {sel: '.section-sub', cls: 'fade-up'},
+    {sel: '.section', cls: 'fade-up'},
+    {sel: '.about-visual', cls: 'fade-right'},
+    {sel: '.about-text', cls: 'fade-left'},
+    // content blocks
+    {sel: '.service-card', cls: 'fade-up'},
+    {sel: '.portfolio-item', cls: 'fade-scale'},
+    {sel: '.gallery-card', cls: 'fade-up'},
+    {sel: '.stat', cls: 'fade-up'},
+    {sel: '.contact-method', cls: 'fade-up'},
+    {sel: '.footer-logo', cls: 'fade-up'},
+    {sel: '.footer-links a', cls: 'fade-up'},
+    {sel: '.marquee-section', cls: 'fade-left'},
+    {sel: '.portfolio-tag', cls: 'fade-up'},
+    {sel: '.gallery-grid .gallery-card', cls: 'fade-up'}
+  ];
+
+  mapping.forEach(m=>{
+    const els = Array.from(document.querySelectorAll(m.sel));
+    els.forEach((el, idx)=>{
+      if(!el.classList.contains('animate-on-scroll')){
+        el.classList.add('animate-on-scroll');
+      }
+      if(m.cls && !el.classList.contains(m.cls)) el.classList.add(m.cls);
+      // add a small stagger so lists/cards don't animate simultaneously
+      if(!el.dataset.animDelay){
+        const delay = Math.min(600, idx * 60);
+        el.style.transitionDelay = delay + 'ms';
+        el.dataset.animDelay = '1';
+      }
+    });
+  });
+}
+
+function rebuildPortfolio(){
+  const grid = document.getElementById('portfolio-grid');
+  if(!grid) return;
+  
+  grid.innerHTML = portfolioFolders.map(folder => {
+    const displayTitle = (portfolioTitles[currentLang] && portfolioTitles[currentLang][folder.id]) || folder.displayTitle || formatPortfolioTitle(folder.title || folder.folder);
+    const imagesLabel = (galleryText[currentLang] && galleryText[currentLang].imagesLabel) || 'imagens';
+    const isMobile = window.innerWidth <= 768;
+    
+    return `
+    <div class="portfolio-item" onclick="openGallery('${folder.id}')">
+      <div class="portfolio-thumb" style="position:relative;background:rgba(0,0,0,0.15);overflow:hidden;width:100%;height:100%;">
+        <img src="${folder.cover}" alt="${displayTitle}" class="portfolio-img" style="width:100%;height:100%;object-fit:cover;display:block;opacity:1;z-index:1;" onerror="this.parentElement.style.background='rgba(141,198,63,0.1)';">
+      </div>
+      <div class="portfolio-overlay">
+        ${typeof folder.icon === 'string' && (folder.icon.includes('img/') || folder.icon.includes('Website CR-img-')) ? `<img src="${folder.icon}" alt="${displayTitle} �cone" style="width:36px;height:36px;object-fit:contain;margin-bottom:0.75rem;">` : `<div style="font-size:28px;margin-bottom:0.75rem;">${folder.icon}</div>`}
+        <h3>${displayTitle}</h3>
+        <p>${folder.images.length} ${imagesLabel}</p>
+      </div>
+      <div class="portfolio-tag" style="z-index:4;">${displayTitle}</div>
+    </div>
+  `}).join('');
+  
+  try {
+    attachScrollAnimationClasses();
+    if(typeof initScrollAnimations === 'function') {
+      setTimeout(initScrollAnimations, 50);
+    }
+  } catch(e) {
+    console.warn('Animation init error:', e);
+  }
+}
+
+function openGallery(id){
+  const folder = portfolioFolders.find(f => f.id === id);
+  if (!folder) return;
+
+  currentGallery = folder;
+  currentGalleryIndex = -1;
+
+  const modal = document.getElementById('portfolio-gallery-modal');
+  const title = document.getElementById('gallery-title');
+  const tag = document.getElementById('gallery-tag');
+  const desc = document.getElementById('gallery-desc');
+  const grid = document.getElementById('gallery-grid');
+  const viewer = document.getElementById('gallery-viewer');
+
+  const displayTitle = (portfolioTitles[currentLang] && portfolioTitles[currentLang][folder.id]) || folder.displayTitle || formatPortfolioTitle(folder.title || folder.folder);
+  title.textContent = displayTitle;
+  tag.textContent = '';
+  const descTemplate = (galleryText[currentLang] && galleryText[currentLang].descTemplate) || `Veja todas as imagens da pasta ${folder.title}. Clique numa miniatura para ver em tamanho grande.`;
+  desc.textContent = descTemplate.replace('{title}', displayTitle);
+  viewer.classList.remove('active');
+
+  grid.innerHTML = folder.images.map((img, index) => {
+      const fileName = img.split('/').pop();
+      const caption = translateCaption(fileName);
+      return `
+      <div class="gallery-card" onclick="openViewer(${index})">
+        <img src="${img}" alt="${caption}">
+        <div class="gallery-card-title">${caption}</div>
+      </div>
+    `;
+  }).join('');
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  // ensure gallery thumbnails animate on scroll (if applicable)
+  attachScrollAnimationClasses();
+  if(typeof initScrollAnimations === 'function') initScrollAnimations();
+}
+
+function openViewer(index){
+  if (!currentGallery || index < 0 || index >= currentGallery.images.length) return;
+  currentGalleryIndex = index;
+  const viewer = document.getElementById('gallery-viewer');
+  const img = document.getElementById('viewer-img');
+  img.src = currentGallery.images[index];
+  img.alt = currentGallery.title;
+  viewer.classList.add('active');
+}
+
+function navigateViewer(direction){
+  if (!currentGallery) return;
+  let nextIndex = currentGalleryIndex + direction;
+  if (nextIndex < 0) nextIndex = currentGallery.images.length - 1;
+  if (nextIndex >= currentGallery.images.length) nextIndex = 0;
+  openViewer(nextIndex);
+}
+
+function closeViewer(){
+  const viewer = document.getElementById('gallery-viewer');
+  viewer.classList.remove('active');
+}
+
+function closeGallery(){
+  const modal = document.getElementById('portfolio-gallery-modal');
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function showPage(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  const navLink = document.getElementById('nav-'+name);
+  if(navLink) navLink.classList.add('active');
+  window.scrollTo({top:0});
+  // small delay to allow page to become visible, then attach animation classes and observe
+  setTimeout(()=>{
+    try{ attachScrollAnimationClasses(); if(typeof initScrollAnimations==='function') initScrollAnimations(); }catch(e){/* ignore */}
+  }, 80);
+}
+
+// Menu toggle handler (hamburger)
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+
+  // Close menu when clicking on any link or button inside the menu drawer
+  navLinks.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => {
+      menuToggle.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+}
+
+// Contact form handling
+const cfSubmit = document.getElementById('cf-submit');
+if (cfSubmit) {
+  cfSubmit.addEventListener('click', () => {
+    const name = document.getElementById('cf-name').value.trim();
+    const phone = document.getElementById('cf-phone-input').value.trim();
+    const service = document.getElementById('cf-service').value;
+    const msg = document.getElementById('cf-msg').value.trim();
+
+    if (!name) {
+      alert(currentLang === 'pt' ? 'Por favor, introduza o seu nome.' : 'Veuillez saisir votre nom.');
+      return;
+    }
+    if (!phone) {
+      alert(currentLang === 'pt' ? 'Por favor, introduza o seu contacto.' : 'Veuillez saisir vos coordonn�es.');
+      return;
+    }
+    if (!service) {
+      alert(currentLang === 'pt' ? 'Por favor, selecione um servi�o.' : 'Veuillez s�lectionner un service.');
+      return;
+    }
+
+    // Build message
+    const waText = currentLang === 'pt'
+      ? `Ol� CR Design! Gostaria de pedir um or�amento.\n\n?? *Nome:* ${name}\n?? *Contacto:* ${phone}\n?? *Servi�o:* ${service}\n?? *Mensagem:* ${msg || 'Sem mensagem adicional.'}`
+      : `Bonjour CR Design! Je souhaite demander un devis.\n\n?? *Nom:* ${name}\n?? *Contact:* ${phone}\n?? *Service:* ${service}\n?? *Message:* ${msg || 'Pas de message suppl�mentaire.'}`;
+
+    // Redirect to WhatsApp
+    const waUrl = `${companyConfig.whatsappUrl}?text=${encodeURIComponent(waText)}`;
+    window.open(waUrl, '_blank');
+  });
+}
+
+function initScrollAnimations(){
+  const isMobile = window.innerWidth <= 768;
+  
+  // On mobile, show all elements with a staggered fade animation
+  if(isMobile) {
+    document.querySelectorAll('.animate-on-scroll').forEach((el, idx)=>{
+      setTimeout(()=>{
+        el.classList.add('visible');
+      }, idx * 50);
+    });
+    return;
+  }
+  
+  const targets = document.querySelectorAll('.animate-on-scroll:not(.visible)');
+  if('IntersectionObserver' in window){
+    if(!window._scrollObserver){
+      window._scrollObserver = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            window._scrollObserver.unobserve(entry.target);
+          }
+        });
+      }, {threshold: 0.16, rootMargin: '0px 0px -80px 0px'});
+    }
+    targets.forEach(el=>{
+      window._scrollObserver.observe(el);
+    });
+    if (typeof window._scrollObserver.takeRecords === 'function') {
+      window._scrollObserver.takeRecords();
+    }
+  } else {
+    targets.forEach(el=>el.classList.add('visible'));
+  }
+}
+
+rebuildServices();
+rebuildPortfolio();
+renderMarquee();
+attachScrollAnimationClasses();
+
+// Initialize scroll animations and make everything visible on mobile
+setTimeout(()=>{ 
+  initScrollAnimations();
+}, 50);
+</script>
+<script>
+// Loader: track image loads and update progress
+(function(){
+  const loader = document.getElementById('page-loader');
+  const fill = document.getElementById('loader-fill');
+  const txt = document.getElementById('loader-text');
+  const isMobile = window.innerWidth <= 768;
+
+  function hideLoader(){
+    if(!loader) return;
+    loader.classList.add('hidden');
+    setTimeout(()=>{ if(loader && loader.parentNode) loader.parentNode.removeChild(loader); }, 300);
+  }
+
+  // On mobile, hide loader very quickly to show content
+  if(isMobile) {
+    setTimeout(hideLoader, 400);
+    return;
+  }
+
+  const imgs = Array.from(document.images).filter(i=>i.src);
+  const total = imgs.length;
+  
+  if(total === 0){
+    setTimeout(hideLoader, 200);
+    return;
+  }
+
+  let loaded = 0;
+  const update = ()=>{
+    loaded++;
+    const pct = Math.round((loaded/total)*100);
+    if(fill) fill.style.width = pct+'%';
+    if(txt) txt.textContent = pct+'%';
+    if(loaded >= total) {
+      setTimeout(hideLoader, 300);
+    }
+  };
+
+  imgs.forEach(img=>{
+    img.dataset._loaderTracked = '1';
+    if(img.complete) { update(); }
+    else { img.addEventListener('load', update); img.addEventListener('error', update); }
+  });
+
+  // Check for dynamically added images
+  setTimeout(()=>{
+    const newImgs = Array.from(document.images).filter(i=>i.src && !i.dataset._loaderTracked);
+    newImgs.forEach(img=>{
+      img.dataset._loaderTracked = '1';
+      if(img.complete) { update(); }
+      else { img.addEventListener('load', update); img.addEventListener('error', update); }
+    });
+  }, 100);
+
+  // Safety timeout
+  setTimeout(()=>{ if(loaded < total) { if(fill) fill.style.width = '100%'; if(txt) txt.textContent = '100%'; hideLoader(); } }, 4000);
+})();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio profissional de Gabriel, designer criativo especializado em identidade visual, motion design, social media e edição de vídeo.">
+<meta name="keywords" content="designer criativo, portfolio, motion design, social media, Felgueiras, Portugal, freelancer, Garisign">
+<meta name="author" content="Gabriel — Garisign Designer">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Garisign Designer — Portfolio">
+<meta property="og:description" content="Portfolio profissional de Gabriel, designer criativo especializado em identidade visual, motion design, social media e edição de vídeo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://garisign.pt/">
+<meta property="og:image" content="og-image.svg">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Garisign Designer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Garisign Designer — Portfolio">
+<meta name="twitter:description" content="Portfolio profissional de Gabriel, designer criativo especializado em identidade visual, motion design, social media e edição de vídeo.">
+<meta name="twitter:image" content="og-image.svg">
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  const _garisignSectionHashes = ['#hero', '#works', '#services', '#about'];
+  const _garisignReferrer = document.referrer ? new URL(document.referrer, window.location.href) : null;
+  const _garisignFromAnotherPage = _garisignReferrer && _garisignReferrer.pathname !== window.location.pathname;
+
+  if (_garisignSectionHashes.includes(window.location.hash) && _garisignFromAnotherPage) {
+    window.__garisignInitialHash = window.location.hash;
+  } else if (_garisignSectionHashes.includes(window.location.hash)) {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+  window.scrollTo(0, 0);
+</script>
+<link rel="canonical" href="https://garisign.pt/">
+<link rel="icon" type="image/svg+xml" href="img-logotipo-LOGO.svg">
+<link rel="apple-touch-icon" href="img-logotipo-LOGO.svg">
+<link rel="manifest" href="site.webmanifest">
+<title>Garisign Designer — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Animated BG Canvas -->
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+
+<!-- Splash Screen -->
+<div id="splash">
+  <div class="splash-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+  <div class="splash-bar-wrap"><div class="splash-bar"></div></div>
+  <span class="splash-percent">0%</span>
+  <span class="splash-name" data-i18n="splash.name">GARISIGN DESIGNER</span>
+</div>
+
+<!-- ------ NAV ------ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo" data-hover>
+    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+    <span class="nav-logo-text">Garisign</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#hero" data-nav class="active" data-i18n="nav.home">Início</a></li>
+    <li><a href="#works" data-nav data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="#services" data-nav data-i18n="nav.services">Serviços</a></li>
+    <li><a href="#about" data-nav data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" data-nav data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="pt" id="btn-pt">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-en">EN</button>
+    </div>
+    <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="#hero" onclick="toggleMenu()" data-i18n="nav.home">Início</a></li>
+    <li><a href="#works" onclick="toggleMenu()" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="#services" onclick="toggleMenu()" data-i18n="nav.services">Serviços</a></li>
+    <li><a href="#about" onclick="toggleMenu()" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" onclick="toggleMenu()" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button type="button" class="lang-btn active" data-lang="pt">PT</button>
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- Floating Socials -->
+<div class="social-float">
+  <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok" data-hover>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.79a4.85 4.85 0 01-1-.1z"/></svg>
+  </a>
+  <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram" data-hover>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+</div>
+
+<!-- ------ HERO ------ -->
+<section id="hero">
+  <canvas id="hero-shader-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge reveal hero-badge-delay">
+        <span class="hero-badge__dot"></span>
+        <span data-i18n="hero.badge">Disponível para projetos</span>
+      </div>
+      <p class="hero-eyebrow reveal hero-eyebrow-delay" data-i18n="hero.eyebrow">[01] — DESIGNER CRIATIVO · FELGUEIRAS, PORTUGAL</p>
+      <h1 class="hero-title">
+        <div class="hero-title-line hero-title-line-1 reveal hero-title-line-1-delay" data-i18n="hero.titleLine1">Design que</div>
+        <div class="hero-title-line hero-title-line-2 reveal hero-title-line-2-delay" data-i18n-html="hero.titleLine2"><span class="hero-title-italic">fala</span><span class="hero-title-regular"> por ti.</span></div>
+        <div class="hero-title-line hero-title-line-3 reveal hero-title-line-3-delay" data-i18n="hero.titleLine3">sem ruído.</div>
+      </h1>
+      <p class="hero-desc reveal hero-desc-delay" data-i18n="hero.desc">Crio imagens e experiências visuais para marcas e projetos com ambição. Design gráfico, motion e vídeo — com rigor, criatividade e atenção ao detalhe.</p>
+      <div class="hero-ctas reveal hero-ctas-delay">
+        <a href="#works" class="btn-primary" data-hover data-i18n="hero.cta.works">Ver Trabalhos —</a>
+        <a href="#about" class="btn-outline" data-hover data-i18n="hero.cta.about">Sobre Mim</a>
+      </div>
+      <div class="hero-stats reveal hero-stats-delay">
+        <span data-i18n="hero.stats.distinction">EPF 2023-2026 — Técnico de Multimédia</span>
+        <span class="hero-stat-separator">·</span>
+        <span data-i18n="hero.stats.location">Felgueiras, Portugal</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal hero-visual-delay">
+      <div class="hero-visual-wrap">
+        <div class="hero-visual-line"></div>
+        <div class="hero-visual-layer hero-visual-layer--large" data-hover>
+          <div class="hero-layer-tilt">
+            <img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign" class="hero-layer-img">
+          </div>
+        </div>
+        <div class="hero-visual-layer hero-visual-layer--medium" data-hover>
+          <div class="hero-layer-tilt">
+            <img src="img-outros-estrelas.svg" alt="" class="hero-layer-img" aria-hidden="true">
+          </div>
+        </div>
+        <div class="hero-visual-layer hero-visual-layer--small" data-hover>
+          <div class="hero-layer-tilt">
+            <img src="img-outros-cursor.svg" alt="" class="hero-layer-img" aria-hidden="true">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------ MARQUEE ------ -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marquee-track"></div>
+</div>
+
+<!-- ------ WORKS ------ -->
+<section id="works">
+  <div class="section-header">
+    <div>
+      <p class="section-label reveal"><span data-i18n="works.label">Trabalhos em Destaque</span></p>
+      <h2 class="reveal reveal-delay-1" data-i18n="works.title">O Meu Melhor</h2>
+    </div>
+    <a href="trabalhos.html" class="btn-outline reveal reveal-delay-2" data-hover data-i18n="works.viewAll">Ver Todos →</a>
+  </div>
+  <div class="works-grid">
+    <a href="trabalhos.html#reconge" class="work-card work-card--reconge glass-card reveal" data-hover>
+      <span class="work-num">01</span>
+      <img src="Reconge-Images-post 1.webp" alt="RECONGE — Identidade Visual PAP 2026" loading="lazy" class="work-img">
+      <div class="work-overlay">
+        <p class="work-tag">Branding · PAP 2026</p>
+        <p class="work-title">RECONGE</p>
+      </div>
+    </a>
+    <a href="trabalhos.html#crdesign" class="work-card work-card--crdesign glass-card reveal reveal-delay-1" data-hover>
+      <span class="work-num">02</span>
+      <img src="Website CR-img-Imagem inicial.webp" alt="CR Design — Website Institucional" loading="lazy" class="work-img">
+      <div class="work-overlay">
+        <p class="work-tag">Website · Freelance · 2026</p>
+        <p class="work-title">CR Design</p>
+      </div>
+    </a>
+    <a href="trabalhos.html#eap" class="work-card glass-card reveal reveal-delay-2" data-hover>
+      <span class="work-num">03</span>
+      <img src="EAP-Prancheta 1.webp" alt="Essência Aos Pedaços — Social Media Instagram" loading="lazy" class="work-img">
+      <div class="work-overlay">
+        <p class="work-tag">Social Media · Instagram</p>
+        <p class="work-title">Essência Aos Pedaços</p>
+      </div>
+    </a>
+    <a href="trabalhos.html#gallery" class="work-card glass-card reveal reveal-delay-3" data-hover>
+      <span class="work-num">04</span>
+      <img src="img-works-Posters  fashion e stores-natal.webp" alt="Fashion & Stores — Campanha de Natal" loading="lazy" class="work-img">
+      <div class="work-overlay">
+        <p class="work-tag">Fashion & Stores</p>
+        <p class="work-title">Ver Galeria →</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ------ SERVICES ------ -->
+<section id="services">
+  <p class="section-label reveal"><span data-i18n="services.label">O Que Faço</span></p>
+  <h2 class="reveal reveal-delay-1" data-i18n="services.title">Serviços</h2>
+  <div class="services-rows">
+    <div class="service-row reveal">
+      <span class="service-row__num">01</span>
+      <h3 class="service-row__title" data-i18n="services.graphic">Design Gráfico</h3>
+      <span class="service-row__arrow">→</span>
+    </div>
+    <div class="service-row reveal reveal-delay-1">
+      <span class="service-row__num">02</span>
+      <h3 class="service-row__title" data-i18n="services.social">Social Media</h3>
+      <span class="service-row__arrow">→</span>
+    </div>
+    <div class="service-row reveal reveal-delay-2">
+      <span class="service-row__num">03</span>
+      <h3 class="service-row__title" data-i18n="services.video">Edição de Vídeo</h3>
+      <span class="service-row__arrow">→</span>
+    </div>
+    <div class="service-row reveal reveal-delay-3">
+      <span class="service-row__num">04</span>
+      <h3 class="service-row__title" data-i18n="services.motion">Motion Design</h3>
+      <span class="service-row__arrow">→</span>
+    </div>
+    <div class="service-row reveal">
+      <span class="service-row__num">05</span>
+      <h3 class="service-row__title" data-i18n="services.photo">Edição de Foto</h3>
+      <span class="service-row__arrow">→</span>
+    </div>
+    <div class="service-row reveal reveal-delay-1">
+      <span class="service-row__num">06</span>
+      <h3 class="service-row__title" data-i18n="services.sports">Web Design</h3>
+      <span class="service-row__arrow">→</span>
+    </div>
+  </div>
+</section>
+
+<!-- ------ ABOUT ------ -->
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-frame">
+      <img class="about-monogram" src="img-logotipo-LOGO.svg" alt="Logótipo Garisign" loading="lazy">
+    </div>
+    <div class="about-stats">
+      <div class="astat"><span class="astat-num">6+</span><span class="astat-label" data-i18n="stats.services">Serviços</span></div>
+      <div class="astat"><span class="astat-num">∞</span><span class="astat-label" data-i18n="stats.creativity">Criatividade</span></div>
+      <div class="astat"><span class="astat-num">100%</span><span class="astat-label" data-i18n="stats.dedication">Dedicação</span></div>
+    </div>
+  </div>
+  <div id="about-text" class="reveal reveal-delay-2">
+    <p class="section-label"><span data-i18n="about.label">Sobre Mim</span></p>
+    <h2 data-i18n="about.title" data-i18n-html>Olá,<br>sou o Gabriel.</h2>
+    <p style="margin-top:20px;" data-i18n="about.p1">Sou um designer português de 18 anos, formado na Escola Profissional de Felgueiras. Tenho um olho e uma paixão imensa pelo design criativo — especialmente design gráfico, social media, edição de vídeo e motion design.</p>
+    <p data-i18n="about.p2">Destaco-me pela escuta ativa, respeito pelo feedback e compromisso com cada entrega.</p>
+    <ul class="offer-list">
+      <li><span data-i18n="about.highlight.1">Escuta ativa e comunicação profissional em cada fase</span></li>
+      <li><span data-i18n="about.highlight.2">Metodologia clara e transparente, focada nos objetivos do cliente</span></li>
+      <li><span data-i18n="about.highlight.3">Desde posters impactantes a identidade visual completa</span></li>
+      <li><span data-i18n="about.highlight.4">Adaptabilidade a diferentes contextos e equipas</span></li>
+    </ul>
+    <div class="about-actions">
+      <a href="sobre.html" class="btn-about-cta" data-hover data-i18n="about.more">Ver Mais Sobre Mim →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ------ SITE FOOTER (CTA + FOOTER) ------ -->
+<section class="site-footer">
+  <div class="site-footer__decal">GA</div>
+  <div class="site-footer__top reveal">
+    <div class="site-footer__intro">
+      <p class="section-label"><span data-i18n="siteFooter.label">[04] — CONTACTO</span></p>
+      <h2 class="site-footer__title" data-i18n-html="siteFooter.title">Vamos criar<br>algo que<br>fica na <span class="site-footer-title-italic">memória.</span></h2>
+    </div>
+    <div class="site-footer__contact">
+      <a href="mailto:garisign2025@gmail.com" class="site-footer__email">garisign2025@gmail.com</a>
+      <p class="site-footer__text" data-i18n="siteFooter.location">Felgueiras, Portugal — disponível remotamente</p>
+      <p class="site-footer__text site-footer__text--muted" data-i18n="siteFooter.areas">Design Gráfico · Motion Design · Edição de Vídeo</p>
+      <a href="contacto.html" class="btn-primary" data-hover data-i18n="siteFooter.button">Ver Contacto →</a>
+    </div>
+  </div>
+  <hr class="site-footer__separator">
+  <div class="site-footer__bottom">
+    <a href="index.html" class="site-footer__logo">GARISIGN</a>
+    <p class="site-footer__copy" data-i18n="footer.copy">© 2025 Garisign Designer. Todos os direitos reservados.</p>
+    <div class="site-footer__links">
+      <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+      <a href="mailto:garisign2025@gmail.com">EMAIL</a>
+    </div>
+  </div>
+</section>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+<script src="hero-shader.js" defer></script>
+<script src="hero-drag.js" defer></script>
+</body>
+</html>
+
+

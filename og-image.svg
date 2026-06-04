@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title>Garisign portfolio preview</title>
+  <desc>Preview image for Garisign portfolio site showing brand identity and design work.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#252525"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(221,181,108,0.2)"/>
+      <stop offset="100%" stop-color="rgba(221,181,108,0)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="64" y="56" width="1072" height="518" rx="42" fill="rgba(255,255,255,0.02)" stroke="rgba(221,181,108,0.16)" stroke-width="2"/>
+  <path d="M64 134h1072" stroke="url(#shine)" stroke-width="6" opacity="0.5"/>
+  <text x="96" y="220" fill="#fff" font-family="Bebas Neue, sans-serif" font-size="88" letter-spacing="2">GARISIGN</text>
+  <text x="96" y="320" fill="#ddb56c" font-family="DM Sans, sans-serif" font-size="44" letter-spacing="3">Brand identity · Digital design · Motion</text>
+  <text x="96" y="400" fill="rgba(255,255,255,0.75)" font-family="DM Sans, sans-serif" font-size="28" letter-spacing="1">Portfolio de design focado em presença estratégica</text>
+  <circle cx="1000" cy="420" r="120" fill="rgba(221,181,108,0.12)"/>
+  <circle cx="1000" cy="420" r="72" fill="rgba(221,181,108,0.20)"/>
+  <text x="960" y="442" fill="#fff" font-family="Bebas Neue, sans-serif" font-size="32">Garisign</text>
+</svg>

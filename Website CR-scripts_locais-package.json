@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-watch",
+  "version": "1.0.0",
+  "description": "Portfolio website generator with file watching",
+  "main": "generate_portfolio.js",
+  "scripts": {
+    "generate": "node generate_portfolio.js",
+    "watch": "node watch_portfolio.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  }
+}

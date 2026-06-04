@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Case study: Website CRDesign — construído de raiz em HTML, CSS e JS. Site bilingue PT/FR para empresa de comunicação visual em Felgueiras.">
+<meta name="author" content="Gabriel — Garisign Designer">
+<link rel="icon" type="image/svg+xml" href="img-logotipo-LOGO.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>CRDesign Website — Garisign</title>
+<style>
+  :root {
+    --cr-green: #8dc63f;
+    --cr-green-dark: #6ba030;
+    --cr-green-dim: rgba(141,198,63,0.10);
+    --cr-green-border: rgba(141,198,63,0.28);
+  }
+
+  /* ------ HERO ------ */
+  .crd-hero {
+    min-height: 100svh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: clamp(80px,10vw,140px) clamp(24px,6vw,100px) clamp(60px,8vw,100px);
+    position: relative; overflow: hidden; z-index: 2;
+  }
+  .crd-hero::before {
+    content: '';
+    position: absolute; inset: 0; z-index: 0;
+    background: radial-gradient(ellipse 70% 55% at 75% 25%, rgba(141,198,63,0.07) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .crd-hero__back {
+    position: absolute; top: clamp(80px,10vw,116px); left: clamp(24px,6vw,100px);
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: rgba(240,237,232,0.35); text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+    transition: color 0.3s; z-index: 2;
+  }
+  .crd-hero__back:hover { color: var(--cr-green); }
+  .crd-hero__content { position: relative; z-index: 2; }
+  .crd-hero__badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 5px 14px; border-radius: 40px;
+    background: var(--cr-green-dim); border: 1px solid var(--cr-green-border);
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--cr-green); margin-bottom: 24px;
+  }
+  .crd-hero__badge::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--cr-green); flex-shrink: 0;
+    animation: pulse-dot 2.4s ease-in-out infinite;
+  }
+  .crd-hero__logo {
+    width: clamp(90px,12vw,160px); margin-bottom: 24px; display: block;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(50%) saturate(500%) hue-rotate(50deg) brightness(100%);
+    opacity: 0.85;
+  }
+  .crd-hero__title {
+    font-family: 'Agdasima', sans-serif;
+    font-size: clamp(80px,14vw,200px);
+    line-height: 0.85; letter-spacing: 4px;
+    color: var(--cream); margin-bottom: 18px;
+  }
+  .crd-hero__sub {
+    font-size: clamp(12px,1.3vw,15px); letter-spacing: 1px;
+    color: rgba(240,237,232,0.4); margin-bottom: 32px;
+  }
+  .crd-hero__chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .crd-chip {
+    padding: 6px 14px; border-radius: 40px;
+    font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+    background: rgba(240,237,232,0.04); border: 1px solid rgba(240,237,232,0.1);
+    color: rgba(240,237,232,0.45);
+  }
+  .crd-chip--green {
+    background: var(--cr-green-dim); border-color: var(--cr-green-border);
+    color: var(--cr-green);
+  }
+
+  /* ------ SEC�?�.ES ------ */
+  .crd-section {
+    padding: clamp(60px,8vw,100px) clamp(24px,6vw,100px);
+    position: relative; z-index: 2;
+    border-top: 1px solid rgba(240,237,232,0.06);
+  }
+  .crd-num {
+    font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--cr-green); margin-bottom: 14px; display: block;
+  }
+  .crd-title {
+    font-family: 'Agdasima', sans-serif;
+    font-size: clamp(38px,5vw,68px); color: var(--cream);
+    letter-spacing: 2px; line-height: 0.95; margin-bottom: 36px;
+  }
+
+  /* ------ [01] O PROJETO ------ */
+  .crd-projeto-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: clamp(32px,5vw,64px); align-items: start;
+  }
+  .crd-projeto__text {
+    font-size: clamp(15px,1.4vw,17px); line-height: 1.8;
+    color: rgba(240,237,232,0.65);
+  }
+  .crd-projeto__text p + p { margin-top: 16px; }
+  .crd-info-card {
+    background: var(--cr-green-dim); border: 1px solid var(--cr-green-border);
+    border-radius: var(--radius); padding: clamp(20px,3vw,32px);
+  }
+  .crd-info-card__label {
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--cr-green); margin-bottom: 18px; display: block;
+  }
+  .crd-info-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 11px 0; border-bottom: 1px solid rgba(141,198,63,0.1);
+  }
+  .crd-info-row:last-child { border-bottom: none; }
+  .crd-info-row__key { font-size: 12px; color: rgba(240,237,232,0.38); }
+  .crd-info-row__val { font-size: 13px; color: var(--cream); font-weight: 500; text-align: right; }
+  .crd-info-row__val a {
+    color: var(--cr-green); text-decoration: none; transition: opacity 0.2s;
+  }
+  .crd-info-row__val a:hover { opacity: 0.75; }
+  @media (max-width: 768px) {
+    .crd-projeto-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ------ [02] FEATURES ------ */
+  .crd-features-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 14px;
+  }
+  .crd-feature-card {
+    background: rgba(240,237,232,0.025); border: 1px solid rgba(240,237,232,0.07);
+    border-radius: var(--radius); padding: clamp(18px,2.5vw,26px);
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .crd-feature-card:hover {
+    background: var(--cr-green-dim); border-color: var(--cr-green-border);
+  }
+  .crd-feature-card__num {
+    font-size: 10px; letter-spacing: 3px; color: var(--cr-green);
+    margin-bottom: 10px; display: block;
+  }
+  .crd-feature-card__title {
+    font-family: 'Agdasima', sans-serif; font-size: 21px;
+    color: var(--cream); letter-spacing: 1px; margin-bottom: 8px;
+  }
+  .crd-feature-card__desc {
+    font-size: 13px; color: rgba(240,237,232,0.48); line-height: 1.65;
+  }
+
+  /* ------ [03] GALERIA ------ */
+  .crd-gallery {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+  .crd-gallery__item {
+    overflow: hidden; border-radius: var(--radius);
+    position: relative; cursor: zoom-in;
+  }
+  .crd-gallery__item:first-child { grid-row: 1 / 3; }
+  .crd-gallery__item img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.6s var(--transition);
+  }
+  .crd-gallery__item:hover img { transform: scale(1.04); }
+  .crd-gallery__caption {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 50%);
+    display: flex; align-items: flex-end; padding: 14px 16px;
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .crd-gallery__item:hover .crd-gallery__caption { opacity: 1; }
+  .crd-gallery__caption span {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(240,237,232,0.8);
+  }
+  @media (max-width: 640px) {
+    .crd-gallery {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .crd-gallery__item:first-child { grid-row: auto; }
+  }
+
+  /* ------ CTA ------ */
+  .crd-cta {
+    padding: clamp(64px,9vw,110px) clamp(24px,6vw,100px);
+    text-align: center; position: relative; z-index: 2;
+    border-top: 1px solid rgba(240,237,232,0.06);
+  }
+  .crd-cta__eyebrow {
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--cr-green); margin-bottom: 16px;
+  }
+  .crd-cta__title {
+    font-family: 'Agdasima', sans-serif;
+    font-size: clamp(44px,7vw,90px);
+    color: var(--cream); letter-spacing: 2px; line-height: 0.9;
+    margin-bottom: 12px;
+  }
+  .crd-cta__sub {
+    font-size: 14px; color: rgba(240,237,232,0.38);
+    margin-bottom: 36px; font-weight: 300;
+  }
+  .crd-cta__btns {
+    display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+  }
+  .btn-crdesign {
+    background: var(--cr-green); color: #192e06;
+    box-shadow: 0 4px 32px rgba(141,198,63,0.2);
+  }
+  .btn-crdesign:hover {
+    background: #a8d84a; transform: translateY(-2px);
+    box-shadow: 0 8px 48px rgba(141,198,63,0.35);
+  }
+  .btn-ghost {
+    background: transparent; border: 1px solid rgba(240,237,232,0.18);
+    color: rgba(240,237,232,0.55);
+  }
+  .btn-ghost:hover {
+    border-color: rgba(240,237,232,0.35); color: var(--cream);
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo" data-hover>
+    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+    <span class="nav-logo-text">Garisign</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-nav data-i18n="nav.home">Início</a></li>
+    <li><a href="trabalhos.html" data-nav class="active" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" data-nav data-i18n="nav.services">Serviços</a></li>
+    <li><a href="sobre.html" data-nav data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" data-nav data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="pt" id="btn-pt">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-en">EN</button>
+    </div>
+    <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html" onclick="toggleMenu()" data-i18n="nav.home">Início</a></li>
+    <li><a href="trabalhos.html" onclick="toggleMenu()" data-i18n="nav.works">Trabalhos</a></li>
+    <li><a href="index.html#services" onclick="toggleMenu()" data-i18n="nav.services">Serviços</a></li>
+    <li><a href="index.html#about" onclick="toggleMenu()" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="contacto.html" onclick="toggleMenu()" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+</div>
+
+<main>
+
+  <!-- ------ HERO ------ -->
+  <section class="crd-hero">
+    <a href="trabalhos.html" class="crd-hero__back" data-i18n="crdesign.hero.back">�?� Trabalhos</a>
+    <div class="crd-hero__content reveal">
+      <div class="crd-hero__badge">Website · Freelance · 2026</div>
+      <img src="Website CR-img-Logos-CR Design.png" alt="Logótipo CR Design" class="crd-hero__logo" loading="lazy">
+      <h1 class="crd-hero__title">CRDESIGN</h1>
+      <p class="crd-hero__sub">crdesign64.com — Felgueiras, Portugal</p>
+      <div class="crd-hero__chips">
+        <span class="crd-chip crd-chip--green" data-i18n="crdesign.hero.chip1">Website Completo</span>
+        <span class="crd-chip">HTML · CSS · JS</span>
+        <span class="crd-chip">Bilingue PT / FR</span>
+        <span class="crd-chip" data-i18n="crdesign.hero.chip3">Design Responsivo</span>
+        <span class="crd-chip">14 Serviços</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ [01] O PROJETO ------ -->
+  <section class="crd-section reveal">
+    <span class="crd-num" data-i18n="crdesign.s01.num">[01] — O Projeto</span>
+    <h2 class="crd-title" data-i18n-html="crdesign.s01.title">Comunicação Visual<br>em Felgueiras</h2>
+    <div class="crd-projeto-grid">
+      <div class="crd-projeto__text">
+        <p data-i18n="crdesign.s01.p1">A CR Design é uma empresa de comunicação visual localizada em Felgueiras, com mais de 14 categorias de serviços — desde branding e flyers a decoração de viaturas e vestuário personalizado.</p>
+        <p data-i18n="crdesign.s01.p2">O desafio foi criar um website que representasse toda essa diversidade de forma clara, atraente e funcional, acessível tanto a clientes portugueses como franceses — a comunidade emigrante tem um peso significativo na região.</p>
+        <p data-i18n="crdesign.s01.p3">Fiz o website de raiz em HTML, CSS e JS puro, sem frameworks nem CMS. Cada secção foi desenhada e programada manualmente: do layout ao lightbox do portfólio, do sistema de traduções ao formulário integrado com WhatsApp.</p>
+      </div>
+      <div class="crd-info-card">
+        <span class="crd-info-card__label" data-i18n="crdesign.s01.infolabel">Detalhes do Projeto</span>
+        <div class="crd-info-row">
+          <span class="crd-info-row__key" data-i18n="crdesign.s01.row1key">Cliente</span>
+          <span class="crd-info-row__val" data-i18n="crdesign.s01.row1val">CR Design, Felgueiras</span>
+        </div>
+        <div class="crd-info-row">
+          <span class="crd-info-row__key" data-i18n="crdesign.s01.row2key">Tipo</span>
+          <span class="crd-info-row__val" data-i18n="crdesign.s01.row2val">Website Institucional</span>
+        </div>
+        <div class="crd-info-row">
+          <span class="crd-info-row__key" data-i18n="crdesign.s01.row3key">Tecnologia</span>
+          <span class="crd-info-row__val">HTML · CSS · JS</span>
+        </div>
+        <div class="crd-info-row">
+          <span class="crd-info-row__key" data-i18n="crdesign.s01.row4key">Idiomas</span>
+          <span class="crd-info-row__val" data-i18n="crdesign.s01.row4val">Português · Francês</span>
+        </div>
+        <div class="crd-info-row">
+          <span class="crd-info-row__key" data-i18n="crdesign.s01.row5key">Serviços</span>
+          <span class="crd-info-row__val" data-i18n="crdesign.s01.row5val">14 categorias</span>
+        </div>
+        <div class="crd-info-row">
+          <span class="crd-info-row__key" data-i18n="crdesign.s01.row6key">Ano</span>
+          <span class="crd-info-row__val">2026</span>
+        </div>
+        <div class="crd-info-row">
+          <span class="crd-info-row__key" data-i18n="crdesign.s01.row7key">Site ao vivo</span>
+          <span class="crd-info-row__val">
+            <a href="https://crdesign64.com" target="_blank" rel="noopener noreferrer">crdesign64.com �?-</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ [02] O QUE CONSTRUÍ ------ -->
+  <section class="crd-section reveal">
+    <span class="crd-num" data-i18n="crdesign.s02.num">[02] — O Que Construí</span>
+    <h2 class="crd-title" data-i18n-html="crdesign.s02.title">Cada Detalhe,<br>de Raiz</h2>
+    <div class="crd-features-grid">
+      <div class="crd-feature-card">
+        <span class="crd-feature-card__num">01</span>
+        <p class="crd-feature-card__title" data-i18n="crdesign.s02.f1title">Bilingue PT / FR</p>
+        <p class="crd-feature-card__desc" data-i18n="crdesign.s02.f1desc">Sistema de traduções dinâmico — toda a interface muda entre Português e Francês sem recarregar a página, adaptado à comunidade emigrante da região.</p>
+      </div>
+      <div class="crd-feature-card">
+        <span class="crd-feature-card__num">02</span>
+        <p class="crd-feature-card__title" data-i18n="crdesign.s02.f2title">14 Categorias</p>
+        <p class="crd-feature-card__desc" data-i18n="crdesign.s02.f2desc">Cada serviço tem ícone próprio, descrição bilingue e filtro de portfólio associado — desde linhas gráficas a decoração de viaturas.</p>
+      </div>
+      <div class="crd-feature-card">
+        <span class="crd-feature-card__num">03</span>
+        <p class="crd-feature-card__title" data-i18n="crdesign.s02.f3title">Galeria com Lightbox</p>
+        <p class="crd-feature-card__desc" data-i18n="crdesign.s02.f3desc">Portfólio filtrado por categoria com viewer nativo — navegação com setas, fecha ao clicar fora, totalmente responsivo em mobile.</p>
+      </div>
+      <div class="crd-feature-card">
+        <span class="crd-feature-card__num">04</span>
+        <p class="crd-feature-card__title" data-i18n="crdesign.s02.f4title">WhatsApp Integrado</p>
+        <p class="crd-feature-card__desc" data-i18n="crdesign.s02.f4desc">CTA flutuante e formulário de contacto com abertura direta no WhatsApp — o canal principal de comunicação da empresa.</p>
+      </div>
+      <div class="crd-feature-card">
+        <span class="crd-feature-card__num">05</span>
+        <p class="crd-feature-card__title" data-i18n="crdesign.s02.f5title">Performance</p>
+        <p class="crd-feature-card__desc" data-i18n="crdesign.s02.f5desc">Imagens em WebP, loader com progresso, animações de scroll com IntersectionObserver, zero dependências além das Google Fonts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ [03] VISUAL ------ -->
+  <section class="crd-section reveal">
+    <span class="crd-num" data-i18n="crdesign.s03.num">[03] — Visual</span>
+    <h2 class="crd-title" data-i18n-html="crdesign.s03.title">O Espaço,<br>em Imagem</h2>
+    <div class="crd-gallery">
+      <div class="crd-gallery__item">
+        <img src="Website CR-img-Imagem inicial.webp" alt="Imagem de fundo do hero do website CR Design" loading="lazy">
+        <div class="crd-gallery__caption"><span data-i18n="crdesign.s03.cap1">Hero — Imagem Principal</span></div>
+      </div>
+      <div class="crd-gallery__item">
+        <img src="Website CR-img-Imagens loja fisica-20260525_105903.webp" alt="Loja física CR Design Felgueiras" loading="lazy">
+        <div class="crd-gallery__caption"><span data-i18n="crdesign.s03.cap2">Loja Física</span></div>
+      </div>
+      <div class="crd-gallery__item">
+        <img src="Website CR-img-Imagens loja fisica-20260527_115911.webp" alt="Exterior da loja CR Design" loading="lazy">
+        <div class="crd-gallery__caption"><span data-i18n="crdesign.s03.cap3">Exterior</span></div>
+      </div>
+      <div class="crd-gallery__item">
+        <img src="Website CR-img-portfolio-12 Decoraçao de Montras (vitrinismo)-Montra Passion.webp" alt="Decoração de montra Passion — CR Design" loading="lazy">
+        <div class="crd-gallery__caption"><span data-i18n="crdesign.s03.cap4">Vitrinismo</span></div>
+      </div>
+      <div class="crd-gallery__item">
+        <img src="Website CR-img-portfolio-9 Brindes e Artigos Personalizados-Caixa melhor mãe.webp" alt="Brinde personalizado Caixa Melhor Mãe" loading="lazy">
+        <div class="crd-gallery__caption"><span data-i18n="crdesign.s03.cap5">Brindes Personalizados</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ CTA ------ -->
+  <div class="crd-cta reveal">
+    <p class="crd-cta__eyebrow" data-i18n="crdesign.cta.eyebrow">Site ao Vivo</p>
+    <h2 class="crd-cta__title" data-i18n-html="crdesign.cta.title">Ver o Resultado<br>Final</h2>
+    <p class="crd-cta__sub" data-i18n="crdesign.cta.sub">Construído de raiz, linha a linha — crdesign64.com</p>
+    <div class="crd-cta__btns">
+      <a href="https://crdesign64.com" target="_blank" rel="noopener noreferrer" class="btn-primary btn-crdesign" data-hover data-i18n="crdesign.cta.btn">Visitar crdesign64.com �?-</a>
+      <a href="trabalhos.html" class="btn-primary btn-ghost" data-hover data-i18n="crdesign.cta.back">�?� Ver Todos os Trabalhos</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ------ SITE FOOTER ------ -->
+<section class="site-footer">
+  <div class="site-footer__decal">GA</div>
+  <div class="site-footer__top reveal">
+    <div class="site-footer__intro">
+      <p class="section-label"><span data-i18n="siteFooter.label">[04] — CONTACTO</span></p>
+      <h2 class="site-footer__title" data-i18n-html="siteFooter.title">Vamos criar<br>algo que<br>fica na <span class="site-footer-title-italic">memória.</span></h2>
+    </div>
+    <div class="site-footer__contact">
+      <a href="mailto:garisign2025@gmail.com" class="site-footer__email">garisign2025@gmail.com</a>
+      <p class="site-footer__text" data-i18n="siteFooter.location">Felgueiras, Portugal — disponível remotamente</p>
+      <p class="site-footer__text site-footer__text--muted" data-i18n="siteFooter.areas">Design Gráfico · Motion Design · Edição de Vídeo</p>
+      <a href="contacto.html" class="btn-primary" data-hover data-i18n="siteFooter.button">Ver Contacto →</a>
+    </div>
+  </div>
+  <hr class="site-footer__separator">
+  <div class="site-footer__bottom">
+    <a href="index.html" class="site-footer__logo">GARISIGN</a>
+    <p class="site-footer__copy" data-i18n="footer.copy">© 2025 Garisign Designer. Todos os direitos reservados.</p>
+    <div class="site-footer__links">
+      <a href="https://instagram.com/garisign.designer" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      <a href="https://tiktok.com/@garisign_designer" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+      <a href="mailto:garisign2025@gmail.com">EMAIL</a>
+    </div>
+  </div>
+</section>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
+
+

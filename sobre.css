@@ -1,0 +1,515 @@
+.about-story-page {
+  position: relative;
+  z-index: 2;
+  padding: calc(var(--nav-h) + 42px) clamp(24px,6vw,100px) 100px;
+}
+
+.about-intro {
+  min-height: max(620px, calc(100vh - var(--nav-h) - 210px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 980px;
+  padding-bottom: 26px;
+}
+
+.about-intro h1 {
+  font-family: 'Agdasima', sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(48px,7vw,96px);
+  line-height: 0.95;
+  letter-spacing: 1px;
+  color: var(--cream);
+  margin-bottom: 22px;
+}
+
+.about-intro-text {
+  max-width: 780px;
+  font-size: clamp(15px,1.35vw,18px);
+  line-height: 1.75;
+}
+
+.about-intro-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: min(820px, 100%);
+  margin-top: 30px;
+}
+
+.about-intro-stat {
+  padding: 22px 20px;
+}
+
+.story-scroll-cue {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  text-decoration: none;
+  color: rgba(221,181,108,0.6);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: opacity 0.35s, transform 0.35s, color 0.35s;
+}
+
+.story-scroll-cue.hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+.story-scroll-cue:hover {
+  color: var(--gold);
+}
+
+.story-scroll-chevron {
+  width: 14px;
+  height: 14px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  animation: story-cue-bounce 1.45s ease-in-out infinite;
+}
+
+@keyframes story-cue-bounce {
+  0%, 100% { translate: 0 -2px; opacity: 0.55; }
+  50% { translate: 0 6px; opacity: 1; }
+}
+
+.timeline-section {
+  padding: 18px 0 105px;
+}
+
+.timeline-heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.timeline-heading .section-label {
+  justify-content: center;
+}
+
+.timeline-heading h2 {
+  font-family: 'Agdasima', sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(48px,7vw,96px);
+  line-height: 1;
+  letter-spacing: 1px;
+  color: var(--cream);
+}
+
+.timeline-heading > p:not(.section-label) {
+  margin-top: 14px;
+  color: rgba(240,237,232,0.55);
+  font-size: 15px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 8px 0 88px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(221,181,108,0.3), rgba(221,181,108,0.3) 84%, rgba(221,181,108,0));
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 90px minmax(0, 1fr);
+  align-items: start;
+  margin-bottom: 46px;
+  opacity: 0;
+  transition: opacity 0.75s var(--transition), transform 0.75s var(--transition);
+}
+
+.timeline-item-left {
+  transform: translateX(-30px);
+}
+
+.timeline-item-right {
+  transform: translateX(30px);
+}
+
+.timeline-item.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-dot {
+  grid-column: 2;
+  justify-self: center;
+  margin-top: 30px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 8px rgba(221,181,108,0.1), 0 0 30px var(--gold-glow);
+  z-index: 2;
+}
+
+.timeline-dot-future {
+  background: transparent;
+  border: 1px solid rgba(221,181,108,0.55);
+  box-shadow: 0 0 0 8px rgba(221,181,108,0.06);
+}
+
+.timeline-card {
+  position: relative;
+  width: min(100%, 420px);
+  padding: 26px;
+}
+
+.timeline-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.timeline-item-left .timeline-card {
+  grid-column: 1;
+  justify-self: end;
+  text-align: right;
+}
+
+.timeline-item-left .timeline-card::after {
+  right: -48px;
+}
+
+.timeline-item-right .timeline-card {
+  grid-column: 3;
+  justify-self: start;
+}
+
+.timeline-item-right .timeline-card::after {
+  left: -48px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.timeline-year {
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.timeline-card h3 {
+  font-family: 'Agdasima', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+
+.timeline-card p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(240,237,232,0.58);
+}
+
+.timeline-toggle {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border: 1px solid var(--glass-border);
+  border-radius: 40px;
+  background: var(--gold-dim);
+  color: var(--gold);
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.timeline-toggle:hover {
+  border-color: var(--gold);
+  background: rgba(221,181,108,0.24);
+  transform: translateY(-2px);
+}
+
+.timeline-panel {
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  padding: 0 32px;
+  transition: height 0.36s ease, padding 0.3s ease;
+}
+
+.timeline-panel p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: rgba(240,237,232,0.6);
+  line-height: 1.8;
+}
+
+.about-final-cta {
+  margin-top: 52px;
+  padding: 42px 42px 38px;
+}
+
+.about-final-cta h2 {
+  font-family: 'Agdasima', sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(40px,6vw,72px);
+  letter-spacing: 1px;
+  color: var(--cream);
+  margin-bottom: 18px;
+}
+
+.about-final-cta p {
+  font-size: 16px;
+  color: rgba(240,237,232,0.6);
+  margin-bottom: 26px;
+  line-height: 1.8;
+}
+
+/* â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+   SOBRE PAGE â€” MOBILE REDESIGN
+   â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â” */
+
+/* â”€â”€â”€ TABLET (â‰¤860px) â”€â”€â”€ */
+@media (max-width: 860px) {
+  .about-story-page {
+    padding-left: clamp(20px, 5vw, 60px);
+    padding-right: clamp(20px, 5vw, 60px);
+  }
+
+  .about-intro {
+    min-height: auto;
+    padding-bottom: 16px;
+  }
+
+  .about-intro h1 {
+    font-size: clamp(44px, 9vw, 72px);
+  }
+
+  .about-intro-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .timeline-section {
+    padding-bottom: 80px;
+  }
+
+  .timeline-heading {
+    margin-bottom: 48px;
+  }
+
+  .timeline-heading h2 {
+    font-size: clamp(40px, 7vw, 72px);
+  }
+
+  .about-final-cta {
+    padding: 32px 28px;
+  }
+
+  /* Switch entrance animation to vertical on smaller screens */
+  .timeline-item-left  { transform: translateY(22px); }
+  .timeline-item-right { transform: translateY(22px); }
+  .timeline-item.in-view { transform: translateY(0); }
+}
+
+/* â”€â”€â”€ PHONE (â‰¤600px) â”€â”€â”€ */
+@media (max-width: 600px) {
+  /* Page padding */
+  .about-story-page {
+    padding: calc(var(--nav-h) + 28px) 20px 64px;
+  }
+
+  /* â”€â”€ Intro â”€â”€ */
+  .about-intro h1 {
+    font-size: clamp(38px, 11vw, 54px);
+    margin-bottom: 14px;
+  }
+
+  .about-intro-text {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .about-intro-stats {
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .about-intro-stat {
+    padding: 14px 8px;
+    text-align: center;
+  }
+
+  .about-intro-stat .astat-num {
+    font-size: 26px;
+  }
+
+  .about-intro-stat .astat-label {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+
+  .story-scroll-cue {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+  /* â”€â”€ Timeline section â”€â”€ */
+  .timeline-section {
+    padding: 12px 0 56px;
+  }
+
+  .timeline-heading {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .timeline-heading h2 {
+    font-size: clamp(34px, 10vw, 50px);
+  }
+
+  /* Vertical line: move to left edge */
+  .timeline::before {
+    left: 15px;
+    transform: none;
+  }
+
+  .timeline {
+    padding: 8px 0 48px;
+  }
+
+  /* â”€â”€ Timeline items: 2-column layout (dot | card) â”€â”€ */
+  .timeline-item {
+    grid-template-columns: 30px 1fr;
+    gap: 0 14px;
+    margin-bottom: 20px;
+    align-items: start;
+  }
+
+  /* Keep vertical entrance on phone */
+  .timeline-item-left,
+  .timeline-item-right {
+    transform: translateY(16px);
+  }
+
+  .timeline-item.in-view {
+    transform: translateY(0);
+  }
+
+  /* Dot: first column */
+  .timeline-dot {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    margin-top: 22px;
+    width: 11px;
+    height: 11px;
+  }
+
+  /* Cards: second column, full width, left-aligned */
+  .timeline-item-left .timeline-card,
+  .timeline-item-right .timeline-card {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: stretch;
+    width: 100%;
+    max-width: none;
+    text-align: left;
+    padding: 16px 14px;
+  }
+
+  /* Hide horizontal connector lines */
+  .timeline-card::after {
+    display: none;
+  }
+
+  .timeline-card h3 {
+    font-size: 24px;
+  }
+
+  .timeline-card > p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  /* Toggle button */
+  .timeline-toggle {
+    margin-top: 14px;
+    padding: 9px 16px;
+    font-size: 11px;
+    min-height: 40px;
+    touch-action: manipulation;
+  }
+
+  /* Expanded panel */
+  .timeline-panel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .timeline-panel p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  /* "A ser continuadoâ€¦" end item */
+  .timeline-item-end {
+    grid-template-columns: 30px 1fr;
+    gap: 0 14px;
+  }
+
+  .timeline-item-end .timeline-dot {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 4px;
+  }
+
+  .timeline-item-end > p {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* â”€â”€ Final CTA â”€â”€ */
+  .about-final-cta {
+    margin-top: 24px;
+    padding: 24px 18px 22px;
+  }
+
+  .about-final-cta h2 {
+    font-size: clamp(32px, 9vw, 46px);
+    margin-bottom: 12px;
+  }
+
+  .about-final-cta p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .about-final-cta .btn-primary {
+    width: 100%;
+    justify-content: center;
+    min-height: 52px;
+    font-size: 15px;
+  }
+}

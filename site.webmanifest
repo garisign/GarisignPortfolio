@@ -1,0 +1,17 @@
+﻿{
+  "name": "Garisign Portfolio",
+  "short_name": "Garisign",
+  "description": "Portfolio de design e branding Garisign.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#101010",
+  "theme_color": "#ddb56c",
+  "icons": [
+    {
+      "src": "img-logotipo-LOGO.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}
+
