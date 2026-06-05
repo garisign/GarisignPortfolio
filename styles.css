@@ -82,21 +82,21 @@
 
   /* â”€â”€ CUSTOM CURSOR â”€â”€ */
   #cursor, #cursor-ring {
-    position: fixed; border-radius: 50%; pointer-events: none;
-    z-index: 9998; transform: translate(-50%,-50%);
+    position: fixed; top: 0; left: 0; border-radius: 50%; pointer-events: none;
+    z-index: 9998; will-change: transform;
     transition: opacity 0.3s;
   }
   #cursor {
     width: 10px; height: 10px;
     background: var(--gold);
     box-shadow: 0 0 10px var(--gold-glow);
-    transition: transform 0.08s linear, opacity 0.3s, width 0.2s, height 0.2s, background 0.2s;
+    transition: opacity 0.3s, width 0.2s, height 0.2s, background 0.2s;
   }
   #cursor-ring {
     width: 36px; height: 36px;
     border: 1.5px solid var(--gold);
     opacity: 0.5;
-    transition: transform 0.18s cubic-bezier(0.16,1,0.3,1), opacity 0.3s, width 0.25s, height 0.25s;
+    transition: opacity 0.3s, width 0.25s, height 0.25s;
   }
   body.cursor-hover #cursor { width: 16px; height: 16px; background: var(--gold); }
   body.cursor-hover #cursor-ring { width: 56px; height: 56px; opacity: 0.3; }
@@ -119,7 +119,7 @@
     position: fixed; inset: 0; z-index: 9997;
     background: var(--dark);
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
-    transition: opacity 0.7s var(--transition), visibility 0.7s;
+    transition: opacity 0.7s var(--transition), visibility 0s 0.7s;
   }
   #splash.gone { opacity: 0; visibility: hidden; pointer-events: none; }
   .splash-logo-mark {
@@ -537,11 +537,24 @@
   .hero-badge__dot {
     width: 7px; height: 7px; border-radius: 50%;
     background: var(--gold); flex-shrink: 0;
+    position: relative;
     animation: pulse-dot 2.4s ease-in-out infinite;
   }
+  .hero-badge__dot::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: rgba(221,181,108,0.45);
+    animation: pulse-ring 2.4s ease-in-out infinite;
+  }
   @keyframes pulse-dot {
-    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(221,181,108,0.5); }
-    60% { opacity: 0.7; box-shadow: 0 0 0 5px rgba(221,181,108,0); }
+    0%, 100% { opacity: 1; }
+    60% { opacity: 0.7; }
+  }
+  @keyframes pulse-ring {
+    0%, 100% { transform: scale(0); opacity: 0.5; }
+    60% { transform: scale(2); opacity: 0; }
   }
   .hero-badge-delay { transition-delay: 1.75s; }
 
@@ -617,6 +630,21 @@
   }
 
   /* â”€â”€ ABOUT SECTION â€” HERO CTA â”€â”€ */
+  .btn-about-cta-wrap {
+    display: inline-block;
+    position: relative;
+    border-radius: 60px;
+  }
+  .btn-about-cta-wrap::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 62px;
+    border: 2px solid rgba(221,181,108,0.5);
+    animation: about-cta-pulse 2.8s ease-in-out infinite;
+    pointer-events: none;
+  }
+
   .btn-about-cta {
     display: inline-flex;
     align-items: center;
@@ -634,10 +662,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    box-shadow:
-      0 0 0 0 rgba(221,181,108,0.55),
-      0 10px 50px rgba(221,181,108,0.38);
-    animation: about-cta-pulse 2.8s ease-in-out infinite;
+    box-shadow: 0 10px 50px rgba(221,181,108,0.38);
     transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1),
                 box-shadow 0.35s,
                 background 0.3s;
@@ -647,10 +672,11 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -80%;
+    left: 0;
     width: 55%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: translateX(-145%);
     animation: about-cta-shimmer 3.2s ease-in-out infinite;
     pointer-events: none;
   }
@@ -658,9 +684,7 @@
   .btn-about-cta:hover {
     transform: translateY(-4px) scale(1.03);
     background: #e8c47a;
-    box-shadow:
-      0 0 0 10px rgba(221,181,108,0.1),
-      0 20px 70px rgba(221,181,108,0.55);
+    box-shadow: 0 20px 70px rgba(221,181,108,0.55);
   }
 
   .btn-about-cta:focus-visible {
@@ -673,21 +697,13 @@
   }
 
   @keyframes about-cta-pulse {
-    0%, 100% {
-      box-shadow:
-        0 0 0 0 rgba(221,181,108,0.5),
-        0 10px 50px rgba(221,181,108,0.35);
-    }
-    50% {
-      box-shadow:
-        0 0 0 14px rgba(221,181,108,0),
-        0 10px 50px rgba(221,181,108,0.55);
-    }
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.12); opacity: 0; }
   }
 
   @keyframes about-cta-shimmer {
-    0%     { left: -80%; }
-    55%, 100% { left: 130%; }
+    0%     { transform: translateX(-145%); }
+    55%, 100% { transform: translateX(236%); }
   }
 
   .site-footer {

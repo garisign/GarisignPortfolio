@@ -64,9 +64,9 @@ let mx = -100, my = -100, rx = -100, ry = -100;
 if (!isTouchDevice && cursor && ring) {
   document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
   function animCursor() {
-    cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+    cursor.style.transform = `translate(${mx - 5}px, ${my - 5}px)`;
     rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    ring.style.transform = `translate(${rx - 18}px, ${ry - 18}px)`;
     requestAnimationFrame(animCursor);
   }
   animCursor();
@@ -161,7 +161,14 @@ function initRevealObserver() {
   }
 
   let t = 0;
+  let bgAnimating = true;
+  document.addEventListener('visibilitychange', () => {
+    bgAnimating = !document.hidden;
+    if (bgAnimating) loop();
+  });
+
   function loop() {
+    if (!bgAnimating) return;
     ctx.clearRect(0, 0, W, H);
     ctx.fillStyle = '#222222';
     ctx.fillRect(0, 0, W, H);
@@ -175,8 +182,10 @@ function initRevealObserver() {
     ctx.strokeStyle = 'rgba(221,181,108,0.025)';
     ctx.lineWidth = 0.5;
     const step = 80;
-    for (let x = 0; x < W; x += step) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
-    for (let y = 0; y < H; y += step) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+    ctx.beginPath();
+    for (let x = 0; x < W; x += step) { ctx.moveTo(x, 0); ctx.lineTo(x, H); }
+    for (let y = 0; y < H; y += step) { ctx.moveTo(0, y); ctx.lineTo(W, y); }
+    ctx.stroke();
     requestAnimationFrame(loop);
   }
   loop();

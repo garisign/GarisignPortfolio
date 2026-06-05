@@ -40,7 +40,10 @@
 <title>Garisign Designer — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="preload" href="Agdasima-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="Comfortaa-Light.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"></noscript>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -58,7 +61,7 @@
 
 <!-- Splash Screen -->
 <div id="splash">
-  <div class="splash-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+  <div class="splash-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign" width="80" height="80"></div>
   <div class="splash-bar-wrap"><div class="splash-bar"></div></div>
   <span class="splash-percent">0%</span>
   <span class="splash-name" data-i18n="splash.name">GARISIGN DESIGNER</span>
@@ -67,7 +70,7 @@
 <!-- ------ NAV ------ -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo" data-hover>
-    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign"></div>
+    <div class="nav-logo-mark"><img src="img-logotipo-LOGO.svg" alt="Logótipo Garisign" width="32" height="32"></div>
     <span class="nav-logo-text">Garisign</span>
   </a>
   <ul class="nav-links">
@@ -274,7 +277,7 @@
       <li><span data-i18n="about.highlight.4">Adaptabilidade a diferentes contextos e equipas</span></li>
     </ul>
     <div class="about-actions">
-      <a href="sobre.html" class="btn-about-cta" data-hover data-i18n="about.more">Ver Mais Sobre Mim →</a>
+      <span class="btn-about-cta-wrap"><a href="sobre.html" class="btn-about-cta" data-hover data-i18n="about.more">Ver Mais Sobre Mim →</a></span>
     </div>
   </div>
 </section>
