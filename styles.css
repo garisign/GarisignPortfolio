@@ -147,9 +147,9 @@
     font-size: 28px; color: var(--gold); letter-spacing: 2px;
   }
   @keyframes splash-logo-reveal {
-    0% { opacity: 0; transform: translateY(18px) scale(0.82); filter: blur(10px); }
-    58% { opacity: 1; transform: translateY(-3px) scale(1.035); filter: blur(0); }
-    100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+    0% { opacity: 0; transform: translateY(18px) scale(0.82); }
+    58% { opacity: 1; transform: translateY(-3px) scale(1.035); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
   }
   @keyframes splash-glow {
     from { opacity: 0.48; transform: scale(0.78); }
@@ -176,8 +176,8 @@
     animation: splash-name-reveal 0.9s 0.42s cubic-bezier(0.16,1,0.3,1) both;
   }
   @keyframes splash-name-reveal {
-    from { opacity: 0; transform: translateY(8px); letter-spacing: 8px; }
-    to { opacity: 1; transform: translateY(0); letter-spacing: 5px; }
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   /* â”€â”€ NAV â”€â”€ */

@@ -173,7 +173,7 @@ function initRevealObserver() {
 
   function loop(ts) {
     if (!bgAnimating) return;
-    if (ts - lastFrameTs < 32) { requestAnimationFrame(loop); return; }
+    if (ts - lastFrameTs < 66) { requestAnimationFrame(loop); return; }
     lastFrameTs = ts;
     ctx.clearRect(0, 0, W, H);
     ctx.fillStyle = '#222222';
