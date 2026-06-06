@@ -119,9 +119,9 @@
     position: fixed; inset: 0; z-index: 9997;
     background: var(--dark);
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
-    transition: opacity 0.7s var(--transition), visibility 0s 0.7s;
+    transition: opacity 0.7s var(--transition);
   }
-  #splash.gone { opacity: 0; visibility: hidden; pointer-events: none; }
+  #splash.gone { opacity: 0; pointer-events: none; }
   .splash-logo-mark {
     width: 80px; height: 80px;
     display: flex; align-items: center; justify-content: center;
@@ -1263,6 +1263,16 @@
     transition: opacity 0.5s;
   }
   .about-frame:hover .about-monogram { opacity: 0.85; }
+  .about-photo {
+    width: 100%; height: 100%; object-fit: cover; object-position: center top;
+    display: block; user-select: none;
+    transition: transform 0.6s cubic-bezier(0.16,1,0.3,1), filter 0.5s;
+    filter: saturate(0.92) brightness(0.95);
+  }
+  .about-frame:hover .about-photo {
+    transform: scale(1.03);
+    filter: saturate(1.05) brightness(1);
+  }
   .about-stats {
     display: flex; gap: 0; margin-top: 20px;
     border: 1px solid var(--glass-border); border-radius: var(--radius);
@@ -1380,6 +1390,7 @@
     position: relative; z-index: 2; overflow: hidden;
     border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);
     padding: 18px 0; background: rgba(34,34,34,0.4); backdrop-filter: blur(8px);
+    min-height: 55px;
   }
   .marquee-track {
     display: flex; gap: 0; white-space: nowrap;

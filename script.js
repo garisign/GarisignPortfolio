@@ -20,7 +20,10 @@ window.addEventListener('load', () => {
   }
 
   function finishIndexIntro() {
-    if (splash) splash.classList.add('gone');
+    if (splash) {
+      splash.classList.add('gone');
+      splash.addEventListener('transitionend', () => { splash.hidden = true; }, { once: true });
+    }
     window.scrollTo(0, 0);
     requestAnimationFrame(() => {
       document.body.style.overflow = '';
@@ -162,13 +165,16 @@ function initRevealObserver() {
 
   let t = 0;
   let bgAnimating = true;
+  let lastFrameTs = 0;
   document.addEventListener('visibilitychange', () => {
     bgAnimating = !document.hidden;
-    if (bgAnimating) loop();
+    if (bgAnimating) requestAnimationFrame(loop);
   });
 
-  function loop() {
+  function loop(ts) {
     if (!bgAnimating) return;
+    if (ts - lastFrameTs < 32) { requestAnimationFrame(loop); return; }
+    lastFrameTs = ts;
     ctx.clearRect(0, 0, W, H);
     ctx.fillStyle = '#222222';
     ctx.fillRect(0, 0, W, H);
@@ -188,7 +194,7 @@ function initRevealObserver() {
     ctx.stroke();
     requestAnimationFrame(loop);
   }
-  loop();
+  requestAnimationFrame(loop);
 })();
 
 /* â”€â”€ HERO VISUAL TILT + EASTER EGGS â”€â”€ */
@@ -233,9 +239,12 @@ function initRevealObserver() {
       if (!img) return;
       const cls = easterClasses[i];
       img.classList.remove(cls);
-      void img.offsetWidth;           // force reflow so animation restarts
-      img.classList.add(cls);
-      img.addEventListener('animationend', () => img.classList.remove(cls), { once: true });
+      img.style.animation = 'none';
+      requestAnimationFrame(() => {
+        img.style.animation = '';
+        img.classList.add(cls);
+        img.addEventListener('animationend', () => img.classList.remove(cls), { once: true });
+      });
     });
   });
 })();
